@@ -25,6 +25,10 @@
    "name": "Central & Eastern US",
    "macro": "na"
   },
+  "ecan": {
+   "name": "Eastern Canada",
+   "macro": "na"
+  },
   "mexico": {
    "name": "Mexico",
    "macro": "sa"
@@ -3304,6 +3308,1556 @@
    "weather": "Dry seasons are June–September and December–February.",
    "hire": "limited",
    "hireNote": "A couple of outfits in Rubavu and Kigali hire mountain bikes",
+   "kind": "route",
+   "support": "bikepacking"
+  },
+  {
+   "id": "parkcity",
+   "name": "Park City",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Utah",
+   "zone": "usw",
+   "lat": 40.646,
+   "lon": -111.498,
+   "elev": [
+    2000,
+    3000
+   ],
+   "refElev": 2300,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Salt Lake City ~40 min",
+   "terrain": "Smooth, buff singletrack through aspen, plus lift-served flow and downhill; all levels",
+   "pitch": "Hundreds of kilometres of smooth singletrack climb through aspen and pine right from town, with lift-served riding at Deer Valley and Park City Mountain and the Wasatch Crest ridge above it all.",
+   "weather": "Afternoon thunderstorms are common in July and August.",
+   "children": [
+    {
+     "name": "Wasatch Crest Trail",
+     "kind": "area",
+     "lat": 40.625,
+     "lon": -111.575,
+     "note": "Ridge-top classic at ~3,000 m from Guardsman Pass, usually shuttled; snow-free ~July–October"
+    },
+    {
+     "name": "Deer Valley Bike Park",
+     "kind": "park",
+     "lat": 40.637,
+     "lon": -111.478,
+     "note": "Lift-served downhill and flow trails"
+    },
+    {
+     "name": "Park City Mountain",
+     "kind": "park",
+     "lat": 40.685,
+     "lon": -111.556,
+     "note": "Summer lifts from Canyons Village, and the long Mid Mountain trail across the resort"
+    },
+    {
+     "name": "Round Valley",
+     "kind": "area",
+     "lat": 40.66,
+     "lon": -111.47,
+     "note": "Rolling sagebrush trails at the edge of town; the first to dry out in spring"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Plenty of shops renting trail, downhill and e-bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "stgeorge",
+   "name": "St George",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Utah",
+   "zone": "usw",
+   "lat": 37.096,
+   "lon": -113.568,
+   "elev": [
+    800,
+    1600
+   ],
+   "refElev": 1000,
+   "season": [
+    9,
+    5
+   ],
+   "best": [
+    3,
+    4,
+    10,
+    11
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "St George ~15 min; Las Vegas ~2 h",
+   "terrain": "Slickrock, lava ledges and fast desert singletrack; intermediate to expert",
+   "pitch": "Utah's winter riding: red-rock and lava-ledge trails around St George and Hurricane, from the slickrock of Gooseberry Mesa to fast desert singletrack, with Zion National Park next door.",
+   "weather": "Summer is very hot, often above 38°C.",
+   "children": [
+    {
+     "name": "Gooseberry Mesa",
+     "kind": "area",
+     "lat": 37.138,
+     "lon": -113.185,
+     "note": "Slickrock and ledges on a mesa top with views to Zion; technical"
+    },
+    {
+     "name": "Hurricane Cliffs (JEM)",
+     "kind": "area",
+     "lat": 37.15,
+     "lon": -113.32,
+     "note": "Fast, flowing desert singletrack along the cliffs; a good first day"
+    },
+    {
+     "name": "Zen Trail",
+     "kind": "area",
+     "lat": 37.1,
+     "lon": -113.63,
+     "note": "Steep, ledgy slickrock right above town; expert"
+    },
+    {
+     "name": "Bearclaw Poppy",
+     "kind": "area",
+     "lat": 37.05,
+     "lon": -113.53,
+     "note": "Rolling, pumpy desert trail; beginner–intermediate"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Several shops in St George and Hurricane rent trail bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ],
+    "road": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "brianhead",
+   "name": "Brian Head",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Utah",
+   "zone": "usw",
+   "lat": 37.702,
+   "lon": -112.85,
+   "elev": [
+    2600,
+    3300
+   ],
+   "refElev": 2900,
+   "season": [
+    6,
+    10
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Cedar City ~45 min; Las Vegas ~3 h",
+   "terrain": "Lift-served flow and downhill plus high-alpine singletrack; all levels",
+   "pitch": "Utah's highest resort, at almost 3,000 m: a lift-served bike park, alpine singletrack among red cliffs, and long shuttled descents off the plateau. Cool when the desert below is baking.",
+   "children": [
+    {
+     "name": "Brian Head Bike Park",
+     "kind": "park",
+     "lat": 37.69,
+     "lon": -112.85,
+     "note": "Lift-served flow and downhill"
+    },
+    {
+     "name": "Dark Hollow to Parowan",
+     "kind": "area",
+     "lat": 37.78,
+     "lon": -112.8,
+     "note": "Long shuttled descent off the plateau; intermediate–advanced"
+    },
+    {
+     "name": "Thunder Mountain (Red Canyon)",
+     "kind": "area",
+     "lat": 37.74,
+     "lon": -112.3,
+     "note": "~1 h east: singletrack through red hoodoos near Bryce Canyon"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "The resort rents bike-park bikes; more choice in Cedar City",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "saltlake",
+   "name": "Salt Lake City",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Utah",
+   "zone": "usw",
+   "lat": 40.76,
+   "lon": -111.891,
+   "elev": [
+    1300,
+    3300
+   ],
+   "refElev": 1500,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9,
+    10
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Salt Lake City ~15 min",
+   "terrain": "Foothill and canyon singletrack, plus long road climbs; all levels",
+   "pitch": "A city with mountains at the end of the street: the Bonneville Shoreline Trail along the foothills, the purpose-built Corner Canyon network to the south, and long road climbs up the Cottonwood canyons to the ski resorts.",
+   "weather": "Summer is hot in the valley; ride early, or head up the canyons.",
+   "children": [
+    {
+     "name": "Corner Canyon",
+     "kind": "area",
+     "lat": 40.49,
+     "lon": -111.83,
+     "note": "Big purpose-built network in Draper, ~30 min south; flow and tech"
+    },
+    {
+     "name": "Bonneville Shoreline Trail",
+     "kind": "area",
+     "lat": 40.78,
+     "lon": -111.83,
+     "note": "Foothill singletrack along an ancient lakeshore above the city"
+    },
+    {
+     "name": "Sundance Bike Park",
+     "kind": "park",
+     "lat": 40.393,
+     "lon": -111.588,
+     "note": "~1 h south: lift-served trails in Provo Canyon"
+    },
+    {
+     "name": "Little Cottonwood Canyon",
+     "kind": "climb",
+     "lat": 40.575,
+     "lon": -111.7,
+     "note": "~13 km at ~8% to Snowbird and Alta"
+    },
+    {
+     "name": "Big Cottonwood Canyon",
+     "kind": "climb",
+     "lat": 40.62,
+     "lon": -111.7,
+     "note": "~24 km, ~1,150 m to Brighton; steadier"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Plenty of shops renting trail, road and e-bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ],
+    "road": [
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "whiterim",
+   "name": "White Rim Road",
+   "category": "gravel",
+   "country": "USA",
+   "region": "Canyonlands, Utah",
+   "zone": "usw",
+   "lat": 38.4,
+   "lon": -109.95,
+   "elev": [
+    1200,
+    1850
+   ],
+   "refElev": 1400,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    9,
+    10
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Moab ~40 min to the start",
+   "terrain": "Jeep road over sand and rock; not technical, but long, hot and remote",
+   "pitch": "A loop below the cliffs of Canyonlands' Island in the Sky, on a jeep road along a white sandstone bench above the Green and Colorado rivers. Camping is by permit, and most groups bring a support vehicle to carry the water.",
+   "stats": {
+    "km": 160,
+    "days": "2–4",
+    "climb": 2000
+   },
+   "weather": "Campsite permits for spring and autumn are booked months ahead; there's no water on the route.",
+   "hire": "limited",
+   "hireNote": "Moab shops rent bikes, and outfitters run supported trips",
+   "kind": "route",
+   "support": "bikepacking"
+  },
+  {
+   "id": "northshore",
+   "name": "North Vancouver (North Shore)",
+   "category": "mtb",
+   "country": "Canada",
+   "region": "British Columbia",
+   "zone": "bc",
+   "lat": 49.32,
+   "lon": -123.07,
+   "elev": [
+    0,
+    1200
+   ],
+   "refElev": 400,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Vancouver airport ~45 min",
+   "terrain": "Steep, rooty, rocky forest trails and wooden features; advanced",
+   "pitch": "The birthplace of freeride: steep, rooty rainforest trails on Fromme, Seymour and Cypress, famous for their wooden features, ten minutes from downtown Vancouver.",
+   "weather": "Wet from October to April, when the roots and rock get very slippery.",
+   "children": [
+    {
+     "name": "Mount Fromme",
+     "kind": "area",
+     "lat": 49.36,
+     "lon": -123.08,
+     "note": "Steep, technical classics; climb the road to the top"
+    },
+    {
+     "name": "Mount Seymour",
+     "kind": "area",
+     "lat": 49.35,
+     "lon": -122.97,
+     "note": "Slightly friendlier, with a few flow trails"
+    },
+    {
+     "name": "Cypress",
+     "kind": "area",
+     "lat": 49.36,
+     "lon": -123.21,
+     "note": "Raw, steep and rough; for experts"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Several shops near the trails rent high-end bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "kamloops",
+   "name": "Kamloops (& Sun Peaks)",
+   "category": "mtb",
+   "country": "Canada",
+   "region": "British Columbia",
+   "zone": "bc",
+   "lat": 50.676,
+   "lon": -120.341,
+   "elev": [
+    350,
+    2080
+   ],
+   "refElev": 600,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Kamloops ~15 min; Vancouver ~4 h",
+   "terrain": "Dry, steep desert trails and a lift-served bike park; intermediate to expert",
+   "pitch": "Dry, dusty hillside trails above town that ride when the coast is wet, the free Kamloops Bike Ranch, and Sun Peaks' lift-served bike park up the road.",
+   "weather": "July and August are hot in town; ride Sun Peaks then.",
+   "children": [
+    {
+     "name": "Kamloops Bike Ranch",
+     "kind": "park",
+     "lat": 50.66,
+     "lon": -120.28,
+     "note": "Free park with dirt jumps, flow and downhill lines"
+    },
+    {
+     "name": "Sun Peaks Bike Park",
+     "kind": "park",
+     "lat": 50.882,
+     "lon": -119.89,
+     "note": "~45 min: lift-served downhill and flow"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Shops in town, and bike-park rentals at Sun Peaks",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ]
+   }
+  },
+  {
+   "id": "montsteanne",
+   "name": "Mont-Sainte-Anne",
+   "category": "mtb",
+   "country": "Canada",
+   "region": "Quebec",
+   "zone": "ecan",
+   "lat": 47.075,
+   "lon": -70.905,
+   "elev": [
+    175,
+    800
+   ],
+   "refElev": 300,
+   "season": [
+    6,
+    10
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Quebec City ~40 min",
+   "terrain": "Rocky, rooty World Cup downhill and a big cross-country network; all levels",
+   "pitch": "A long-time World Cup venue near Quebec City: gondola-served downhill on rocky, rooty eastern terrain and a big cross-country network, with the St Lawrence below.",
+   "weather": "Rain makes the roots and rock very slick.",
+   "children": [
+    {
+     "name": "Mont-Sainte-Anne Bike Park",
+     "kind": "park",
+     "lat": 47.075,
+     "lon": -70.905,
+     "note": "Gondola-served downhill, including the World Cup track"
+    },
+    {
+     "name": "Cross-country trails",
+     "kind": "area",
+     "lat": 47.09,
+     "lon": -70.92,
+     "note": "A big network of rooty forest singletrack"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Downhill and trail bikes for hire at the resort",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "durango",
+   "name": "Durango",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Colorado",
+   "zone": "usw",
+   "lat": 37.275,
+   "lon": -107.88,
+   "elev": [
+    2000,
+    3600
+   ],
+   "refElev": 2000,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9,
+    10
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Durango–La Plata County ~25 min",
+   "terrain": "Rocky singletrack from town and high-alpine trails above; all levels",
+   "pitch": "A mountain-bike town since it hosted the first world championships in 1990, with trails right from Main Street, alpine singletrack in the San Juans, lift-served riding at Purgatory and big road passes to the north.",
+   "weather": "Afternoon storms in July and August; high trails are snow-free from about July.",
+   "children": [
+    {
+     "name": "Horse Gulch",
+     "kind": "area",
+     "lat": 37.27,
+     "lon": -107.86,
+     "note": "Rocky, fun town trails minutes from downtown"
+    },
+    {
+     "name": "Colorado Trail (Kennebec)",
+     "kind": "area",
+     "lat": 37.42,
+     "lon": -108.0,
+     "note": "High-alpine classic at ~3,500 m; usually shuttled"
+    },
+    {
+     "name": "Purgatory Bike Park",
+     "kind": "park",
+     "lat": 37.63,
+     "lon": -107.814,
+     "note": "~40 min north: lift-served downhill and flow"
+    },
+    {
+     "name": "Coal Bank & Molas passes",
+     "kind": "climb",
+     "lat": 37.7,
+     "lon": -107.78,
+     "note": "Two big passes on the road to Silverton"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Plenty of shops renting trail, road and e-bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ],
+    "road": [
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "sunvalley",
+   "name": "Ketchum (Sun Valley)",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Idaho",
+   "zone": "usw",
+   "lat": 43.681,
+   "lon": -114.364,
+   "elev": [
+    1750,
+    2790
+   ],
+   "refElev": 1800,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    6,
+    7,
+    9
+   ],
+   "crowds": 2,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Hailey ~20 min; Boise ~2.5 h",
+   "terrain": "Long, smooth singletrack and lift-served descents; all levels",
+   "pitch": "Hundreds of kilometres of smooth singletrack through sagebrush and aspen, and gondola-served descents off Bald Mountain, in a quiet mountain valley.",
+   "children": [
+    {
+     "name": "Bald Mountain",
+     "kind": "park",
+     "lat": 43.66,
+     "lon": -114.4,
+     "note": "Gondola-served flow and long descents"
+    },
+    {
+     "name": "Adams Gulch",
+     "kind": "area",
+     "lat": 43.72,
+     "lon": -114.39,
+     "note": "Classic loops just north of town"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Several shops in Ketchum rent trail and e-bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ],
+    "gravel": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "mammoth",
+   "name": "Mammoth Lakes",
+   "category": "mtb",
+   "country": "USA",
+   "region": "California",
+   "zone": "usw",
+   "lat": 37.648,
+   "lon": -118.972,
+   "elev": [
+    2400,
+    3370
+   ],
+   "refElev": 2700,
+   "season": [
+    6,
+    10
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Mammoth Yosemite ~15 min; Los Angeles ~5 h",
+   "terrain": "Volcanic pumice trails and lift-served downhill; all levels",
+   "pitch": "A big lift-served bike park on the pumice slopes of an old volcano, plus high-Sierra singletrack between alpine lakes.",
+   "weather": "Afternoon storms in summer, and the altitude takes a day or two to get used to.",
+   "children": [
+    {
+     "name": "Mammoth Bike Park",
+     "kind": "park",
+     "lat": 37.651,
+     "lon": -119.027,
+     "note": "Gondola to the 3,370 m summit, with long pumice descents"
+    },
+    {
+     "name": "Lakes Basin",
+     "kind": "area",
+     "lat": 37.6,
+     "lon": -119.01,
+     "note": "Cross-country loops among alpine lakes"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Bike-park and trail bikes for hire at the resort and in town",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "downieville",
+   "name": "Downieville",
+   "category": "mtb",
+   "country": "USA",
+   "region": "California",
+   "zone": "usw",
+   "lat": 39.559,
+   "lon": -120.826,
+   "elev": [
+    900,
+    2200
+   ],
+   "refElev": 1000,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    6,
+    9,
+    10
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Reno ~2 h; Sacramento ~2.5 h",
+   "terrain": "Long, rocky shuttled descents; intermediate to advanced",
+   "pitch": "A Gold Rush town with a famous shuttle ride: the Downieville Downhill drops from Packer Saddle back to town, and it ends with a swim in the Yuba River.",
+   "weather": "The canyon is hot in midsummer; ride early.",
+   "children": [
+    {
+     "name": "Downieville Downhill",
+     "kind": "area",
+     "lat": 39.62,
+     "lon": -120.66,
+     "note": "~24 km, ~1,300 m of descent from Packer Saddle; shuttled"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "The shuttle companies in town rent a small fleet; book ahead",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "tahoe",
+   "name": "Truckee (Lake Tahoe)",
+   "category": "mtb",
+   "country": "USA",
+   "region": "California",
+   "zone": "usw",
+   "lat": 39.328,
+   "lon": -120.183,
+   "elev": [
+    1800,
+    2700
+   ],
+   "refElev": 1900,
+   "season": [
+    6,
+    10
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Reno ~45 min",
+   "terrain": "Granite singletrack, lake views and lift-served parks; all levels",
+   "pitch": "Granite and pine around the lake: the Flume Trail high above the water, Northstar's lift-served bike park, and the classic road loop around Lake Tahoe.",
+   "children": [
+    {
+     "name": "Flume Trail",
+     "kind": "area",
+     "lat": 39.2,
+     "lon": -119.92,
+     "note": "Cliffside trail high above the east shore; usually shuttled"
+    },
+    {
+     "name": "Northstar Bike Park",
+     "kind": "park",
+     "lat": 39.274,
+     "lon": -120.121,
+     "note": "Lift-served downhill and flow"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Shops around the lake rent trail, road and e-bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ],
+    "road": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "bellingham",
+   "name": "Bellingham",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Washington",
+   "zone": "usw",
+   "lat": 48.75,
+   "lon": -122.478,
+   "elev": [
+    0,
+    1000
+   ],
+   "refElev": 200,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Bellingham ~15 min; Seattle ~1.5 h",
+   "terrain": "Rooty, loamy forest singletrack, from flow to steep tech; all levels",
+   "pitch": "Galbraith Mountain, on the edge of town, has around 100 km of community-built forest trails, from jump lines to steep, rooty tech, with coastal riding at Chuckanut too.",
+   "weather": "Wet from October to April; the trails ride all year but get muddy.",
+   "children": [
+    {
+     "name": "Galbraith Mountain",
+     "kind": "area",
+     "lat": 48.73,
+     "lon": -122.42,
+     "note": "Around 100 km of trails on the edge of town"
+    },
+    {
+     "name": "Chuckanut",
+     "kind": "area",
+     "lat": 48.68,
+     "lon": -122.47,
+     "note": "Coastal trails with sea views; rougher and steeper"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "A few shops rent trail bikes; book ahead",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "copperharbor",
+   "name": "Copper Harbor",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Michigan",
+   "zone": "usc",
+   "lat": 47.468,
+   "lon": -87.886,
+   "elev": [
+    180,
+    450
+   ],
+   "refElev": 250,
+   "season": [
+    6,
+    10
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Houghton ~1 h",
+   "terrain": "Rocky, rooty northwoods singletrack and big built flow lines; all levels",
+   "pitch": "A tiny town at the tip of the Keweenaw Peninsula on Lake Superior, with rocky northwoods trails and long, built descents with big berms and jumps.",
+   "weather": "Snow lingers into May, and black flies are bad in June.",
+   "children": [
+    {
+     "name": "Flow Motion & Overflow",
+     "kind": "area",
+     "lat": 47.46,
+     "lon": -87.88,
+     "note": "Long built descents off Brockway Mountain"
+    },
+    {
+     "name": "Brockway Mountain",
+     "kind": "area",
+     "lat": 47.465,
+     "lon": -87.92,
+     "note": "Rock and big views over Lake Superior"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "A couple of shops in town rent bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "tucson",
+   "name": "Tucson",
+   "category": "road",
+   "country": "USA",
+   "region": "Arizona",
+   "zone": "usw",
+   "lat": 32.222,
+   "lon": -110.975,
+   "elev": [
+    700,
+    2790
+   ],
+   "refElev": 800,
+   "season": [
+    10,
+    4
+   ],
+   "best": [
+    11,
+    12,
+    1,
+    2,
+    3
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Tucson ~20 min; Phoenix ~1.5 h",
+   "terrain": "Desert roads with wide shoulders, and one huge climb; all levels",
+   "pitch": "A winter base for pros and amateurs: dry, warm days, bike-friendly roads and the climb up Mount Lemmon, from saguaro cactus to pine forest.",
+   "weather": "Summer is extremely hot; ride at dawn if at all.",
+   "children": [
+    {
+     "name": "Mount Lemmon",
+     "kind": "climb",
+     "lat": 32.38,
+     "lon": -110.69,
+     "note": "~40 km, ~1,800 m from the desert floor to Summerhaven"
+    },
+    {
+     "name": "Gates Pass",
+     "kind": "climb",
+     "lat": 32.222,
+     "lon": -111.1,
+     "note": "Short, steep pass west of town among saguaros"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Several shops renting good road bikes",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "day",
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "santabarbara",
+   "name": "Santa Barbara",
+   "category": "road",
+   "country": "USA",
+   "region": "California",
+   "zone": "usw",
+   "lat": 34.42,
+   "lon": -119.698,
+   "elev": [
+    0,
+    1200
+   ],
+   "refElev": 100,
+   "season": [
+    1,
+    12
+   ],
+   "best": [
+    3,
+    4,
+    5,
+    9,
+    10
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Santa Barbara ~15 min; Los Angeles ~2 h",
+   "terrain": "Coastal roads and steep mountain climbs; all levels",
+   "pitch": "Pros winter here for the mild weather and the steep climbs behind the city, with flat coast roads and the Santa Ynez Valley wine country over the hill.",
+   "weather": "The coast is often foggy in early summer.",
+   "children": [
+    {
+     "name": "Gibraltar Road",
+     "kind": "climb",
+     "lat": 34.47,
+     "lon": -119.69,
+     "note": "~10 km, steep, above the city and the sea"
+    },
+    {
+     "name": "Figueroa Mountain",
+     "kind": "climb",
+     "lat": 34.74,
+     "lon": -119.98,
+     "note": "Steep climb above the Santa Ynez Valley, near Solvang"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Several shops renting road and e-bikes",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "day",
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "healdsburg",
+   "name": "Healdsburg (Sonoma)",
+   "category": "road",
+   "country": "USA",
+   "region": "California",
+   "zone": "usw",
+   "lat": 38.61,
+   "lon": -122.869,
+   "elev": [
+    30,
+    500
+   ],
+   "refElev": 100,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    9,
+    10
+   ],
+   "crowds": 2,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Santa Rosa ~15 min; San Francisco ~1.5 h",
+   "terrain": "Quiet vineyard roads, steep coastal climbs and dirt fire roads; all levels",
+   "pitch": "Sonoma wine country: quiet roads through vineyards and redwoods, steep climbs out toward the Pacific, and plenty of dirt for gravel days.",
+   "children": [
+    {
+     "name": "King Ridge Road",
+     "kind": "climb",
+     "lat": 38.55,
+     "lon": -123.13,
+     "note": "Steep, remote climb through redwoods toward the coast"
+    },
+    {
+     "name": "Coleman Valley Road",
+     "kind": "climb",
+     "lat": 38.37,
+     "lon": -123.03,
+     "note": "Steep climb up from the coast near Occidental"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "A few shops in town rent high-end road and gravel bikes",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "day",
+     "climbs"
+    ],
+    "gravel": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "aspen",
+   "name": "Aspen",
+   "category": "road",
+   "country": "USA",
+   "region": "Colorado",
+   "zone": "usw",
+   "lat": 39.191,
+   "lon": -106.817,
+   "elev": [
+    2400,
+    3690
+   ],
+   "refElev": 2400,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 5,
+   "guide": "Optional",
+   "airport": "Aspen ~10 min; Denver ~3.5 h",
+   "terrain": "High mountain passes and alpine singletrack; intermediate to advanced",
+   "pitch": "High-country riding: road climbs over Independence Pass and up to the Maroon Bells, plus alpine singletrack and Snowmass's lift-served bike park.",
+   "weather": "Afternoon storms in summer; Independence Pass is closed from about November to late May.",
+   "children": [
+    {
+     "name": "Independence Pass",
+     "kind": "climb",
+     "lat": 39.108,
+     "lon": -106.564,
+     "note": "~30 km, ~1,300 m to 3,687 m on the Continental Divide"
+    },
+    {
+     "name": "Maroon Creek Road",
+     "kind": "climb",
+     "lat": 39.1,
+     "lon": -106.94,
+     "note": "~16 km to the Maroon Bells; cars restricted in the day in summer"
+    },
+    {
+     "name": "Snowmass Bike Park",
+     "kind": "park",
+     "lat": 39.209,
+     "lon": -106.949,
+     "note": "Lift-served flow and downhill"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Plenty of shops renting road, mountain and e-bikes",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs"
+    ],
+    "mtb": [
+     "trails",
+     "lift"
+    ]
+   }
+  },
+  {
+   "id": "vermont",
+   "name": "Woodstock (Vermont gravel)",
+   "category": "gravel",
+   "country": "USA",
+   "region": "Vermont",
+   "zone": "usc",
+   "lat": 43.624,
+   "lon": -72.519,
+   "elev": [
+    200,
+    800
+   ],
+   "refElev": 300,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    6,
+    9,
+    10
+   ],
+   "crowds": 2,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Lebanon ~30 min; Boston ~2.5 h",
+   "terrain": "Steep dirt roads through farms and forest; intermediate",
+   "pitch": "Vermont has thousands of kilometres of unpaved town roads, steep and quiet, through farms, maple forest and covered bridges. Best in autumn colour.",
+   "weather": "Mud season in April and May makes the dirt roads soft.",
+   "hire": "limited",
+   "hireNote": "A couple of shops rent gravel bikes",
+   "kind": "base",
+   "offers": {
+    "gravel": [
+     "day"
+    ],
+    "road": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "arizonatrail",
+   "name": "Arizona Trail",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Arizona",
+   "zone": "usw",
+   "lat": 33.9,
+   "lon": -111.6,
+   "elev": [
+    600,
+    2800
+   ],
+   "refElev": 1500,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    10
+   ],
+   "crowds": 1,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Mexican border near Sierra Vista (start), Utah border (end)",
+   "terrain": "Rough, rocky singletrack with hike-a-bike; advanced, very remote",
+   "pitch": "Border to border across Arizona on singletrack, from saguaro desert and sky-island mountains to the pines of the north and the Grand Canyon, which you have to carry your bike across. Bikes detour around wilderness areas.",
+   "stats": {
+    "km": 1200,
+    "days": "14–30",
+    "climb": 25000
+   },
+   "weather": "Water is the main challenge: long dry stretches and caches.",
+   "hire": "byo",
+   "hireNote": "Set up for bikepacking and rough singletrack",
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "maahdaahey",
+   "name": "Maah Daah Hey Trail",
+   "category": "mtb",
+   "country": "USA",
+   "region": "North Dakota",
+   "zone": "usc",
+   "lat": 47.15,
+   "lon": -103.5,
+   "elev": [
+    600,
+    900
+   ],
+   "refElev": 750,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    6,
+    9
+   ],
+   "crowds": 1,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Medora (start or end); Bismarck ~2 h",
+   "terrain": "Badlands singletrack with sharp climbs; intermediate to advanced",
+   "pitch": "About 150 km of singletrack through the North Dakota badlands, past Theodore Roosevelt National Park, with campgrounds and water caches along the way.",
+   "stats": {
+    "km": 155,
+    "days": "3–5",
+    "climb": 3500
+   },
+   "weather": "The clay trail is unrideable when wet; summer storms and heat.",
+   "hire": "byo",
+   "hireNote": "A few outfitters in Medora run supported trips",
+   "kind": "route",
+   "support": "bikepacking"
+  },
+  {
+   "id": "oregontimber",
+   "name": "Oregon Timber Trail",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Oregon",
+   "zone": "usw",
+   "lat": 43.8,
+   "lon": -121.5,
+   "elev": [
+    30,
+    2400
+   ],
+   "refElev": 1400,
+   "season": [
+    7,
+    10
+   ],
+   "best": [
+    8,
+    9
+   ],
+   "crowds": 1,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Lakeview (start), Hood River (end)",
+   "terrain": "Backcountry singletrack and forest roads; advanced",
+   "pitch": "A bikepacking route from California to the Columbia River on mostly singletrack, through high desert, volcanoes and old-growth forest, past Oakridge and Mount Hood.",
+   "stats": {
+    "km": 1080,
+    "days": "14–21",
+    "climb": 17000
+   },
+   "weather": "Wildfire smoke and closures are common in late summer.",
+   "hire": "byo",
+   "hireNote": "Set up for bikepacking on singletrack",
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "katy",
+   "name": "Katy Trail",
+   "category": "gravel",
+   "country": "USA",
+   "region": "Missouri",
+   "zone": "usc",
+   "lat": 38.75,
+   "lon": -92.3,
+   "elev": [
+    150,
+    250
+   ],
+   "refElev": 200,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    4,
+    5,
+    9,
+    10
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "St Louis (east end); Kansas City ~1.5 h from the west end",
+   "terrain": "Flat, crushed-stone rail trail; easy",
+   "pitch": "America's longest continuous rail trail, along the Missouri River bluffs through small wine towns, flat and easy all the way.",
+   "stats": {
+    "km": 385,
+    "days": "4–6",
+    "climb": 800
+   },
+   "weather": "Summer is hot and humid; spring floods can close sections.",
+   "hire": "limited",
+   "hireNote": "A few outfitters rent bikes and run shuttles, mostly near the east end",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "gap",
+   "name": "Great Allegheny Passage & C&O Canal",
+   "category": "gravel",
+   "country": "USA",
+   "region": "Pittsburgh to Washington DC",
+   "zone": "usc",
+   "lat": 39.65,
+   "lon": -78.76,
+   "elev": [
+    10,
+    725
+   ],
+   "refElev": 300,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    9,
+    10
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Pittsburgh (start), Washington DC (end)",
+   "terrain": "Crushed-stone rail trail, then a rougher dirt towpath; easy",
+   "pitch": "From Pittsburgh over the Eastern Continental Divide on a gentle rail trail, then down the old C&O Canal towpath along the Potomac into Washington DC.",
+   "stats": {
+    "km": 540,
+    "days": "5–8",
+    "climb": 1000
+   },
+   "hire": "limited",
+   "hireNote": "Outfitters at both ends and along the way rent bikes and run shuttles",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "icefields",
+   "name": "Icefields Parkway",
+   "category": "road",
+   "country": "Canada",
+   "region": "Jasper to Banff, Alberta",
+   "zone": "bc",
+   "lat": 52.2,
+   "lon": -117.2,
+   "elev": [
+    1050,
+    2090
+   ],
+   "refElev": 1600,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Edmonton ~4 h to Jasper; Calgary ~1.5 h from Banff",
+   "terrain": "Mountain highway with a wide shoulder; intermediate",
+   "pitch": "One of the world's great mountain roads: about 230 km between Jasper and Banff past glaciers, turquoise lakes and two big passes, with hostels and lodges along the way.",
+   "stats": {
+    "km": 230,
+    "days": "2–4",
+    "climb": 2500
+   },
+   "weather": "Snow is possible on the passes in any month, and there are bears near the road.",
+   "hire": "limited",
+   "hireNote": "Shops in Banff and Jasper rent road bikes; no one-way hire",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "cabot",
+   "name": "Cabot Trail",
+   "category": "road",
+   "country": "Canada",
+   "region": "Cape Breton, Nova Scotia",
+   "zone": "ecan",
+   "lat": 46.65,
+   "lon": -60.7,
+   "elev": [
+    0,
+    530
+   ],
+   "refElev": 200,
+   "season": [
+    6,
+    10
+   ],
+   "best": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Sydney ~1 h; Halifax ~4.5 h",
+   "terrain": "Coastal road with steep climbs over the headlands; intermediate",
+   "pitch": "A loop around Cape Breton's highlands, with steep climbs over coastal headlands, Gaelic and Acadian villages and whales offshore. Autumn colour peaks in early October.",
+   "stats": {
+    "km": 300,
+    "days": "3–5",
+    "climb": 3500
+   },
+   "hire": "limited",
+   "hireNote": "A few shops in Baddeck and Sydney; most riders bring their own",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "blueridge",
+   "name": "Blue Ridge Parkway",
+   "category": "road",
+   "country": "USA",
+   "region": "Virginia and North Carolina",
+   "zone": "usc",
+   "lat": 36.6,
+   "lon": -81.2,
+   "elev": [
+    200,
+    1850
+   ],
+   "refElev": 900,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    9,
+    10
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Waynesboro, Virginia (north end), Cherokee, North Carolina (south end)",
+   "terrain": "Smooth, scenic road with long climbs and no shoulder; intermediate to advanced",
+   "pitch": "A scenic road along the crest of the Appalachians, with no trucks or traffic lights, long climbs and long views, and Mount Mitchell, the highest peak east of the Mississippi, just off the route.",
+   "stats": {
+    "km": 755,
+    "days": "7–10",
+    "climb": 15000
+   },
+   "weather": "Sections close for snow and fog in winter; there are long tunnels in the south, so carry lights.",
+   "hire": "limited",
+   "hireNote": "No one-way hire; bring your own or go with a tour company",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "oregoncoast",
+   "name": "Oregon Coast",
+   "category": "road",
+   "country": "USA",
+   "region": "Oregon",
+   "zone": "usw",
+   "lat": 44.5,
+   "lon": -124.06,
+   "elev": [
+    0,
+    300
+   ],
+   "refElev": 50,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Astoria (start), Brookings (end); Portland ~2 h to Astoria",
+   "terrain": "Coast highway with a shoulder and rolling headlands; intermediate",
+   "pitch": "Ride south with the summer tailwind along the Oregon coast: sea stacks, lighthouses, dunes and seafood towns, with hiker-biker campsites in the state parks.",
+   "stats": {
+    "km": 590,
+    "days": "6–9",
+    "climb": 5000
+   },
+   "weather": "Ride north to south in summer, when the wind is behind you.",
+   "hire": "byo",
+   "hireNote": "No one-way hire",
    "kind": "route",
    "support": "bikepacking"
   }
