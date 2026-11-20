@@ -54,11 +54,11 @@
    "macro": "eu"
   },
   "nordic": {
-   "name": "Scandinavia",
+   "name": "Scandinavia & the Baltic",
    "macro": "eu"
   },
   "benelux": {
-   "name": "Belgium",
+   "name": "Belgium & Germany",
    "macro": "eu"
   },
   "france": {
@@ -77,6 +77,10 @@
    "name": "Slovenia",
    "macro": "eu"
   },
+  "adriatic": {
+   "name": "Croatia",
+   "macro": "eu"
+  },
   "iberia": {
    "name": "Spain, Portugal & Andorra",
    "macro": "eu"
@@ -92,6 +96,10 @@
   "mideast": {
    "name": "Middle East",
    "macro": "af"
+  },
+  "caucasus": {
+   "name": "Türkiye & the Caucasus",
+   "macro": "asia"
   },
   "centralasia": {
    "name": "Central Asia",
@@ -2788,7 +2796,7 @@
     "days": "14–21",
     "climb": 10000
    },
-   "weather": "Permits and border status change: check current access.",
+   "advisory": "Foreigners need a Tibet Travel Permit and a licensed guide, Tibet can close to foreigners at short notice, and the Nepal border crossing has been shut for long periods. Check current access and your government's advice.",
    "hire": "byo",
    "hireNote": "Most riders go with a tour operator, which may hire bikes; otherwise bring your own",
    "kind": "route",
@@ -3094,7 +3102,7 @@
     "days": "21–30",
     "climb": 15000
    },
-   "weather": "Needs a special GBAO permit. Check travel advisories before planning.",
+   "advisory": "The highway runs along the Afghan border: some governments advise reconsidering travel there, and there have been cross-border attacks. You need a GBAO permit, which can be suspended at short notice. Check your government's current advice.",
    "hire": "byo",
    "hireNote": "Spares are hard to find on the way, so carry what you need",
    "kind": "route",
@@ -3336,6 +3344,7 @@
     "climb": 6000
    },
    "weather": "Dry seasons are June–September and December–February.",
+   "advisory": "The trail runs along Lake Kivu, on the border with the DR Congo, where fighting continues. The US advises against all travel within 10 km of the border in Rubavu and Rusizi, and the UK against all but essential travel in parts of Rusizi. Check your government's current advice before planning.",
    "hire": "limited",
    "hireNote": "A couple of outfits in Rubavu and Kigali hire mountain bikes",
    "kind": "route",
@@ -7592,7 +7601,8 @@
     "days": "12–18",
     "climb": 9000
    },
-   "weather": "Check current security advice before going; landslides can close the road.",
+   "weather": "Landslides can close the road.",
+   "advisory": "Several governments advise against travel to parts of Pakistan; Gilgit-Baltistan is generally treated differently from border regions. Check your government's current advice and use a registered local operator.",
    "hire": "byo",
    "hireNote": "Tour operators supply bikes on supported trips; otherwise bring your own",
    "kind": "route",
@@ -8057,6 +8067,1361 @@
    "hireNote": "Bring your own; buses to Landmannalaugar carry bikes",
    "kind": "route",
    "support": "bikepacking"
+  },
+  {
+   "id": "istria",
+   "name": "Istria: Trieste to Pula",
+   "category": "gravel",
+   "country": "Croatia / Slovenia / Italy",
+   "region": "Istria",
+   "zone": "adriatic",
+   "lat": 45.3,
+   "lon": 13.8,
+   "elev": [
+    0,
+    450
+   ],
+   "refElev": 200,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9,
+    10
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Trieste (start; Venice ~2 h), Pula (end, with flights)",
+   "terrain": "Gravel rail trail, quiet lanes and coast roads; easy to intermediate",
+   "pitch": "Two thousand years of history in one short ride: from Habsburg Trieste along the Parenzana, a narrow-gauge railway turned gravel trail through tunnels, viaducts and hilltop towns like Grožnjan and Motovun, then down the Venetian coast past Poreč's Byzantine basilica to Pula's Roman arena. Truffles, olive oil and Malvazija wine all the way.",
+   "stats": {
+    "km": 250,
+    "days": "4–6",
+    "climb": 3000
+   },
+   "children": [
+    {
+     "name": "Parenzana",
+     "kind": "section",
+     "lat": 45.38,
+     "lon": 13.7,
+     "note": "Old Trieste–Poreč railway, ~123 km of mostly gravel through Italy, Slovenia and Croatia"
+    },
+    {
+     "name": "Motovun & Livade",
+     "kind": "section",
+     "lat": 45.337,
+     "lon": 13.828,
+     "note": "Hilltop town above the Mirna valley's truffle forests"
+    },
+    {
+     "name": "Grožnjan",
+     "kind": "section",
+     "lat": 45.38,
+     "lon": 13.722,
+     "note": "Medieval hill town of artists' studios"
+    },
+    {
+     "name": "Poreč",
+     "kind": "section",
+     "lat": 45.227,
+     "lon": 13.594,
+     "note": "Venetian old town and the UNESCO Euphrasian Basilica"
+    },
+    {
+     "name": "Pula Arena",
+     "kind": "section",
+     "lat": 44.873,
+     "lon": 13.85,
+     "note": "One of the best-preserved Roman amphitheatres; Habsburg naval port"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Bike and e-bike hire in Poreč, Rovinj, Pula and Trieste; one-way drop-offs can be arranged",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "dalmatia",
+   "name": "Dalmatian islands",
+   "category": "road",
+   "country": "Croatia",
+   "region": "Split to Dubrovnik",
+   "zone": "adriatic",
+   "lat": 43.15,
+   "lon": 16.7,
+   "elev": [
+    0,
+    630
+   ],
+   "refElev": 100,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9,
+    10
+   ],
+   "crowds": 4,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Split (start), Dubrovnik (end); both have flights",
+   "terrain": "Hilly island roads linked by ferries; intermediate",
+   "pitch": "Island-hopping by bike and ferry: Brač, Hvar and Korčula, with stone villages, lavender and vineyards, quiet inland roads and a swim at the end of every day.",
+   "stats": {
+    "km": 300,
+    "days": "6–9",
+    "climb": 4500
+   },
+   "weather": "July and August are hot and the ferries are full: go in late spring or September.",
+   "children": [
+    {
+     "name": "Brač",
+     "kind": "section",
+     "lat": 43.32,
+     "lon": 16.65,
+     "note": "Climbs to Vidova Gora, the highest point of the Adriatic islands"
+    },
+    {
+     "name": "Hvar",
+     "kind": "section",
+     "lat": 43.17,
+     "lon": 16.6,
+     "note": "Stari Grad's ancient Greek field system and lavender ridges"
+    },
+    {
+     "name": "Korčula",
+     "kind": "section",
+     "lat": 42.96,
+     "lon": 17.135,
+     "note": "Walled Venetian town"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Hire in Split; tour companies do one-way bikes to Dubrovnik",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "moselrhine",
+   "name": "Mosel & Rhine Gorge",
+   "category": "road",
+   "country": "Germany",
+   "region": "Trier to Koblenz to Bingen",
+   "zone": "benelux",
+   "lat": 50.0,
+   "lon": 7.2,
+   "elev": [
+    60,
+    150
+   ],
+   "refElev": 100,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9
+   ],
+   "crowds": 4,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Trier (start; Luxembourg ~45 min), Bingen (end; Frankfurt ~1 h)",
+   "terrain": "Flat, paved riverside paths; easy",
+   "pitch": "Wine villages and castles on two famous rivers: Roman Trier, the steep Riesling slopes of the Mosel, Koblenz's Deutsches Eck, then up the UNESCO-listed Rhine Gorge past the Lorelei.",
+   "stats": {
+    "km": 260,
+    "days": "4–6",
+    "climb": 800
+   },
+   "children": [
+    {
+     "name": "Trier",
+     "kind": "section",
+     "lat": 49.756,
+     "lon": 6.641,
+     "note": "Germany's oldest city: the Porta Nigra and Roman baths"
+    },
+    {
+     "name": "Bernkastel-Kues",
+     "kind": "section",
+     "lat": 49.916,
+     "lon": 7.069,
+     "note": "Half-timbered wine town on the Mosel's best stretch"
+    },
+    {
+     "name": "Rhine Gorge",
+     "kind": "section",
+     "lat": 50.14,
+     "lon": 7.73,
+     "note": "~65 km of castles and vineyards between Koblenz and Bingen; UNESCO"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Hire all along the rivers, with one-way returns",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "berlinwall",
+   "name": "Berlin Wall Trail",
+   "category": "road",
+   "country": "Germany",
+   "region": "Berlin",
+   "zone": "benelux",
+   "lat": 52.52,
+   "lon": 13.4,
+   "elev": [
+    30,
+    80
+   ],
+   "refElev": 40,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Berlin BER airport",
+   "terrain": "Mostly paved paths on the old border patrol road; easy",
+   "pitch": "Ride the line of the Wall around what was West Berlin, on the old patrol road through city, lakes and forest, past the East Side Gallery, Checkpoint Charlie and the Bernauer Strasse memorial.",
+   "stats": {
+    "km": 160,
+    "days": "2–3",
+    "climb": 650
+   },
+   "children": [
+    {
+     "name": "East Side Gallery",
+     "kind": "section",
+     "lat": 52.505,
+     "lon": 13.44,
+     "note": "The longest surviving stretch of the Wall, painted"
+    },
+    {
+     "name": "Bernauer Strasse",
+     "kind": "section",
+     "lat": 52.535,
+     "lon": 13.39,
+     "note": "The Berlin Wall Memorial and preserved death strip"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Bike hire everywhere in Berlin",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "lofoten",
+   "name": "Lofoten Islands",
+   "category": "road",
+   "country": "Norway",
+   "region": "Moskenes to Svolvær",
+   "zone": "nordic",
+   "lat": 68.1,
+   "lon": 13.6,
+   "elev": [
+    0,
+    200
+   ],
+   "refElev": 50,
+   "season": [
+    5,
+    9
+   ],
+   "best": [
+    6,
+    7,
+    8
+   ],
+   "crowds": 3,
+   "cost": 5,
+   "guide": "Optional",
+   "airport": "Bodø, then the ferry to Moskenes (~4 h); fly out of Svolvær or Leknes",
+   "terrain": "Coastal roads between islands, with tunnels and ferries; easy to intermediate",
+   "pitch": "The Arctic's most dramatic coast road, on EuroVelo 1: red fishing cabins on stilts, granite peaks straight out of the sea, white beaches and the midnight sun. Ferries and a bike boat dodge the worst tunnels.",
+   "stats": {
+    "km": 230,
+    "days": "4–6",
+    "climb": 2000
+   },
+   "weather": "Cool and changeable even in summer; the sun doesn't set from late May to mid July.",
+   "children": [
+    {
+     "name": "Å & Reine",
+     "kind": "section",
+     "lat": 67.932,
+     "lon": 13.09,
+     "note": "Fishing villages at the end of the road"
+    },
+    {
+     "name": "Nusfjord",
+     "kind": "section",
+     "lat": 68.035,
+     "lon": 13.35,
+     "note": "Preserved fishing village; bike ferry to Ballstad"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "A few shops in Svolvær, Leknes and Reine rent bikes; most tourers bring their own",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "rallarvegen",
+   "name": "Rallarvegen",
+   "category": "gravel",
+   "country": "Norway",
+   "region": "Haugastøl to Flåm",
+   "zone": "nordic",
+   "lat": 60.65,
+   "lon": 7.4,
+   "elev": [
+    0,
+    1300
+   ],
+   "refElev": 1000,
+   "season": [
+    7,
+    9
+   ],
+   "best": [
+    7,
+    8
+   ],
+   "crowds": 4,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Oslo or Bergen by train to Haugastøl; train back from Flåm or Myrdal",
+   "terrain": "Gravel works road across the mountain plateau, then a steep descent; easy to intermediate",
+   "pitch": "The navvies' road built by hand to supply the Bergen Railway: across the bare Hardangervidda plateau past Finse, then a wild, steep descent of the Flåm valley to the fjord.",
+   "stats": {
+    "km": 80,
+    "days": "1–2",
+    "climb": 600
+   },
+   "weather": "Usually open from early July to late September; snow can block parts early in the season.",
+   "children": [
+    {
+     "name": "Finse",
+     "kind": "section",
+     "lat": 60.602,
+     "lon": 7.505,
+     "note": "Highest station on the Bergen Line, at ~1,220 m"
+    },
+    {
+     "name": "Flåmsdalen",
+     "kind": "section",
+     "lat": 60.8,
+     "lon": 7.1,
+     "note": "Hairpins down from Myrdal to the fjord"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Hire at Haugastøl and Finse, returned in Flåm",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "kattegattleden",
+   "name": "Kattegattleden",
+   "category": "road",
+   "country": "Sweden",
+   "region": "Helsingborg to Gothenburg",
+   "zone": "nordic",
+   "lat": 56.9,
+   "lon": 12.4,
+   "elev": [
+    0,
+    100
+   ],
+   "refElev": 20,
+   "season": [
+    5,
+    9
+   ],
+   "best": [
+    6,
+    7,
+    8
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Copenhagen ~1 h to Helsingborg (start); Gothenburg (end)",
+   "terrain": "Mostly car-free paths and quiet roads along the coast; easy",
+   "pitch": "Sweden's west coast on a mostly car-free path: fishing harbours, sandy beaches, smoked fish and swimming stops. Named European Cycle Route of the Year in 2018.",
+   "stats": {
+    "km": 390,
+    "days": "5–8",
+    "climb": 1500
+   },
+   "children": [
+    {
+     "name": "Kullaberg",
+     "kind": "section",
+     "lat": 56.3,
+     "lon": 12.46,
+     "note": "Cliffs and lighthouse at the start"
+    },
+    {
+     "name": "Varberg",
+     "kind": "section",
+     "lat": 57.106,
+     "lon": 12.25,
+     "note": "Fortress and cold-bath house on the sea"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Hire in the towns along the route, with one-way options",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "curonian",
+   "name": "Curonian Spit",
+   "category": "road",
+   "country": "Lithuania",
+   "region": "Smiltynė to Nida",
+   "zone": "nordic",
+   "lat": 55.5,
+   "lon": 21.1,
+   "elev": [
+    0,
+    50
+   ],
+   "refElev": 10,
+   "season": [
+    5,
+    9
+   ],
+   "best": [
+    6,
+    7,
+    8
+   ],
+   "crowds": 3,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Klaipėda (ferry to Smiltynė); Palanga airport ~30 min",
+   "terrain": "Flat, paved forest path along a sand spit; easy",
+   "pitch": "A narrow strip of sand between the Baltic and a lagoon, a UNESCO site on EuroVelo 10: pine forest, Europe's highest drifting dunes, fishing villages with smoked fish, and the Witches' Hill carvings at Juodkrantė.",
+   "stats": {
+    "km": 52,
+    "days": "1–2",
+    "climb": 200
+   },
+   "children": [
+    {
+     "name": "Juodkrantė",
+     "kind": "section",
+     "lat": 55.54,
+     "lon": 21.12,
+     "note": "Witches' Hill wood carvings"
+    },
+    {
+     "name": "Parnidis Dune",
+     "kind": "section",
+     "lat": 55.29,
+     "lon": 21.01,
+     "note": "Huge dunes above Nida, looking into Russia's Kaliningrad"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Hire in Smiltynė, Juodkrantė and Nida",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "viarhona",
+   "name": "ViaRhôna",
+   "category": "road",
+   "country": "France",
+   "region": "Lake Geneva to the Mediterranean",
+   "zone": "france",
+   "lat": 45.2,
+   "lon": 4.8,
+   "elev": [
+    0,
+    400
+   ],
+   "refElev": 150,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Geneva (start), Marseille or Montpellier (end)",
+   "terrain": "Mostly flat paths and quiet roads down the Rhône; easy",
+   "pitch": "Down the Rhône from the Alps to the sea on EuroVelo 17: Lyon's food, the Côtes du Rhône vineyards, Roman Vienne and Orange, papal Avignon and the Camargue's flamingos.",
+   "stats": {
+    "km": 815,
+    "days": "10–14",
+    "climb": 3000
+   },
+   "weather": "The mistral wind blows down the valley, so most people ride north to south.",
+   "children": [
+    {
+     "name": "Lyon",
+     "kind": "section",
+     "lat": 45.76,
+     "lon": 4.835,
+     "note": "France's food capital"
+    },
+    {
+     "name": "Avignon",
+     "kind": "section",
+     "lat": 43.949,
+     "lon": 4.806,
+     "note": "Palace of the Popes"
+    },
+    {
+     "name": "Camargue",
+     "kind": "section",
+     "lat": 43.55,
+     "lon": 4.5,
+     "note": "Salt marshes, white horses and flamingos at the end"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "Hire in Lyon, Avignon and other towns; one-way hire for the whole route is harder",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "torinonice",
+   "name": "Torino–Nice",
+   "category": "gravel",
+   "country": "Italy / France",
+   "region": "Turin to Nice",
+   "zone": "alps",
+   "lat": 44.7,
+   "lon": 7.0,
+   "elev": [
+    0,
+    2750
+   ],
+   "refElev": 2000,
+   "season": [
+    7,
+    9
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Turin (start), Nice (end); both have airports",
+   "terrain": "Old military gravel roads over high passes, plus tarmac; advanced",
+   "pitch": "A gravel route on the 19th-century military roads that ring the French–Italian border: the Assietta ridge, above 2,000 m for 34 km, high forts and the old salt road to the Mediterranean.",
+   "stats": {
+    "km": 700,
+    "days": "7–12",
+    "climb": 17000
+   },
+   "weather": "The high passes are snow-free from about July to September; the Col de Tende road has been closed, so check the current route.",
+   "children": [
+    {
+     "name": "Strada dell'Assietta",
+     "kind": "section",
+     "lat": 45.07,
+     "lon": 6.95,
+     "note": "Military gravel road above 2,000 m for ~34 km"
+    },
+    {
+     "name": "Via del Sale",
+     "kind": "section",
+     "lat": 44.13,
+     "lon": 7.64,
+     "note": "Old salt road along the border ridge"
+    }
+   ],
+   "hire": "byo",
+   "hireNote": "Set up for gravel bikepacking",
+   "kind": "route",
+   "support": "bikepacking"
+  },
+  {
+   "id": "puglia",
+   "name": "Puglia (Valle d'Itria)",
+   "category": "road",
+   "country": "Italy",
+   "region": "Puglia",
+   "zone": "italy",
+   "lat": 40.7,
+   "lon": 17.4,
+   "elev": [
+    0,
+    450
+   ],
+   "refElev": 400,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    9,
+    10
+   ],
+   "crowds": 3,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Bari or Brindisi ~1 h",
+   "terrain": "Rolling lanes between stone walls and gravel aqueduct paths; easy",
+   "pitch": "Italy's heel: lanes and aqueduct service roads through olive groves and trulli, the white towns of Locorotondo, Cisternino and Martina Franca, orecchiette, burrata and grilled meat at the butcher's.",
+   "children": [
+    {
+     "name": "Acquedotto Pugliese cycleway",
+     "kind": "section",
+     "lat": 40.73,
+     "lon": 17.44,
+     "note": "Gravel path along the old aqueduct, Ceglie Messapica to Cisternino"
+    },
+    {
+     "name": "Alberobello",
+     "kind": "section",
+     "lat": 40.783,
+     "lon": 17.237,
+     "note": "Town of trulli; UNESCO"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Bike and e-bike hire in the Valle d'Itria towns",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "day"
+    ],
+    "gravel": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "lejog",
+   "name": "Land's End to John o' Groats",
+   "category": "road",
+   "country": "UK",
+   "region": "Cornwall to Caithness",
+   "zone": "uk",
+   "lat": 54.5,
+   "lon": -3.0,
+   "elev": [
+    0,
+    500
+   ],
+   "refElev": 150,
+   "season": [
+    5,
+    9
+   ],
+   "best": [
+    5,
+    6,
+    9
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Penzance (start; train from London), Wick or Inverness (end)",
+   "terrain": "Mostly quiet roads and lanes the length of Britain; intermediate",
+   "pitch": "Britain end to end, the classic long ride: Cornish lanes, the Welsh borders, the Lake District or Pennines, the Scottish Borders and the Highlands to the far north coast.",
+   "stats": {
+    "km": 1600,
+    "days": "10–14",
+    "climb": 15000
+   },
+   "hire": "byo",
+   "hireNote": "Most people bring their own; specialist tour companies supply bikes",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "taiwanloop",
+   "name": "Taiwan round-island (Huandao)",
+   "category": "road",
+   "country": "Taiwan",
+   "region": "Cycle Route No. 1",
+   "zone": "eastasia",
+   "lat": 23.7,
+   "lon": 121.0,
+   "elev": [
+    0,
+    500
+   ],
+   "refElev": 50,
+   "season": [
+    10,
+    4
+   ],
+   "best": [
+    11,
+    12,
+    3
+   ],
+   "crowds": 3,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Taipei (start and end)",
+   "terrain": "Signed roads and bike paths around the island; intermediate",
+   "pitch": "Taiwan's national bike route around the island: night markets and temples every evening, the Pacific coast road between Hualien and Taitung, and a 7-Eleven every few kilometres for snacks. Add Taroko Gorge and Sun Moon Lake if you can.",
+   "stats": {
+    "km": 960,
+    "days": "9–13",
+    "climb": 6000
+   },
+   "weather": "Typhoon season is July to October; summer is very hot and humid.",
+   "children": [
+    {
+     "name": "East coast (Highway 11)",
+     "kind": "section",
+     "lat": 23.4,
+     "lon": 121.45,
+     "note": "~170 km of Pacific coast between Hualien and Taitung"
+    },
+    {
+     "name": "Shouka",
+     "kind": "section",
+     "lat": 22.24,
+     "lon": 120.84,
+     "note": "The route's biggest climb, across the south of the island"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Giant stores rent touring bikes with one-way returns around the island",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "maehongson",
+   "name": "Mae Hong Son Loop",
+   "category": "road",
+   "country": "Thailand",
+   "region": "From Chiang Mai",
+   "zone": "seasia",
+   "lat": 19.0,
+   "lon": 98.3,
+   "elev": [
+    300,
+    1600
+   ],
+   "refElev": 800,
+   "season": [
+    11,
+    2
+   ],
+   "best": [
+    11,
+    12,
+    1
+   ],
+   "crowds": 2,
+   "cost": 1,
+   "guide": "Optional",
+   "airport": "Chiang Mai (start and end)",
+   "terrain": "Paved mountain roads with very steep climbs; advanced",
+   "pitch": "A loop through the mountains of northern Thailand, famous for its 1,864 curves: hill-tribe villages, Shan temples, hot springs and the hippie town of Pai.",
+   "stats": {
+    "km": 600,
+    "days": "6–10",
+    "climb": 12000
+   },
+   "weather": "The burning season (February to April) brings heavy smoke; the rains run May to October.",
+   "children": [
+    {
+     "name": "Pai",
+     "kind": "section",
+     "lat": 19.36,
+     "lon": 98.44,
+     "note": "Laid-back valley town"
+    },
+    {
+     "name": "Mae Hong Son",
+     "kind": "section",
+     "lat": 19.3,
+     "lon": 97.97,
+     "note": "Shan temples on a lake, near the Myanmar border"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "Bike hire and tours in Chiang Mai",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "hagiang",
+   "name": "Ha Giang Loop",
+   "category": "road",
+   "country": "Vietnam",
+   "region": "Ha Giang province",
+   "zone": "seasia",
+   "lat": 23.1,
+   "lon": 105.2,
+   "elev": [
+    100,
+    1600
+   ],
+   "refElev": 1000,
+   "season": [
+    10,
+    4
+   ],
+   "best": [
+    10,
+    11,
+    3
+   ],
+   "crowds": 4,
+   "cost": 1,
+   "guide": "Recommended",
+   "airport": "Hanoi ~6 h by bus to Ha Giang",
+   "terrain": "Steep, winding mountain roads; advanced",
+   "pitch": "Vietnam's far north on the Chinese border: karst mountains, rice terraces, Hmong and Dao markets, and the Ma Pi Leng Pass high above the Nho Quế river gorge.",
+   "stats": {
+    "km": 350,
+    "days": "4–6",
+    "climb": 8000
+   },
+   "weather": "Rainy season (May to September) brings landslides; busy with motorbike tours.",
+   "children": [
+    {
+     "name": "Ma Pi Leng Pass",
+     "kind": "section",
+     "lat": 23.23,
+     "lon": 105.4,
+     "note": "~20 km cliff road above the Nho Quế gorge"
+    },
+    {
+     "name": "Dong Van",
+     "kind": "section",
+     "lat": 23.278,
+     "lon": 105.36,
+     "note": "Old town and Sunday market"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "Cycling tour companies in Hanoi and Ha Giang supply bikes",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "angkor",
+   "name": "Angkor (Siem Reap)",
+   "category": "road",
+   "country": "Cambodia",
+   "region": "Siem Reap",
+   "zone": "seasia",
+   "lat": 13.412,
+   "lon": 103.867,
+   "elev": [
+    10,
+    60
+   ],
+   "refElev": 20,
+   "season": [
+    11,
+    3
+   ],
+   "best": [
+    12,
+    1
+   ],
+   "crowds": 4,
+   "cost": 1,
+   "guide": "Optional",
+   "airport": "Siem Reap ~45 min",
+   "terrain": "Flat park roads and dirt tracks between temples; easy",
+   "pitch": "The best way to see Angkor: ride between the temples on flat, shady roads, from Angkor Wat at sunrise to the faces of the Bayon, Ta Prohm's jungle roots and quiet temples the tour buses skip.",
+   "weather": "Cool and dry from November to February; very hot by April.",
+   "children": [
+    {
+     "name": "Angkor Wat",
+     "kind": "section",
+     "lat": 13.412,
+     "lon": 103.867,
+     "note": "~7 km from town; go at sunrise"
+    },
+    {
+     "name": "Angkor Thom & Bayon",
+     "kind": "section",
+     "lat": 13.441,
+     "lon": 103.859,
+     "note": "Walled city and the temple of faces"
+    },
+    {
+     "name": "Roluos",
+     "kind": "section",
+     "lat": 13.344,
+     "lon": 103.972,
+     "note": "Older temples among rice fields east of town"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Bikes and e-bikes for hire all over Siem Reap",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "day"
+    ],
+    "gravel": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "cappadocia",
+   "name": "Cappadocia",
+   "category": "mtb",
+   "country": "Türkiye",
+   "region": "Göreme",
+   "zone": "caucasus",
+   "lat": 38.643,
+   "lon": 34.829,
+   "elev": [
+    900,
+    1400
+   ],
+   "refElev": 1100,
+   "season": [
+    4,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    9,
+    10
+   ],
+   "crowds": 3,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Kayseri or Nevşehir ~1 h",
+   "terrain": "Soft-rock singletrack and dirt roads through eroded valleys; all levels",
+   "pitch": "Ride through valleys of fairy chimneys, past cave churches and dovecotes carved into the rock, with balloons overhead at dawn and a cave hotel at night.",
+   "children": [
+    {
+     "name": "Red & Rose valleys",
+     "kind": "area",
+     "lat": 38.66,
+     "lon": 34.86,
+     "note": "Singletrack past cave churches; great at sunset"
+    },
+    {
+     "name": "Göreme National Park",
+     "kind": "area",
+     "lat": 38.64,
+     "lon": 34.84,
+     "note": "Valleys of fairy chimneys around Göreme"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Mountain bike and e-bike hire in Göreme",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "svaneti",
+   "name": "Svaneti",
+   "category": "gravel",
+   "country": "Georgia",
+   "region": "Mestia, Ushguli and the Zagari Pass",
+   "zone": "caucasus",
+   "lat": 43.0,
+   "lon": 42.9,
+   "elev": [
+    700,
+    2600
+   ],
+   "refElev": 1500,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 2,
+   "cost": 1,
+   "guide": "Optional",
+   "airport": "Mestia airport (flights from Tbilisi or Kutaisi); Kutaisi ~6 h by road",
+   "terrain": "Rough mountain dirt roads and big climbs; advanced",
+   "pitch": "The high Caucasus: medieval Svan defence towers in Mestia and Ushguli, among Europe's highest villages, under the glaciers of Shkhara, then out over the Zagari Pass. Georgian food and wine for the recovery.",
+   "stats": {
+    "km": 200,
+    "days": "3–5",
+    "climb": 4500
+   },
+   "advisory": "Svaneti isn't flagged in itself, but it borders Russian-occupied Abkhazia: don't cross the boundary line. Check your government's current advice for Georgia.",
+   "children": [
+    {
+     "name": "Ushguli",
+     "kind": "section",
+     "lat": 42.917,
+     "lon": 43.016,
+     "note": "Tower villages at ~2,100 m under Shkhara"
+    },
+    {
+     "name": "Zagari Pass",
+     "kind": "section",
+     "lat": 42.87,
+     "lon": 42.9,
+     "note": "Unpaved pass at ~2,600 m; snow into June"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "A few places in Mestia rent bikes; most riders bring their own",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "altai",
+   "name": "Chuysky Trakt (Altai)",
+   "category": "road",
+   "country": "Russia",
+   "region": "Altai Republic",
+   "zone": "centralasia",
+   "lat": 50.3,
+   "lon": 87.6,
+   "elev": [
+    300,
+    2500
+   ],
+   "refElev": 1500,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    7,
+    8
+   ],
+   "crowds": 1,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Gorno-Altaysk or Barnaul; Novosibirsk ~7 h",
+   "terrain": "Paved mountain highway with remote gravel side valleys; intermediate",
+   "pitch": "Siberia's most beautiful road: up the Katun river through the Altai mountains, over the Chike-Taman and Seminsky passes, past petroglyphs and Kazakh herders' yurts to the steppe at Kosh-Agach near Mongolia.",
+   "stats": {
+    "km": 500,
+    "days": "7–10",
+    "climb": 6000
+   },
+   "advisory": "Many governments advise against all travel to Russia. Flights, visas, insurance and foreign card payments are heavily restricted, and rescue or consular help may be limited. Areas near the Mongolian border need a permit.",
+   "children": [
+    {
+     "name": "Chike-Taman Pass",
+     "kind": "section",
+     "lat": 50.64,
+     "lon": 86.31,
+     "note": "Switchbacks over the Altai"
+    },
+    {
+     "name": "Kurai Steppe",
+     "kind": "section",
+     "lat": 50.2,
+     "lon": 87.9,
+     "note": "Wide steppe under the snowy North Chuya range"
+    }
+   ],
+   "hire": "byo",
+   "hireNote": "Bring your own; hire is rare",
+   "kind": "route",
+   "support": "bikepacking"
+  },
+  {
+   "id": "lesotho",
+   "name": "Lesotho Traverse",
+   "category": "mtb",
+   "country": "Lesotho",
+   "region": "Maseru to the Sani Pass",
+   "zone": "africa",
+   "lat": -29.5,
+   "lon": 28.5,
+   "elev": [
+    1500,
+    3250
+   ],
+   "refElev": 2500,
+   "season": [
+    3,
+    5
+   ],
+   "best": [
+    4,
+    5
+   ],
+   "crowds": 1,
+   "cost": 1,
+   "guide": "Optional",
+   "airport": "Maseru (start); Durban ~3 h from the bottom of the Sani Pass",
+   "terrain": "Dirt roads and tracks over high passes; very advanced",
+   "pitch": "Across the 'Kingdom in the Sky': high passes over 3,000 m, Basotho horsemen in blankets, rondavel villages, and a final plunge down the Sani Pass past Africa's highest pub.",
+   "stats": {
+    "km": 500,
+    "days": "8–10",
+    "climb": 13400
+   },
+   "weather": "Summer (December to February) is stormy; winter brings snow on the passes. Autumn is best.",
+   "children": [
+    {
+     "name": "Sani Pass",
+     "kind": "section",
+     "lat": -29.586,
+     "lon": 29.286,
+     "note": "Hairpins from 2,876 m down into South Africa"
+    }
+   ],
+   "hire": "byo",
+   "hireNote": "Set up for rough, remote bikepacking",
+   "kind": "route",
+   "support": "bikepacking"
+  },
+  {
+   "id": "namibia",
+   "name": "Namib Desert",
+   "category": "gravel",
+   "country": "Namibia",
+   "region": "Windhoek to Swakopmund via Sossusvlei",
+   "zone": "africa",
+   "lat": -24.2,
+   "lon": 15.5,
+   "elev": [
+    0,
+    2000
+   ],
+   "refElev": 1000,
+   "season": [
+    4,
+    9
+   ],
+   "best": [
+    5,
+    8,
+    9
+   ],
+   "crowds": 1,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Windhoek (start), Swakopmund (end; Walvis Bay airport)",
+   "terrain": "Long, empty gravel roads, sand and corrugations; intermediate, very remote",
+   "pitch": "Wide gravel roads through one of the oldest deserts on Earth: the red dunes of Sossusvlei, the Spreetshoogte Pass, apple pie at Solitaire and a finish on the cold Atlantic coast.",
+   "stats": {
+    "km": 900,
+    "days": "10–14",
+    "climb": 6000
+   },
+   "weather": "Water is scarce and towns are far apart; November to March is very hot with no shade.",
+   "children": [
+    {
+     "name": "Sossusvlei",
+     "kind": "section",
+     "lat": -24.73,
+     "lon": 15.29,
+     "note": "Red dunes and the dead trees of Deadvlei"
+    },
+    {
+     "name": "Spreetshoogte Pass",
+     "kind": "section",
+     "lat": -23.65,
+     "lon": 16.22,
+     "note": "Steep drop off the escarpment into the Namib"
+    }
+   ],
+   "hire": "byo",
+   "hireNote": "Set up for desert touring: wide tyres and lots of water",
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "salta",
+   "name": "Salta & the Calchaquí valleys",
+   "category": "road",
+   "country": "Argentina",
+   "region": "Salta, Cachi and Cafayate",
+   "zone": "andes",
+   "lat": -25.3,
+   "lon": -65.9,
+   "elev": [
+    1100,
+    3460
+   ],
+   "refElev": 1700,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    10
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Salta (start and end)",
+   "terrain": "Paved and gravel mountain roads, including Ruta 40; intermediate",
+   "pitch": "A loop through the Andes' red-rock wine country: the Cuesta del Obispo climb, adobe Cachi, the gravel Ruta 40 through the Quebrada de las Flechas to high-altitude Torrontés in Cafayate, and back down the Quebrada de las Conchas.",
+   "stats": {
+    "km": 500,
+    "days": "6–8",
+    "climb": 6500
+   },
+   "children": [
+    {
+     "name": "Cuesta del Obispo",
+     "kind": "section",
+     "lat": -25.14,
+     "lon": -65.8,
+     "note": "Big climb out of the valley"
+    },
+    {
+     "name": "Quebrada de las Flechas",
+     "kind": "section",
+     "lat": -25.6,
+     "lon": -66.07,
+     "note": "Gravel Ruta 40 between rock fins"
+    },
+    {
+     "name": "Cafayate",
+     "kind": "section",
+     "lat": -26.073,
+     "lon": -65.976,
+     "note": "Wine town; try the Torrontés"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "A few shops in Salta and Cafayate rent bikes",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "perudivide",
+   "name": "Peru Great Divide",
+   "category": "mtb",
+   "country": "Peru",
+   "region": "From Huaraz along the Andes",
+   "zone": "andes",
+   "lat": -10.5,
+   "lon": -76.8,
+   "elev": [
+    2000,
+    4900
+   ],
+   "refElev": 4000,
+   "season": [
+    5,
+    9
+   ],
+   "best": [
+    6,
+    7,
+    8
+   ],
+   "crowds": 1,
+   "cost": 1,
+   "guide": "Optional",
+   "airport": "Huaraz (start; Lima ~8 h by bus)",
+   "terrain": "Remote dirt roads over dozens of 4,000 m passes; very advanced",
+   "pitch": "One of the world's great bikepacking routes: over 50 passes above 4,000 m, past the glaciers of the Cordillera Blanca and Huayhuash, through Quechua villages where few outsiders pass.",
+   "stats": {
+    "km": 1600,
+    "days": "30–35",
+    "climb": 38000
+   },
+   "weather": "The dry season (May to September) is the only real option; altitude is the main challenge.",
+   "hire": "byo",
+   "hireNote": "Set up for remote, high-altitude bikepacking",
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "greatoceanroad",
+   "name": "Great Ocean Road",
+   "category": "road",
+   "country": "Australia",
+   "region": "Torquay to the Twelve Apostles",
+   "zone": "aus",
+   "lat": -38.6,
+   "lon": 143.7,
+   "elev": [
+    0,
+    300
+   ],
+   "refElev": 50,
+   "season": [
+    10,
+    4
+   ],
+   "best": [
+    11,
+    12,
+    3
+   ],
+   "crowds": 4,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Melbourne ~1.5 h to Torquay",
+   "terrain": "Winding coast road with rolling climbs; intermediate",
+   "pitch": "A road carved into the cliffs by returned World War I soldiers: surf beaches, rainforest in the Otways, koalas in the trees, and the limestone stacks of the Twelve Apostles at the end.",
+   "stats": {
+    "km": 250,
+    "days": "3–4",
+    "climb": 3500
+   },
+   "weather": "Busy with traffic in summer holidays; ride early.",
+   "children": [
+    {
+     "name": "Lorne",
+     "kind": "section",
+     "lat": -38.54,
+     "lon": 143.975,
+     "note": "Surf town on the best stretch of coast"
+    },
+    {
+     "name": "Twelve Apostles",
+     "kind": "section",
+     "lat": -38.665,
+     "lon": 143.105,
+     "note": "Limestone stacks off the cliffs"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "Some hire in Torquay, Lorne and Apollo Bay",
+   "kind": "route",
+   "support": "hotel"
   }
  ]
 }

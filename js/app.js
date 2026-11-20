@@ -501,6 +501,7 @@ function popupHTML(d) {
     ${r ? `<div class="row">${esc(c.rated.reasons[0])}</div>` : ""}
     ${d.stats ? `<div class="row">${statsText(d)}</div>` : ""}
     ${month ? `<div class="row">${month}</div>` : ""}
+    ${d.advisory ? `<div class="row" style="color:#a3341f">⚠ Travel advisory: see details</div>` : ""}
     <div class="row muted">${c?.asOf ? `Forecast from ${fmtDate(c.asOf)}${staleNote(d) ? ` <span class="stale-tag">· out of date</span>` : ""} · ` : ""}click for details</div>
   </div>`;
 }
@@ -742,6 +743,7 @@ function renderDetail(id) {
     <h3>${esc(d.name)}</h3>
     <div class="muted" style="font-size:13px">${esc(d.region)}, ${esc(d.country)}</div>
     <p class="pitch">${esc(d.pitch)}</p>
+    ${d.advisory ? `<div class="callout warn"><b>⚠ Travel advisory.</b> ${esc(d.advisory)}</div>` : ""}
     ${isRoute(d) ? "" : `<div class="offers">${Object.entries(d.offers).map(([c, xs]) => `<div><span class="dot sm" style="background:${CAT[c].color}"></span><b>${CAT[c].label}</b> ${xs.map(x => `<span class="offer">${OFFERS[c][x]}</span>`).join("")}</div>`).join("")}<div class="note" style="margin:2px 0 0">What you can ride from here ${info("offers")}</div></div>`}
     ${d.stats ? `<div class="route-stats"><div><b>${num(d.stats.km)}</b><span>km</span></div><div><b>${d.stats.days}</b><span>days</span></div><div><b>~${num(d.stats.climb)}</b><span>m climbing ${info("route")}</span></div></div><div class="note" style="margin:-6px 0 10px">${SUPPORT[d.support]} ${info("support")}</div>` : ""}
     <div class="actions">
@@ -919,6 +921,7 @@ function openCompare() {
         ${row(`Cost ${info("cost")}`, it => meter(it.d.cost, 5))}
         ${row(`Guide ${info("guide")}`, it => esc(it.d.guide))}
         ${row("Getting there", it => esc(it.d.airport))}
+        ${items.some(it => it.d.advisory) ? row("Travel advisory", it => it.d.advisory ? `<span style="color:#a3341f">⚠ ${esc(it.d.advisory)}</span>` : "–") : ""}
         ${row("Links", it => [...mapLinks(it.d, true), searchLink(destSearch(it.d), "search")].join(" · "))}
       </tbody>
     </table>`;
