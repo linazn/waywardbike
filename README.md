@@ -1,6 +1,6 @@
 # Wayward Bike
 
-A world map of mountain bike, road and gravel trips worth the journey, with this week's riding conditions and when to go.
+A world map of mountain bike, road and gravel trips worth the journey, with this week's riding conditions and when to go. Live at https://waywardbike.com
 Sister site to Wayward Ski (copied from its code in Nov 2026; shared fixes are copied across by hand).
 
 - `index.html`, `css/app.css`, `js/*.js`: the site (static, no build step)

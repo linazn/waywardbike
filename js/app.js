@@ -1,5 +1,6 @@
 import { MONTHS, monthBars, showTip, hideTip } from "./charts.js";
 import { DEFS, info } from "./defs.js";
+import { aboutHTML, siteLinksHTML } from "./about.js";
 
 const CAT = {
   mtb:    { label: "Mountain bike", short: "MTB", color: "#eda100", desc: "Lifts, trails, enduro" },
@@ -882,6 +883,12 @@ function openFeedback(place = "", btn = null) {
   loadTally().then(() => window.Tally ? window.Tally.openPopup(FEEDBACK_FORM, { layout: "modal", width: 460, overlay: true, hiddenFields, onOpen: done }) : (done(), fallback()))
     .catch(() => { done(); fallback(); });
 }
+/** About: the story behind the Wayward sites, in the reading layout used for stories */
+function openAbout() {
+  $("#modalBody").innerHTML = aboutHTML("bike");
+  $("#modal").classList.add("story-mode"); $("#modal").classList.remove("hidden");
+  $("#modal .modal-card").scrollTop = 0;
+}
 function closeModal() {
   $("#modal").classList.add("hidden"); $("#modal").classList.remove("story-mode");
   if (location.hash.startsWith("#place/")) history.pushState(null, "", location.pathname + location.search);
@@ -958,6 +965,8 @@ async function boot() {
   document.addEventListener("click", (e) => { const el = e.target.closest?.("[data-info]"); if (el) { e.stopPropagation(); infoAt(el); } }, true);
   $("#showAll").onclick = () => fitAll(true);
   document.addEventListener("click", (e) => { const b = e.target.closest?.("[data-feedback]"); if (b) { e.preventDefault(); openFeedback(b.dataset.feedback, b); } });
+  $("#siteLinks").innerHTML = siteLinksHTML("bike");
+  document.addEventListener("click", (e) => { if (e.target.closest?.("[data-about]")) { e.preventDefault(); openAbout(); } });
   // start fetching Tally as soon as someone heads for a feedback link
   const warmTally = (e) => { if (e.target.closest?.("[data-feedback]")) loadTally().catch(() => {}); };
   document.addEventListener("pointerover", warmTally); document.addEventListener("focusin", warmTally);

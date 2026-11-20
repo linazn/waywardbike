@@ -341,3 +341,10 @@ svg.chart .grid { stroke: var(--border); stroke-width: 1; }
 .offers > div { display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
 .offers .dot.sm { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
 .offer { font-size: 12px; background: var(--accent-soft); color: var(--accent); border-radius: 10px; padding: 1px 8px; }
+
+/* site links under the logo, and the About page */
+.site-links { font-size: 13px; margin: 2px 0 0; color: var(--text-secondary); }
+.site-links a, .site-links .link-btn { color: var(--accent); font-size: inherit; padding: 0; }
+.about-sites { font-size: 15px; line-height: 1.6; padding-left: 18px; margin: 0 0 12px; }
+.about .link-btn { font-size: inherit; padding: 0; }
+.about .about-sign { font-style: italic; color: var(--text-secondary); margin-top: 16px; }
