@@ -230,17 +230,17 @@ function initMap() {
     // bases are circles, multi-day routes are diamonds
     addDiamond();
     map.addLayer({ id: "routes", type: "symbol", source: "dest", filter: ["all", ["!", ["has", "point_count"]], ["==", ["get", "kind"], "route"]], layout: {
-      "icon-image": ["concat", "diamond|", ["get", "color"], "|", ["case", ["==", ["get", "color"], NODATA], "#8a8984", ["get", "ring"]]],
+      "icon-image": ["concat", "diamond|", ["get", "color"], "|", ["case", ["==", ["get", "color"], NODATA], "#6f6e69", ["get", "ring"]]],
       "icon-allow-overlap": true, "icon-ignore-placement": true,
       "icon-size": ["interpolate", ["linear"], ["zoom"], 1, ["case", ["get", "best"], 0.85, 0.72], 6, ["case", ["get", "best"], 1.1, 0.95]],
-    }, paint: { "icon-opacity": ["case", ["get", "dim"], 0.25, 1] } });
+    }, paint: { "icon-opacity": ["case", ["get", "dim"], 0.45, 1] } });
     map.addLayer({ id: "points", type: "circle", source: "dest", filter: ["all", ["!", ["has", "point_count"]], ["!=", ["get", "kind"], "route"]], paint: {
       "circle-color": ["get", "color"],
       "circle-radius": ["interpolate", ["linear"], ["zoom"], 1, ["case", ["get", "best"], 7, 5.5], 6, ["case", ["get", "best"], 10, 8]],
-      "circle-stroke-color": ["case", ["==", ["get", "color"], NODATA], "#8a8984", ["get", "ring"]],
+      "circle-stroke-color": ["case", ["==", ["get", "color"], NODATA], "#6f6e69", ["get", "ring"]],
       "circle-stroke-width": ["case", ["get", "best"], 3, 2],
-      "circle-opacity": ["case", ["get", "dim"], 0.25, 1],
-      "circle-stroke-opacity": ["case", ["get", "dim"], 0.25, 1],
+      "circle-opacity": ["case", ["==", ["get", "color"], NODATA], 1, ["get", "dim"], 0.4, 1],
+      "circle-stroke-opacity": ["case", ["get", "dim"], 0.6, 1],
     } });
     map.addLayer({ id: "labels", type: "symbol", source: "dest", filter: ["!", ["has", "point_count"]], minzoom: 4.5, layout: {
       "text-field": ["get", "name"], "text-size": 12, "text-font": ["Noto Sans Regular"], "text-offset": [0, 1.1], "text-anchor": "top", "text-max-width": 12, "text-optional": true,
@@ -259,8 +259,8 @@ function initMap() {
     // every sub-area is a smaller version of a destination dot: filled with its own type colour (or the parent's snow colour), white ring
     map.addLayer({ id: "kids", type: "circle", source: "kids", minzoom: 5, paint: {
       "circle-radius": ["interpolate", ["linear"], ["zoom"], 5, 3.5, 9, 6.5],
-      "circle-color": ["get", "color"], "circle-stroke-color": "#fcfcfb", "circle-stroke-width": 1.5,
-      "circle-opacity": ["case", ["get", "dim"], 0.3, 1], "circle-stroke-opacity": ["case", ["get", "dim"], 0.3, 1],
+      "circle-color": ["get", "color"], "circle-stroke-color": ["case", ["==", ["get", "color"], NODATA], "#6f6e69", "#fcfcfb"], "circle-stroke-width": 1.5,
+      "circle-opacity": ["case", ["==", ["get", "color"], NODATA], 1, ["get", "dim"], 0.4, 1], "circle-stroke-opacity": ["case", ["get", "dim"], 0.6, 1],
     } });
     map.addLayer({ id: "kids-labels", type: "symbol", source: "kids", minzoom: 6.3, layout: {
       "text-field": ["get", "name"], "text-size": 11, "text-font": ["case", ["get", "bc"], ["literal", ["Noto Sans Italic"]], ["literal", ["Noto Sans Regular"]]], "text-offset": ["match", ["get", "anchor"], "bottom", ["literal", KID_LABEL_OFFSET.bottom], "left", ["literal", KID_LABEL_OFFSET.left], "right", ["literal", KID_LABEL_OFFSET.right], ["literal", KID_LABEL_OFFSET.top]], "text-anchor": ["get", "anchor"], "text-optional": true, "text-max-width": 10,
@@ -330,7 +330,7 @@ function groupsFor(merged) {
 function pillHTML(g) {
   const dots = g.shown.map(d => {
     const col = markerColor(d), out = outForMonths(d), best = bestForMonths(d);
-    return `<i data-id="${d.id}" class="${out ? "out" : ""} ${best ? "best" : ""} ${isRoute(d) ? "route" : ""}" style="background:${col};${col === NODATA ? "box-shadow:inset 0 0 0 1px #8a8984" : ""}"></i>`;
+    return `<i data-id="${d.id}" class="${out ? "out" : ""} ${best ? "best" : ""} ${isRoute(d) ? "route" : ""}" style="background:${col};${col === NODATA ? "box-shadow:inset 0 0 0 1.5px #6f6e69" : ""}"></i>`;
   }).join("");
   return `<div class="zname" data-zone="${g.key}">${esc(g.name)} <span>${g.shown.length}</span></div><div class="zdots">${dots}</div>`;
 }
@@ -598,7 +598,7 @@ function bindControls() {
 
 function renderLegend() {
   $("#legend").innerHTML = state.colorBy === "cond"
-    ? Object.values(COND).map(c => `<span><i style="background:${c.color}"></i>${c.label}</span>`).join("") + `<span><i style="background:#fff;border:1px solid #8a8984"></i>out of season / no data yet</span><span><i class="route-key"></i>multi-day route</span><span class="muted" style="width:100%">Riding conditions over the next 7 days. Ring colour = main discipline.</span>`
+    ? Object.values(COND).map(c => `<span><i style="background:${c.color}"></i>${c.label}</span>`).join("") + `<span><i style="background:#fff;border:1.5px solid #6f6e69"></i>out of season / no data yet</span><span><i class="route-key"></i>multi-day route</span><span class="muted" style="width:100%">Riding conditions over the next 7 days. Ring colour = main discipline.</span>`
     : Object.values(CAT).map(c => `<span><i style="background:${c.color}"></i>${c.label}</span>`).join("") + `<span><i class="route-key"></i>multi-day route</span>` + (state.months.length ? `<span class="muted" style="width:100%">Ringed dot = a best month · faded = out of season in all picked months</span>` : "");
 }
 
@@ -623,7 +623,7 @@ function renderList() {
     const head = state.sort === "zone" && d.zone !== lastZone ? `<li class="group">${esc(ZONES[d.zone]?.name)}<span>${esc(MACROS[ZONES[d.zone]?.macro] ?? "")}</span></li>` : "";
     lastZone = d.zone;
     const dim = outForMonths(d);
-    return `${head}<li data-id="${d.id}" class="${dim ? "dim" : ""}"><span class="dot ${isRoute(d) ? "route" : ""}" style="background:${markerColor(d)};${markerColor(d) === NODATA ? "border:1px solid #8a8984" : ""}"></span>
+    return `${head}<li data-id="${d.id}" class="${dim ? "dim" : ""}"><span class="dot ${isRoute(d) ? "route" : ""}" style="background:${markerColor(d)};${markerColor(d) === NODATA ? "border:1.5px solid #6f6e69" : ""}"></span>
       <span>${esc(d.name)}<div class="sub">${esc(d.country)}${subLabel(d) ? " · " + esc(subLabel(d)) : ""}</div></span>
       <span class="pill" title="${esc(st.label)}">${pill}</span></li>`;
   }).join("");
