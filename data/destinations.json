@@ -33,6 +33,10 @@
    "name": "Mexico",
    "macro": "sa"
   },
+  "andes": {
+   "name": "Andes",
+   "macro": "sa"
+  },
   "patagonia": {
    "name": "Patagonia",
    "macro": "sa"
@@ -95,6 +99,10 @@
   },
   "eastasia": {
    "name": "Japan & Taiwan",
+   "macro": "asia"
+  },
+  "seasia": {
+   "name": "Southeast Asia",
    "macro": "asia"
   },
   "aus": {
@@ -3593,14 +3601,14 @@
      "kind": "climb",
      "lat": 40.575,
      "lon": -111.7,
-     "note": "~13 km at ~8% to Snowbird and Alta"
+     "note": "~13 km at ~7.5% to Snowbird and Alta"
     },
     {
      "name": "Big Cottonwood Canyon",
      "kind": "climb",
      "lat": 40.62,
      "lon": -111.7,
-     "note": "~24 km, ~1,150 m to Brighton; steadier"
+     "note": "~23 km and ~1,200 m to Brighton; steadier"
     }
    ],
    "hire": "easy",
@@ -3648,10 +3656,10 @@
    "pitch": "A loop below the cliffs of Canyonlands' Island in the Sky, on a jeep road along a white sandstone bench above the Green and Colorado rivers. Camping is by permit, and most groups bring a support vehicle to carry the water.",
    "stats": {
     "km": 160,
-    "days": "2–4",
+    "days": "3–4",
     "climb": 2000
    },
-   "weather": "Campsite permits for spring and autumn are booked months ahead; there's no water on the route.",
+   "weather": "Permits are needed even for day rides, and spring and autumn sell out months ahead. There's no water on the route, and the west side can flood in May–June.",
    "hire": "limited",
    "hireNote": "Moab shops rent bikes, and outfitters run supported trips",
    "kind": "route",
@@ -3756,7 +3764,7 @@
      "kind": "park",
      "lat": 50.66,
      "lon": -120.28,
-     "note": "Free park with dirt jumps, flow and downhill lines"
+     "note": "City-run park with dirt jumps, flow and downhill lines"
     },
     {
      "name": "Sun Peaks Bike Park",
@@ -4060,7 +4068,7 @@
     }
    ],
    "hire": "limited",
-   "hireNote": "The shuttle companies in town rent a small fleet; book ahead",
+   "hireNote": "Shuttles run from town, but rental bikes are scarce since Yuba Expeditions closed; most riders bring their own",
    "kind": "base",
    "offers": {
     "mtb": [
@@ -4156,7 +4164,7 @@
    "guide": "Optional",
    "airport": "Bellingham ~15 min; Seattle ~1.5 h",
    "terrain": "Rooty, loamy forest singletrack, from flow to steep tech; all levels",
-   "pitch": "Galbraith Mountain, on the edge of town, has around 100 km of community-built forest trails, from jump lines to steep, rooty tech, with coastal riding at Chuckanut too.",
+   "pitch": "Galbraith Mountain, on the edge of town, has more than 100 km of community-built forest trails, from jump lines to steep, rooty tech, with coastal riding at Chuckanut too.",
    "weather": "Wet from October to April; the trails ride all year but get muddy.",
    "children": [
     {
@@ -4164,7 +4172,7 @@
      "kind": "area",
      "lat": 48.73,
      "lon": -122.42,
-     "note": "Around 100 km of trails on the edge of town"
+     "note": "More than 100 km of trails on the edge of town"
     },
     {
      "name": "Chuckanut",
@@ -4174,8 +4182,8 @@
      "note": "Coastal trails with sea views; rougher and steeper"
     }
    ],
-   "hire": "limited",
-   "hireNote": "A few shops rent trail bikes; book ahead",
+   "hire": "easy",
+   "hireNote": "Several shops rent trail bikes, and some deliver to the trailhead",
    "kind": "base",
    "offers": {
     "mtb": [
@@ -4230,7 +4238,7 @@
     }
    ],
    "hire": "limited",
-   "hireNote": "A couple of shops in town rent bikes",
+   "hireNote": "Keweenaw Adventure Company by the trailhead and the Keweenaw Mountain Lodge rent trail bikes",
    "kind": "base",
    "offers": {
     "mtb": [
@@ -4276,7 +4284,7 @@
      "kind": "climb",
      "lat": 32.38,
      "lon": -110.69,
-     "note": "~40 km, ~1,800 m from the desert floor to Summerhaven"
+     "note": "~45 km and ~1,900 m from the desert floor to Summerhaven"
     },
     {
      "name": "Gates Pass",
@@ -4334,7 +4342,7 @@
      "kind": "climb",
      "lat": 34.47,
      "lon": -119.69,
-     "note": "~10 km, steep, above the city and the sea"
+     "note": "~16 km and ~1,000 m at ~7%, above the city and the sea"
     },
     {
      "name": "Figueroa Mountain",
@@ -4449,7 +4457,7 @@
      "kind": "climb",
      "lat": 39.108,
      "lon": -106.564,
-     "note": "~30 km, ~1,300 m to 3,687 m on the Continental Divide"
+     "note": "~25 km and ~1,250 m to 3,687 m on the Continental Divide"
     },
     {
      "name": "Maroon Creek Road",
@@ -4553,7 +4561,7 @@
    "stats": {
     "km": 1200,
     "days": "14–30",
-    "climb": 25000
+    "climb": 20000
    },
    "weather": "Water is the main challenge: long dry stretches and caches.",
    "hire": "byo",
@@ -4586,13 +4594,13 @@
    "crowds": 1,
    "cost": 2,
    "guide": "Optional",
-   "airport": "Medora (start or end); Bismarck ~2 h",
+   "airport": "CCC Campground near Watford City (north end), Burning Coal Vein near Amidon (south end); Medora is about halfway",
    "terrain": "Badlands singletrack with sharp climbs; intermediate to advanced",
-   "pitch": "About 150 km of singletrack through the North Dakota badlands, past Theodore Roosevelt National Park, with campgrounds and water caches along the way.",
+   "pitch": "About 230 km of singletrack through the North Dakota badlands, past Theodore Roosevelt National Park, with campgrounds and water caches along the way.",
    "stats": {
-    "km": 155,
-    "days": "3–5",
-    "climb": 3500
+    "km": 232,
+    "days": "4–7",
+    "climb": 5000
    },
    "weather": "The clay trail is unrideable when wet; summer storms and heat.",
    "hire": "byo",
@@ -4629,9 +4637,9 @@
    "terrain": "Backcountry singletrack and forest roads; advanced",
    "pitch": "A bikepacking route from California to the Columbia River on mostly singletrack, through high desert, volcanoes and old-growth forest, past Oakridge and Mount Hood.",
    "stats": {
-    "km": 1080,
-    "days": "14–21",
-    "climb": 17000
+    "km": 1100,
+    "days": "18–25",
+    "climb": 20000
    },
    "weather": "Wildfire smoke and closures are common in late summer.",
    "hire": "byo",
@@ -4973,7 +4981,7 @@
      "kind": "park",
      "lat": 51.723,
      "lon": -3.354,
-     "note": "Van uplift; dozens of graded trails from blue flow to black tech"
+     "note": "Van uplift; 50+ graded trails from green flow to pro lines"
     },
     {
      "name": "Afan Forest Park",
@@ -5303,7 +5311,7 @@
    "guide": "Optional",
    "airport": "Coimbra ~30 min; Porto ~2 h; Lisbon ~2.5 h",
    "terrain": "Steep, loamy enduro trails with shuttles; intermediate to expert",
-   "pitch": "A quiet hill town in central Portugal with steep enduro trails through the schist villages of the Serra da Lousã, served by shuttle companies and used for international enduro races.",
+   "pitch": "A quiet hill town in central Portugal with steep enduro trails through the schist villages of the Serra da Lousã, served by shuttle companies, with regular enduro races at the Louzanpark bike park.",
    "weather": "Summer is hot and brings wildfire risk; winter is mild but wet.",
    "children": [
     {
@@ -5315,7 +5323,7 @@
     }
    ],
    "hire": "limited",
-   "hireNote": "The shuttle companies rent enduro and e-bikes; book ahead",
+   "hireNote": "Shuttle and guiding outfits rent enduro and e-bikes; book ahead",
    "kind": "base",
    "offers": {
     "mtb": [
@@ -5511,7 +5519,7 @@
      "kind": "climb",
      "lat": 50.483,
      "lon": 5.7,
-     "note": "~2 km at ~9%; steep and famous"
+     "note": "~1.6 km at ~9.5%; steep and famous"
     },
     {
      "name": "Côte de la Roche-aux-Faucons",
@@ -5737,7 +5745,7 @@
      "kind": "climb",
      "lat": 37.06,
      "lon": -3.37,
-     "note": "~40 km and ~2,500 m of climbing from Granada; the top is closed to cars"
+     "note": "~42 km and ~2,600 m of climbing from Granada; closed to cars above ~2,500 m"
     }
    ],
    "hire": "limited",
@@ -5883,7 +5891,7 @@
    "terrain": "Mountain roads over 18 cols; advanced",
    "pitch": "Atlantic to Mediterranean across the French Pyrenees, over 18 cols including the Aubisque, Tourmalet and Aspin. The classic challenge is to finish within 100 hours.",
    "stats": {
-    "km": 720,
+    "km": 710,
     "days": "5–10",
     "climb": 11000
    },
@@ -5922,7 +5930,7 @@
    "terrain": "Gravel tracks, mule paths and high passes; intermediate to advanced, with some pushing",
    "pitch": "The classic alpine crossing by mountain bike, from Bavaria over the Austrian and Italian Alps to Lake Garda, on well-known routes like the Albrecht and Joe routes.",
    "stats": {
-    "km": 450,
+    "km": 470,
     "days": "6–8",
     "climb": 12000
    },
@@ -5936,7 +5944,7 @@
    "name": "Via Claudia Augusta",
    "category": "road",
    "country": "Germany, Austria, Italy",
-   "region": "Füssen to Verona",
+   "region": "Donauwörth to Verona",
    "zone": "alps",
    "lat": 46.9,
    "lon": 10.7,
@@ -5956,13 +5964,13 @@
    "crowds": 3,
    "cost": 3,
    "guide": "Optional",
-   "airport": "Munich ~2 h to Füssen (start); Verona at the end",
+   "airport": "Donauwörth (start; Munich ~1 h), Verona (end)",
    "terrain": "Cycle paths and quiet roads over the Reschen Pass; easy to intermediate",
-   "pitch": "Follow an old Roman road from Bavaria over the Fern and Reschen passes and down through the apple orchards of the Adige valley to Verona, mostly on traffic-free paths.",
+   "pitch": "Follow an old Roman road from the Danube in Bavaria over the Fern and Reschen passes and down through the apple orchards of the Adige valley to Verona, mostly on traffic-free paths.",
    "stats": {
-    "km": 460,
-    "days": "6–8",
-    "climb": 3000
+    "km": 700,
+    "days": "8–12",
+    "climb": 4000
    },
    "hire": "easy",
    "hireNote": "One-way hire with luggage transfers is easy to arrange",
@@ -6166,6 +6174,761 @@
    "hireNote": "Several companies hire bikes one way and collect them in Santiago",
    "kind": "route",
    "support": "hotel"
+  },
+  {
+   "id": "vallebravo",
+   "name": "Valle de Bravo",
+   "category": "mtb",
+   "country": "Mexico",
+   "region": "State of Mexico",
+   "zone": "mexico",
+   "lat": 19.192,
+   "lon": -100.131,
+   "elev": [
+    1800,
+    2600
+   ],
+   "refElev": 1900,
+   "season": [
+    10,
+    5
+   ],
+   "best": [
+    11,
+    12,
+    1,
+    2,
+    3
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Mexico City ~2.5 h",
+   "terrain": "Pine-forest singletrack on old volcanoes, from cross-country loops to steep descents; intermediate to advanced",
+   "pitch": "A lakeside colonial town in pine-covered hills, with forest singletrack in the Monte Alto park on the edge of town and local guides who know the steeper descents.",
+   "weather": "The rainy season runs from June to September.",
+   "children": [
+    {
+     "name": "Monte Alto",
+     "kind": "area",
+     "lat": 19.205,
+     "lon": -100.15,
+     "note": "Volcano-slope loops in the state park above town"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "Guided-ride operators supply bikes; there's no obvious rental shop, so many riders bring their own",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "medellin",
+   "name": "Medellín",
+   "category": "road",
+   "country": "Colombia",
+   "region": "Antioquia",
+   "zone": "andes",
+   "lat": 6.244,
+   "lon": -75.581,
+   "elev": [
+    1500,
+    2700
+   ],
+   "refElev": 1500,
+   "season": [
+    1,
+    12
+   ],
+   "best": [
+    12,
+    1,
+    2,
+    7,
+    8
+   ],
+   "crowds": 3,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "José María Córdova airport ~45 min",
+   "terrain": "Long climbs on mountain roads in spring-like weather; intermediate to advanced",
+   "pitch": "The 'city of eternal spring', in a country mad about cycling: mild weather all year, long climbs out of the valley in every direction, and car-free roads on Sunday mornings.",
+   "weather": "Two rainier seasons, roughly April–May and October–November.",
+   "children": [
+    {
+     "name": "Alto de Las Palmas",
+     "kind": "climb",
+     "lat": 6.17,
+     "lon": -75.54,
+     "note": "~15.5 km and ~950 m at ~6% out of the city"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Several shops and tour companies rent road bikes",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs",
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "cusco",
+   "name": "Cusco (Sacred Valley)",
+   "category": "mtb",
+   "country": "Peru",
+   "region": "Cusco",
+   "zone": "andes",
+   "lat": -13.532,
+   "lon": -71.968,
+   "elev": [
+    2800,
+    4300
+   ],
+   "refElev": 3300,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 2,
+   "guide": "Recommended",
+   "airport": "Cusco ~15 min; Lima ~1.5 h by air",
+   "terrain": "High-altitude singletrack on old Inca paths and dirt roads; intermediate to advanced",
+   "pitch": "Ride old Inca paths and dirt roads above 3,000 m over the Sacred Valley, past terraces and ruins, with long descents to the river.",
+   "weather": "The rainy season is November to March, and the altitude takes a few days to get used to.",
+   "children": [
+    {
+     "name": "Sacred Valley descents",
+     "kind": "area",
+     "lat": -13.33,
+     "lon": -72.08,
+     "note": "Long descents from the high plains down to the river"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "Tour operators in Cusco rent bikes, usually with a guide",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "bariloche",
+   "name": "Bariloche",
+   "category": "mtb",
+   "country": "Argentina",
+   "region": "Río Negro",
+   "zone": "patagonia",
+   "lat": -41.133,
+   "lon": -71.31,
+   "elev": [
+    770,
+    2000
+   ],
+   "refElev": 900,
+   "season": [
+    11,
+    4
+   ],
+   "best": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "crowds": 3,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Bariloche ~20 min; Buenos Aires ~2 h by air",
+   "terrain": "Lakeside forest singletrack and lift-served descents; all levels",
+   "pitch": "A lake town in Argentine Patagonia with forest singletrack, lift-served riding at Cerro Catedral in summer, and the Circuito Chico road loop past lakes and mountains.",
+   "weather": "It's often windy; summer is short but long-lit.",
+   "children": [
+    {
+     "name": "Cerro Catedral",
+     "kind": "park",
+     "lat": -41.17,
+     "lon": -71.44,
+     "note": "Lift-served descents in summer"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Several shops rent mountain and road bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ],
+    "road": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "lagunas",
+   "name": "Lagunas Route",
+   "category": "gravel",
+   "country": "Bolivia",
+   "region": "Uyuni to San Pedro de Atacama",
+   "zone": "andes",
+   "lat": -22.0,
+   "lon": -67.7,
+   "elev": [
+    2400,
+    4900
+   ],
+   "refElev": 4300,
+   "season": [
+    4,
+    11
+   ],
+   "best": [
+    5,
+    9,
+    10
+   ],
+   "crowds": 1,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Uyuni (start), San Pedro de Atacama in Chile (end)",
+   "terrain": "Sand, washboard and rock at high altitude; advanced, very remote",
+   "pitch": "Across Bolivia's high desert from the Uyuni salt flats past flamingo lagoons, geysers and volcanoes to Chile's Atacama, mostly above 4,000 m.",
+   "stats": {
+    "km": 500,
+    "days": "10–14",
+    "climb": 6000
+   },
+   "weather": "Freezing nights and strong afternoon winds; the salt flats can flood in the wet season.",
+   "hire": "byo",
+   "hireNote": "Hire in Uyuni is basic; most riders bring their own",
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "knysna",
+   "name": "Knysna (Garden Route)",
+   "category": "mtb",
+   "country": "South Africa",
+   "region": "Western Cape",
+   "zone": "africa",
+   "lat": -34.035,
+   "lon": 23.048,
+   "elev": [
+    0,
+    500
+   ],
+   "refElev": 100,
+   "season": [
+    1,
+    12
+   ],
+   "best": [
+    3,
+    4,
+    5,
+    9,
+    10,
+    11
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "George ~1 h; Cape Town ~6 h",
+   "terrain": "Forest singletrack and coastal trails; all levels",
+   "pitch": "Indigenous forest singletrack along the Garden Route, with lagoons, beaches and whale-watching between rides.",
+   "children": [
+    {
+     "name": "Harkerville",
+     "kind": "area",
+     "lat": -34.05,
+     "lon": 23.25,
+     "note": "Classic forest and coastal loops"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "Outeniqua Bike Hire by the Harkerville trails rents adult bikes; book ahead",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "jebelakhdar",
+   "name": "Nizwa (Jebel Akhdar)",
+   "category": "road",
+   "country": "Oman",
+   "region": "Ad Dakhiliyah",
+   "zone": "mideast",
+   "lat": 22.933,
+   "lon": 57.53,
+   "elev": [
+    500,
+    2000
+   ],
+   "refElev": 600,
+   "season": [
+    10,
+    3
+   ],
+   "best": [
+    11,
+    12,
+    1,
+    2
+   ],
+   "crowds": 1,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Muscat ~1.5 h",
+   "terrain": "Very steep mountain roads and empty desert roads; advanced",
+   "pitch": "Empty, smooth roads through desert and date-palm oases, and the brutal Green Mountain climb, a Tour of Oman summit finish averaging over 10%.",
+   "weather": "Summer is dangerously hot.",
+   "children": [
+    {
+     "name": "Jebel Akhdar",
+     "kind": "climb",
+     "lat": 23.0,
+     "lon": 57.6,
+     "note": "The Tour of Oman finishes ~6 km up at ~10%; the road keeps climbing for twice as far"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "A few shops in Muscat rent road bikes",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs",
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "fuji",
+   "name": "Fujiyoshida (Mount Fuji)",
+   "category": "road",
+   "country": "Japan",
+   "region": "Yamanashi",
+   "zone": "eastasia",
+   "lat": 35.486,
+   "lon": 138.807,
+   "elev": [
+    800,
+    2300
+   ],
+   "refElev": 900,
+   "season": [
+    4,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    10,
+    11
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Tokyo ~2 h",
+   "terrain": "Big volcano climbs and lake loops; intermediate to advanced",
+   "pitch": "Loop the Fuji Five Lakes and climb the Fuji Subaru Line toward the fifth station at about 2,300 m, the course of the Mt Fuji Hill Climb race.",
+   "weather": "The rainy season is June; the upper road closes in winter.",
+   "children": [
+    {
+     "name": "Fuji Subaru Line",
+     "kind": "climb",
+     "lat": 35.4,
+     "lon": 138.75,
+     "note": "~25 km and ~1,300 m to the fifth station at ~2,300 m; bikes pay a small toll"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "Plenty of city and e-bikes around Lake Kawaguchi; road bikes are harder to find",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs",
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "chiangmai",
+   "name": "Chiang Mai",
+   "category": "road",
+   "country": "Thailand",
+   "region": "Northern Thailand",
+   "zone": "seasia",
+   "lat": 18.788,
+   "lon": 98.985,
+   "elev": [
+    300,
+    2565
+   ],
+   "refElev": 350,
+   "season": [
+    11,
+    3
+   ],
+   "best": [
+    11,
+    12,
+    1,
+    2
+   ],
+   "crowds": 3,
+   "cost": 1,
+   "guide": "Optional",
+   "airport": "Chiang Mai ~15 min; Bangkok ~1 h by air",
+   "terrain": "Steep jungle climbs and singletrack; all levels",
+   "pitch": "A relaxed city in Thailand's northern hills, with steep road climbs like Doi Suthep and Doi Inthanon, jungle singletrack and cheap living.",
+   "weather": "Rainy from May to October; smoky haze in March and April.",
+   "children": [
+    {
+     "name": "Doi Suthep",
+     "kind": "climb",
+     "lat": 18.805,
+     "lon": 98.92,
+     "note": "~11 km at ~6% from the edge of the city to the temple"
+    },
+    {
+     "name": "Doi Inthanon",
+     "kind": "climb",
+     "lat": 18.588,
+     "lon": 98.487,
+     "note": "Thailand's highest road; very steep near the top"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Several shops rent road and mountain bikes",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs",
+     "day"
+    ],
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "manalileh",
+   "name": "Manali to Leh",
+   "category": "road",
+   "country": "India",
+   "region": "Himachal Pradesh to Ladakh",
+   "zone": "himalaya",
+   "lat": 33.0,
+   "lon": 77.5,
+   "elev": [
+    2000,
+    5330
+   ],
+   "refElev": 4000,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Manali (start; Kullu airport ~1.5 h), Leh (end; flights to Delhi)",
+   "terrain": "High mountain road with rough sections and passes over 5,000 m; advanced",
+   "pitch": "One of the world's highest roads, over several passes above 5,000 m, from the green Kullu valley to the high desert of Ladakh.",
+   "stats": {
+    "km": 430,
+    "days": "10–14",
+    "climb": 8000
+   },
+   "weather": "Open roughly June to September; altitude sickness is a real risk.",
+   "hire": "byo",
+   "hireNote": "Tour operators in Manali hire bikes for supported trips; otherwise bring your own",
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "bright",
+   "name": "Bright (Victorian Alps)",
+   "category": "road",
+   "country": "Australia",
+   "region": "Victoria",
+   "zone": "aus",
+   "lat": -36.729,
+   "lon": 146.96,
+   "elev": [
+    300,
+    1860
+   ],
+   "refElev": 350,
+   "season": [
+    10,
+    4
+   ],
+   "best": [
+    11,
+    12,
+    3,
+    4
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Melbourne ~3.5 h; Albury ~1 h",
+   "terrain": "Long alpine climbs and forest mountain-bike trails; all levels",
+   "pitch": "A country town under the Victorian Alps with Australia's biggest road climbs (Mount Buffalo, Hotham and Falls Creek), plus mountain-bike trails and rail trails.",
+   "children": [
+    {
+     "name": "Mount Buffalo",
+     "kind": "climb",
+     "lat": -36.74,
+     "lon": 146.83,
+     "note": "~20 km at ~5%"
+    },
+    {
+     "name": "Mount Hotham",
+     "kind": "climb",
+     "lat": -36.975,
+     "lon": 147.135,
+     "note": "~30 km and ~1,300 m from Harrietville; steep in places"
+    },
+    {
+     "name": "Mystic MTB Park",
+     "kind": "area",
+     "lat": -36.737,
+     "lon": 146.97,
+     "note": "Shuttled trails just outside town"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Several shops renting road, mountain and e-bikes",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs",
+     "day"
+    ],
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "adelaide",
+   "name": "Adelaide",
+   "category": "road",
+   "country": "Australia",
+   "region": "South Australia",
+   "zone": "aus",
+   "lat": -34.928,
+   "lon": 138.6,
+   "elev": [
+    0,
+    700
+   ],
+   "refElev": 100,
+   "season": [
+    9,
+    5
+   ],
+   "best": [
+    10,
+    11,
+    3,
+    4
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Adelaide ~15 min",
+   "terrain": "Hills, vineyards and quiet roads; all levels",
+   "pitch": "The home of the Tour Down Under, with climbs straight out of the city into the Adelaide Hills, McLaren Vale wine country and Willunga Hill to the south.",
+   "weather": "Summer heatwaves can top 40°C.",
+   "children": [
+    {
+     "name": "Willunga Hill",
+     "kind": "climb",
+     "lat": -35.3,
+     "lon": 138.56,
+     "note": "~3 km at ~7.5%; the Tour Down Under decider"
+    },
+    {
+     "name": "Norton Summit",
+     "kind": "climb",
+     "lat": -34.92,
+     "lon": 138.72,
+     "note": "Classic climb from the city into the hills"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Several shops renting road bikes",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "day",
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "cairns",
+   "name": "Cairns",
+   "category": "mtb",
+   "country": "Australia",
+   "region": "Queensland",
+   "zone": "aus",
+   "lat": -16.92,
+   "lon": 145.77,
+   "elev": [
+    0,
+    800
+   ],
+   "refElev": 50,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Cairns ~15 min",
+   "terrain": "Steep rainforest singletrack and purpose-built flow; intermediate to expert",
+   "pitch": "Tropical rainforest riding, from the steep Smithfield trails that have hosted World Cups and World Championships to the purpose-built network at Atherton in the cooler highlands.",
+   "weather": "The wet season, December to April, brings heavy rain and heat.",
+   "children": [
+    {
+     "name": "Smithfield",
+     "kind": "area",
+     "lat": -16.825,
+     "lon": 145.69,
+     "note": "Steep, rooty rainforest trails"
+    },
+    {
+     "name": "Atherton",
+     "kind": "area",
+     "lat": -17.27,
+     "lon": 145.47,
+     "note": "~1.5 h: purpose-built flow in the cooler highlands"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "A few shops rent trail bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "otagorail",
+   "name": "Otago Central Rail Trail",
+   "category": "gravel",
+   "country": "New Zealand",
+   "region": "Central Otago",
+   "zone": "nz",
+   "lat": -45.2,
+   "lon": 169.8,
+   "elev": [
+    150,
+    620
+   ],
+   "refElev": 400,
+   "season": [
+    10,
+    4
+   ],
+   "best": [
+    11,
+    12,
+    2,
+    3,
+    4
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Queenstown ~1.5 h; Dunedin ~1.5 h",
+   "terrain": "Gentle gravel rail trail over viaducts and through tunnels; easy",
+   "pitch": "New Zealand's original great ride: a gentle gravel rail trail through the gold-rush country of Central Otago, with old viaducts, tunnels and country pubs.",
+   "stats": {
+    "km": 150,
+    "days": "3–5",
+    "climb": 600
+   },
+   "hire": "easy",
+   "hireNote": "Plenty of operators hire bikes one way and move luggage",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "mundabiddi",
+   "name": "Munda Biddi Trail",
+   "category": "mtb",
+   "country": "Australia",
+   "region": "Perth to Albany, Western Australia",
+   "zone": "aus",
+   "lat": -33.5,
+   "lon": 116.0,
+   "elev": [
+    0,
+    400
+   ],
+   "refElev": 200,
+   "season": [
+    4,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    9,
+    10
+   ],
+   "crowds": 1,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Perth (start, at Mundaring), Albany (end)",
+   "terrain": "Forest singletrack and gravel; intermediate",
+   "pitch": "One of the world's longest purpose-built off-road cycle trails, through jarrah and karri forest from the hills behind Perth to the south coast, with free campsites a day's ride apart.",
+   "stats": {
+    "km": 1060,
+    "days": "14–21",
+    "climb": 10000
+   },
+   "weather": "Summer is hot and dry, with fire closures.",
+   "hire": "byo",
+   "hireNote": "Set up for bikepacking",
+   "kind": "route",
+   "support": "bikepacking"
   }
  ]
 }
