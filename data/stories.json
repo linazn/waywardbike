@@ -1,1 +1,288 @@
-{"_about": "Read-more pages for Wayward Bike (none yet)."}
+{
+ "_about": "Read-more pages for Wayward Bike, keyed by destination id. Sections: riding, beyond, know (plain text; *italic* and **bold** allowed; blank line = new paragraph). Describe the character of the riding, never turn-by-turn routes. draft: true hides a page unless the URL has ?drafts. sources: official or local first.",
+ "moab": {
+  "draft": true,
+  "riding": "Moab's riding is built on rock. The Navajo sandstone around town grips tyres like sandpaper, so you can ride up and down slopes that look impossible, and the skill is trusting it. The **Slickrock Trail**, first laid out for motorcycles in 1969, is the famous one: a loop of painted dashes across bare, rolling domes, steep and punchy, with the Colorado River canyon below. It's hard work for its length, and most people find it humbling the first time.\n\nThe other classic is the **Whole Enchilada**, a full day that drops about 2,400 m from Burro Pass in the La Sal Mountains, through aspen and alpine meadows, down to desert ledges and finally the river. The top is only free of snow from around June. For easier days, the **Brand trails** and **Klondike Bluffs** north of town are flowing desert singletrack, and the **Mag 7** trails link canyon rims with big views. Expect ledges, sand in the washes and very little shade.",
+  "beyond": "Moab sits between two national parks. **Arches** has more than 2,000 natural stone arches, and **Canyonlands**' Island in the Sky looks down on the canyons you've been riding above; Dead Horse Point at sunset is close by. Rafting the Colorado through the red-walled Fisher Towers stretch makes a good rest day, and there are petroglyphs along the river roads.\n\nThe town itself is small and busy, full of outfitters, diners and a couple of brewpubs. The night skies are some of the darkest in the lower 48 states.",
+  "know": "Carry more water than you think, at least three litres on a desert ride, and start early in warm months: summer in town is regularly above 35°C, which is why spring and autumn are the seasons. Stay on rock or trail: the dark, crusty *cryptobiotic soil* takes decades to recover from a tyre track.\n\nBook beds and shuttles early for spring weekends, and avoid the week before Easter, when the Jeep Safari fills every room. The Slickrock area charges a small day-use fee, and Arches usually needs a timed-entry reservation in the busy months.",
+  "sources": [
+   {
+    "label": "Discover Moab: mountain biking",
+    "url": "https://www.discovermoab.com/attractions/mountainbiking/"
+   },
+   {
+    "label": "BLM: Sand Flats Recreation Area",
+    "url": "https://www.blm.gov/visit/sand-flats-recreation-area"
+   }
+  ],
+  "photos": [
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Slickrock_Biking_%286676161591%29.jpg/1280px-Slickrock_Biking_%286676161591%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Slickrock_Biking_(6676161591).jpg",
+    "caption": "Riding the Slickrock Trail's bare sandstone.",
+    "alt": "Riding the Slickrock Trail's bare sandstone.",
+    "author": "Zach Dischner",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+   },
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Upper_Porcupine_Rim_Trail_%2827490850186%29.jpg/1280px-Upper_Porcupine_Rim_Trail_%2827490850186%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Upper_Porcupine_Rim_Trail_(27490850186).jpg",
+    "caption": "Upper Porcupine Rim, the last part of the Whole Enchilada.",
+    "alt": "Upper Porcupine Rim, the last part of the Whole Enchilada.",
+    "author": "BLMUtah",
+    "license": "Public domain",
+    "licenseUrl": ""
+   },
+   {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Mountain_Biking-_Moab_Brands_Trails_%2821066005078%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Mountain_Biking-_Moab_Brands_Trails_(21066005078).jpg",
+    "caption": "The Brand trails north of town, a good first day.",
+    "alt": "The Brand trails north of town, a good first day.",
+    "author": "BLMUtah",
+    "license": "Public domain",
+    "licenseUrl": ""
+   },
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/USA_10400_Arches_National_Park_Luca_Galuzzi_2007.jpg/1280px-USA_10400_Arches_National_Park_Luca_Galuzzi_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:USA_10400_Arches_National_Park_Luca_Galuzzi_2007.jpg",
+    "caption": "Delicate Arch in Arches National Park, just outside town.",
+    "alt": "Delicate Arch in Arches National Park, just outside town.",
+    "author": "Luca Galuzzi (Lucag)",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+   }
+  ]
+ },
+ "girona": {
+  "draft": true,
+  "riding": "Dozens of pro riders live in Girona, and it's easy to see why: quiet, smooth back roads start at the edge of town, the climbs are long enough to train on, and the weather is good most of the year. Ride north-west and you're in the volcanic hills of the Garrotxa; ride east and the Gavarres hills take you to the sea.\n\nThe local test is **Rocacorba**, about 10 km that gets steeper near the top, where pros time themselves. **Els Àngels** is a steadier climb to a hilltop sanctuary (Salvador Dalí married Gala there in 1958). Down on the Costa Brava, the cliff road between **Sant Feliu de Guíxols** and **Tossa de Mar** twists above the water for 20 km.\n\nGirona is also one of Europe's gravel capitals. Farm tracks and forest roads run everywhere, and two old railway lines, the *Carrilet* greenways, give flat, traffic-free routes to Olot in the hills and Sant Feliu on the coast. The Traka, one of Europe's biggest gravel races, is held here each spring.",
+  "beyond": "The old town, the *Barri Vell*, is a maze of stone lanes inside medieval walls you can walk along, with the cathedral's huge staircase at the top. The coloured houses along the Onyar river are the classic view. Coffee is a serious business here, and several cafés are run by and for riders.\n\nCatalan food is the other draw: El Celler de Can Roca, run by three local brothers, has twice been named the world's best restaurant, but a long lunch anywhere is a good rest day. The Costa Brava's coves are 40 minutes away, and the Dalí museum in Figueres is a short train ride.",
+  "know": "Mild winters make Girona a year-round base, but summer days inland get hot, so ride early. Catalan is the local language; Spanish and English are widely spoken. Local drivers are used to cyclists, and groups of riders are everywhere.\n\nSpain eats late: lunch is around 2 pm and dinner rarely before 9 pm, which suits a long morning ride.",
+  "sources": [
+   {
+    "label": "Costa Brava & Girona Pyrenees: road cycling",
+    "url": "https://costabrava.org/en/what-to-do/cycling-bike-tourism/road-cycling/"
+   }
+  ],
+  "photos": [
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Houses_along_the_Onyar_River%2C_Girona_%281%29_%2831320053085%29.jpg/1280px-Houses_along_the_Onyar_River%2C_Girona_%281%29_%2831320053085%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Houses_along_the_Onyar_River,_Girona_(1)_(31320053085).jpg",
+    "caption": "Houses along the Onyar River in Girona.",
+    "alt": "Houses along the Onyar River in Girona.",
+    "author": "Richard Mortel from Riyadh, Saudi Arabia",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+   },
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Rocacorba_-_P1130061.jpg/1280px-Rocacorba_-_P1130061.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Rocacorba_-_P1130061.jpg",
+    "caption": "Rocacorba, the pros' test climb north-west of town.",
+    "alt": "Rocacorba, the pros' test climb north-west of town.",
+    "author": "Pere López Brosa",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
+  ]
+ },
+ "stelvio": {
+  "draft": true,
+  "riding": "Bormio sits at the foot of three of the most famous climbs in cycling. The **Stelvio** is the big one: at 2,757 m it's the highest paved pass in Italy and the second highest in the Alps. From Bormio it climbs about 1,500 m over 21 km, through tunnels and avalanche galleries. The other side, from Prato in South Tyrol, is the one in the photos, with 48 numbered hairpins stacked up the mountainside. A third road comes up from Switzerland over the Umbrail Pass.\n\nThe **Gavia** is wilder: a long, steady climb from Bormio through Santa Caterina, then a narrow, steep descent on the far side. It's famous for the 1988 Giro d'Italia stage raced through a snowstorm. The **Mortirolo**, down the valley from Mazzo, is short and brutal: 12 km averaging over 10%, made legendary by Marco Pantani in 1994.\n\nOn a few days each summer, the passes close to cars and fill with cyclists.",
+  "beyond": "Bormio has been a spa town since Roman times. The **Bagni Vecchi** have hot pools carved into the cliff above town, including an outdoor one looking straight down the valley; the newer Bagni Nuovi are next door. There's no better end to a pass day.\n\nThe food is Valtellina's: *pizzoccheri* (buckwheat pasta with cabbage, potato and melted cheese), *bresaola* (air-dried beef), the local Bitto cheese, and the strong red Sforzato wine. The old town is compact, with stone towers and arcaded streets, and the Stelvio National Park starts at the edge of town.",
+  "know": "The high passes open from around late May or June to October, depending on snow, and can close for a day even in summer. At 2,700 m it can be near freezing in August, so carry a jacket, gloves and a light for the Stelvio's tunnels. You'll feel the altitude on the top switchbacks.\n\nThis is advanced riding: long climbs, long descents and cold summits. July to September is the safest window.",
+  "sources": [
+   {
+    "label": "Bormio tourism",
+    "url": "https://www.bormio.eu/en/"
+   },
+   {
+    "label": "Stelvio National Park",
+    "url": "https://www.stelviopark.it/"
+   }
+  ],
+  "photos": [
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Stelvio_Pass_Bolzano_side_3.jpg/1280px-Stelvio_Pass_Bolzano_side_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Stelvio_Pass_Bolzano_side_3.jpg",
+    "caption": "The Stelvio's famous hairpins on the Prato side.",
+    "alt": "The Stelvio's famous hairpins on the Prato side.",
+    "author": "kallerna",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   },
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Passo_di_Gavia_SS_300_Bormio_side_1.jpg/1280px-Passo_di_Gavia_SS_300_Bormio_side_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Passo_di_Gavia_SS_300_Bormio_side_1.jpg",
+    "caption": "The Gavia road on the Bormio side.",
+    "alt": "The Gavia road on the Bormio side.",
+    "author": "kallerna",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   },
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Mortirolo_2019_a.jpg/1280px-Mortirolo_2019_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Mortirolo_2019_a.jpg",
+    "caption": "The top of the Mortirolo.",
+    "alt": "The top of the Mortirolo.",
+    "author": "Jesper Bøtker Mortensen",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   },
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Bagni_vecchi_di_Bormio.JPG/1280px-Bagni_vecchi_di_Bormio.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Bagni_vecchi_di_Bormio.JPG",
+    "caption": "Bormio's old thermal baths, the Bagni Vecchi.",
+    "alt": "Bormio's old thermal baths, the Bagni Vecchi.",
+    "author": "Salento81",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
+  ]
+ },
+ "morzine": {
+  "draft": true,
+  "riding": "The Portes du Soleil links about a dozen resorts across the French–Swiss border, and in summer one lift pass gets you and your bike up all of them. Morzine is the busiest base. The riding is mostly downhill, and it has a reputation: steep, rooty and dusty, with braking bumps worn in by thousands of riders. It's lift-served, but rarely easy.\n\nEach bike park has its own character. **Pleney**, above Morzine, has the old-school steep tracks. **Les Gets** is flowier, with jump lines and a track that hosted the World Championships in 2004 and 2022. **Châtel** is known for big jumps and slopestyle features, and **Champéry**, on the Swiss side, has one of the steepest World Cup downhill courses. You can also ride a loop through the resorts using the lifts, crossing the border and back in a day. Each June the Pass'Portes event fills that loop with thousands of riders.\n\nRoad riders get the **Col de Joux Plane**, a Tour de France climb, from the edge of town.",
+  "beyond": "On rest days, the **Lac de Montriond**, a short ride from town, is good for a swim, and Lake Geneva is about an hour away. Paragliding off the local peaks is popular.\n\nThe food is Savoyard and built for big days: *tartiflette* with the local reblochon cheese, raclette and fondue. Abondance cheese comes from the next valley. Morzine has a big British summer chalet scene, so English is spoken everywhere.",
+  "know": "The lifts run from about mid-June to mid-September. Full-face helmets and body armour are normal here, not over-the-top. When it rains, the roots get very slippery; when it's dry, the dust and braking bumps take over.\n\nBook bikes and chalets early for July and August. Many chalets sell packages that include uplift, a mechanic and guiding. Carry ID if you'll ride into Switzerland.",
+  "sources": [
+   {
+    "label": "Portes du Soleil",
+    "url": "https://en.portesdusoleil.com/"
+   }
+  ],
+  "photos": [
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Vers_les_Gets_et_Morzine_sous_Col_de_Joux-Plane_%28juillet_2023%29.JPG/1280px-Vers_les_Gets_et_Morzine_sous_Col_de_Joux-Plane_%28juillet_2023%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Vers_les_Gets_et_Morzine_sous_Col_de_Joux-Plane_(juillet_2023).JPG",
+    "caption": "Looking towards Les Gets and Morzine from below the Col de Joux Plane.",
+    "alt": "Looking towards Les Gets and Morzine from below the Col de Joux Plane.",
+    "author": "Florian Pépellin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   },
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/2004_UCI_Mountain_Bike_and_Trials_World_Championships_-_Les_Gets_-_DH3.jpg/1280px-2004_UCI_Mountain_Bike_and_Trials_World_Championships_-_Les_Gets_-_DH3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:2004_UCI_Mountain_Bike_and_Trials_World_Championships_-_Les_Gets_-_DH3.jpg",
+    "caption": "Downhill at the 2004 World Championships in Les Gets.",
+    "alt": "Downhill at the 2004 World Championships in Les Gets.",
+    "author": "Nsheard",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   },
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Lac_de_Montriond_06.jpg/1280px-Lac_de_Montriond_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Lac_de_Montriond_06.jpg",
+    "caption": "Lac de Montriond, a rest-day swim just outside Morzine.",
+    "alt": "Lac de Montriond, a rest-day swim just outside Morzine.",
+    "author": "Krzysztof Golik",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   },
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/2011_UCI_Mountain_Bike_and_Trials_World_Championships_-_18.JPG/1280px-2011_UCI_Mountain_Bike_and_Trials_World_Championships_-_18.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:2011_UCI_Mountain_Bike_and_Trials_World_Championships_-_18.JPG",
+    "caption": "The 2011 World Championships at Champéry, on the Swiss side.",
+    "alt": "The 2011 World Championships at Champéry, on the Swiss side.",
+    "author": "Shev123",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
+  ]
+ },
+ "greatdivide": {
+  "draft": true,
+  "riding": "The Great Divide Mountain Bike Route is the classic North American bikepacking route. It follows the Rocky Mountains from Canada to the Mexican border, crossing the Continental Divide about 30 times, mostly on gravel forest roads and dirt tracks; only about a third is paved. The traditional start is **Banff**, which is where the Tour Divide race leaves from; Adventure Cycling's official route now begins further north in **Jasper**, which makes it about 4,970 km.\n\nIt's less about technical riding than about scale. The route runs through Montana's forested mountains, past the Tetons in Wyoming, across the empty **Great Divide Basin**, then over Colorado's high passes, the highest at about 3,630 m, before ending in the New Mexico desert at Antelope Wells. Most riders take six to ten weeks. The fastest Tour Divide racers ride it unsupported in about two.",
+  "beyond": "Much of the pleasure is the small towns that come every day or two: ranch towns, mining towns and hot springs along the way. **Pie Town**, New Mexico, lives up to its name, and its *Toaster House* is a free hostel for riders and hikers. The start, in the Canadian Rockies' national parks, is reason enough to arrive a few days early.",
+  "know": "This is a big expedition. Grizzly bears live along the northern half, in Canada, Montana and Wyoming, so carry bear spray and store food properly. Water needs real planning in the Great Divide Basin and in New Mexico, where stretches of 100 km or more have none. Summer afternoon storms on the high passes bring lightning and hail.\n\nMost riders start southbound in mid-June, when the northern snow has cleared, and reach New Mexico before the autumn cold. Antelope Wells is a tiny border crossing with nothing around it, so arrange a ride out in advance.",
+  "sources": [
+   {
+    "label": "Adventure Cycling Association: Great Divide Mountain Bike Route",
+    "url": "https://www.adventurecycling.org/routes/great-divide-mountain-bike-route/"
+   }
+  ],
+  "photos": [
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Bikepacking_through_Great_Divide_Basin%2C_Wyoming%2C_USA.jpg/1280px-Bikepacking_through_Great_Divide_Basin%2C_Wyoming%2C_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Bikepacking_through_Great_Divide_Basin,_Wyoming,_USA.jpg",
+    "caption": "Bikepacking through Wyoming's Great Divide Basin.",
+    "alt": "Bikepacking through Wyoming's Great Divide Basin.",
+    "author": "Mats Skölving",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+   },
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Lightning_and_hail_storm_in_the_Great_Divide_Basin.jpg/1280px-Lightning_and_hail_storm_in_the_Great_Divide_Basin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Lightning_and_hail_storm_in_the_Great_Divide_Basin.jpg",
+    "caption": "A summer storm over the Great Divide Basin, where there's nowhere to shelter.",
+    "alt": "A summer storm over the Great Divide Basin, where there's nowhere to shelter.",
+    "author": "Ericshawwhite",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+   },
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Pie_Town%2C_New_Mexico_-_PIE-O-NEER_Cafe%2C_January_2016_01.jpg/1280px-Pie_Town%2C_New_Mexico_-_PIE-O-NEER_Cafe%2C_January_2016_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Pie_Town,_New_Mexico_-_PIE-O-NEER_Cafe,_January_2016_01.jpg",
+    "caption": "The Pie-O-Neer café in Pie Town, New Mexico.",
+    "alt": "The Pie-O-Neer café in Pie Town, New Mexico.",
+    "author": "Larry Lamsa",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+   }
+  ]
+ },
+ "capewinelands": {
+  "draft": true,
+  "riding": "Stellenbosch puts mountain biking in wine country. Trail networks wind through vineyards, orchards and *fynbos*, the Cape's unique shrubland, with the mountains of the Boland rising behind. Many are on wine farms, so a ride can end with a tasting.\n\n**Jonkershoek**, a nature reserve in the valley just east of town, has the steep, technical trails: long climbs and rocky descents under the Twin Peaks. Lower down there are flowing networks for every level, and the Cape Epic, an eight-day stage race held each March, often uses these hills. Closer to Cape Town, **Tokai** forest has trails on the city's doorstep.\n\nRoad riders have the passes: Helshoogte over to Franschhoek, and the Franschhoek Pass beyond. Each March the Cape Town Cycle Tour, the world's largest timed cycle race, loops around the Cape Peninsula.",
+  "beyond": "Stellenbosch, founded in 1679, is one of South Africa's oldest towns, with white Cape Dutch houses and streets lined with oaks; locals call it the City of Oaks. Hundreds of wine estates surround it, and Franschhoek, over the pass, is known for its restaurants.\n\nCape Town is under an hour away: Table Mountain, the beaches, Cape Point, and the penguins at Boulders Beach.",
+  "know": "Most trail networks need a day permit, sold online or at the farm gate; the Stellenbosch Trail Fund covers several of them. Summer (December to February) is hot, and the south-easter wind can blow hard for days; winter is the rainy season. Spring and autumn are the sweet spots.\n\nAs anywhere in the Cape, don't leave valuables in the car, and follow local advice on which trails to ride in a group.",
+  "sources": [
+   {
+    "label": "CapeNature: Jonkershoek Nature Reserve",
+    "url": "https://www.capenature.co.za/reserves/jonkershoek-nature-reserve"
+   },
+   {
+    "label": "Stellenbosch Trail Fund",
+    "url": "https://www.stellenboschtrailfund.co.za/"
+   }
+  ],
+  "photos": [
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Jonkershoek.jpg/1280px-Jonkershoek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Jonkershoek.jpg",
+    "caption": "The Jonkershoek valley just outside Stellenbosch.",
+    "alt": "The Jonkershoek valley just outside Stellenbosch.",
+    "author": "Orrling",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+   },
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Dorp_Street_cyclists_2.jpg/1280px-Dorp_Street_cyclists_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Dorp_Street_cyclists_2.jpg",
+    "caption": "Cyclists on Dorp Street, Stellenbosch.",
+    "alt": "Cyclists on Dorp Street, Stellenbosch.",
+    "author": "HelenOnline",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+   },
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Oak_trees%2C_Dorp_Street%2C_Stellenbosch.jpg/1280px-Oak_trees%2C_Dorp_Street%2C_Stellenbosch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Oak_trees,_Dorp_Street,_Stellenbosch.jpg",
+    "caption": "The oak-lined streets that give Stellenbosch its nickname.",
+    "alt": "The oak-lined streets that give Stellenbosch its nickname.",
+    "author": "Steven Morrow",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+   },
+   {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Stellenbosch_Mountain_-_Coetzenburg.jpg/1280px-Stellenbosch_Mountain_-_Coetzenburg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Stellenbosch_Mountain_-_Coetzenburg.jpg",
+    "caption": "Vineyards and orchards below Stellenbosch Mountain.",
+    "alt": "Vineyards and orchards below Stellenbosch Mountain.",
+    "author": "Gustav Ludick",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
+  ]
+ }
+}
