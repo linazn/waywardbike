@@ -9,6 +9,10 @@
   "af": "Africa & Middle East"
  },
  "zones": {
+  "alaska": {
+   "name": "Alaska & Yukon",
+   "macro": "na"
+  },
   "bc": {
    "name": "Western Canada",
    "macro": "na"
@@ -74,7 +78,7 @@
    "macro": "eu"
   },
   "iberia": {
-   "name": "Spain & Portugal",
+   "name": "Spain, Portugal & Andorra",
    "macro": "eu"
   },
   "atlantic": {
@@ -6927,6 +6931,808 @@
    "weather": "Summer is hot and dry, with fire closures.",
    "hire": "byo",
    "hireNote": "Set up for bikepacking",
+   "kind": "route",
+   "support": "bikepacking"
+  },
+  {
+   "id": "fernie",
+   "name": "Fernie",
+   "category": "mtb",
+   "country": "Canada",
+   "region": "British Columbia",
+   "zone": "bc",
+   "lat": 49.504,
+   "lon": -115.063,
+   "elev": [
+    1000,
+    2100
+   ],
+   "refElev": 1100,
+   "season": [
+    6,
+    10
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Cranbrook ~1 h; Calgary ~3 h",
+   "terrain": "Steep, rooty forest singletrack and a lift-served bike park; intermediate to expert",
+   "pitch": "A Rockies town ringed by trails, with long forest climbs and descents on Mount Fernie and lift-served downhill at Fernie Alpine Resort.",
+   "children": [
+    {
+     "name": "Fernie Alpine Resort",
+     "kind": "park",
+     "lat": 49.462,
+     "lon": -115.087,
+     "note": "Lift-served park with ~35 trails, green to double black; late June to Labour Day"
+    },
+    {
+     "name": "Mount Fernie",
+     "kind": "area",
+     "lat": 49.49,
+     "lon": -115.11,
+     "note": "Big network of forest singletrack from town"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Several shops in town and at the resort rent bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ]
+   }
+  },
+  {
+   "id": "rossland",
+   "name": "Rossland",
+   "category": "mtb",
+   "country": "Canada",
+   "region": "British Columbia",
+   "zone": "bc",
+   "lat": 49.078,
+   "lon": -117.8,
+   "elev": [
+    1000,
+    2200
+   ],
+   "refElev": 1050,
+   "season": [
+    6,
+    10
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 1,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Castlegar ~30 min; Spokane ~2.5 h",
+   "terrain": "Long, natural alpine singletrack and a new lift-served park; intermediate to expert",
+   "pitch": "A small mountain town and old gold-mining camp with big natural singletrack, including the Seven Summits ridge, an IMBA Epic, and a lift-served bike park at Red Mountain that opened in 2025.",
+   "children": [
+    {
+     "name": "Seven Summits Trail",
+     "kind": "area",
+     "lat": 49.17,
+     "lon": -117.79,
+     "note": "~30 km of ridge singletrack, ridden north to south; best July to early October"
+    },
+    {
+     "name": "RED Bike Park",
+     "kind": "park",
+     "lat": 49.105,
+     "lon": -117.83,
+     "note": "Lift-served park at Red Mountain, new in 2025"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "A couple of shops in town, and a rental shop at the base of Red Mountain",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ]
+   }
+  },
+  {
+   "id": "revelstoke",
+   "name": "Revelstoke",
+   "category": "mtb",
+   "country": "Canada",
+   "region": "British Columbia",
+   "zone": "bc",
+   "lat": 50.998,
+   "lon": -118.196,
+   "elev": [
+    450,
+    2225
+   ],
+   "refElev": 500,
+   "season": [
+    6,
+    10
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Kelowna ~2.5 h; Calgary ~4.5 h",
+   "terrain": "Gondola-served alpine flow and tech, plus town trail networks; intermediate to advanced",
+   "pitch": "A railway town in the Selkirks with a growing gondola-served bike park on Mount Mackenzie, including the long Fifty-six Twenty descent, and forest trail networks just out of town.",
+   "children": [
+    {
+     "name": "Revelstoke Mountain Resort",
+     "kind": "park",
+     "lat": 50.958,
+     "lon": -118.165,
+     "note": "Gondola-served flow, tech and jump trails; mostly intermediate and up"
+    },
+    {
+     "name": "Mount Macpherson",
+     "kind": "area",
+     "lat": 50.95,
+     "lon": -118.2,
+     "note": "Forest singletrack just south of town"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Shops in town and at the resort rent bike-park and trail bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "cumberland",
+   "name": "Cumberland",
+   "category": "mtb",
+   "country": "Canada",
+   "region": "Vancouver Island, British Columbia",
+   "zone": "bc",
+   "lat": 49.618,
+   "lon": -125.03,
+   "elev": [
+    100,
+    800
+   ],
+   "refElev": 200,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    5,
+    6,
+    9,
+    10
+   ],
+   "crowds": 3,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Comox ~25 min; Nanaimo ~1 h",
+   "terrain": "Loamy, rooty forest singletrack; all levels",
+   "pitch": "An old coal-mining village on Vancouver Island with more than 200 km of hand-built forest singletrack starting at the edge of town, one of the busiest trail networks in North America.",
+   "weather": "Rideable most of the year, but wet from November to March.",
+   "children": [
+    {
+     "name": "Cumberland Community Forest",
+     "kind": "area",
+     "lat": 49.61,
+     "lon": -125.05,
+     "note": "200+ km of trails from the village"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "A couple of shops in the village rent trail bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "vallnord",
+   "name": "Vallnord (Pal Arinsal)",
+   "category": "mtb",
+   "country": "Andorra",
+   "region": "La Massana",
+   "zone": "iberia",
+   "lat": 42.545,
+   "lon": 1.52,
+   "elev": [
+    1300,
+    2350
+   ],
+   "refElev": 1600,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Andorra–La Seu d'Urgell ~30 min; Barcelona or Toulouse ~3 h",
+   "terrain": "Lift-served downhill, enduro and flow on ski slopes; all levels",
+   "pitch": "A lift-served bike park in the Pyrenees that has hosted World Cups and the 2015 World Championships, with 60+ km of trails and big mountain views.",
+   "children": [
+    {
+     "name": "Pal Arinsal Bike Park",
+     "kind": "park",
+     "lat": 42.548,
+     "lon": 1.49,
+     "note": "Chairlifts to 2,350 m; downhill, enduro and a beginner zone"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Bike-park and e-bikes for hire at the resort and in La Massana",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "nelson",
+   "name": "Nelson",
+   "category": "mtb",
+   "country": "New Zealand",
+   "region": "Nelson Tasman",
+   "zone": "nz",
+   "lat": -41.271,
+   "lon": 173.284,
+   "elev": [
+    0,
+    900
+   ],
+   "refElev": 100,
+   "season": [
+    10,
+    5
+   ],
+   "best": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Nelson airport ~15 min",
+   "terrain": "Forest singletrack from town and shuttled backcountry trails; all levels",
+   "pitch": "A sunny small city with trails starting from the centre, the Coppermine Trail over the hills behind it, and the shuttled Wairoa Gorge an hour away.",
+   "children": [
+    {
+     "name": "Codgers",
+     "kind": "area",
+     "lat": -41.29,
+     "lon": 173.28,
+     "note": "Loops minutes from the city centre"
+    },
+    {
+     "name": "Coppermine Trail",
+     "kind": "area",
+     "lat": -41.3,
+     "lon": 173.36,
+     "note": "~40 km Great Ride circuit over Coppermine Saddle; grade 4"
+    },
+    {
+     "name": "Wairoa Gorge",
+     "kind": "park",
+     "lat": -41.48,
+     "lon": 173.1,
+     "note": "~1 h: 70+ km of hand-built singletrack with 4WD shuttles"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Several shops rent trail and e-bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ]
+   }
+  },
+  {
+   "id": "oakridge",
+   "name": "Oakridge",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Oregon",
+   "zone": "usw",
+   "lat": 43.747,
+   "lon": -122.461,
+   "elev": [
+    400,
+    1800
+   ],
+   "refElev": 400,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    6,
+    7,
+    9,
+    10
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Eugene ~45 min",
+   "terrain": "Long, loamy shuttled descents through old-growth forest; intermediate to advanced",
+   "pitch": "A small timber town in the Cascades and an IMBA gold-level Ride Center, with long shuttled descents through old-growth forest like the Alpine Trail.",
+   "weather": "Wildfire smoke and closures are possible in late summer.",
+   "children": [
+    {
+     "name": "Alpine Trail",
+     "kind": "area",
+     "lat": 43.77,
+     "lon": -122.42,
+     "note": "Shuttle up, then ~1,400 m of descent through big trees"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "Local outfits rent bikes and run daily shuttles; more choice in Eugene",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "duluth",
+   "name": "Duluth",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Minnesota",
+   "zone": "usc",
+   "lat": 46.787,
+   "lon": -92.1,
+   "elev": [
+    180,
+    400
+   ],
+   "refElev": 250,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    6,
+    7,
+    9
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Duluth ~15 min; Minneapolis ~2.5 h",
+   "terrain": "Rocky, rooty singletrack and a lift-served park, inside the city; all levels",
+   "pitch": "A port city on Lake Superior and an IMBA gold-level Ride Center, with the Duluth Traverse linking trail parks right across town and lift-served riding at Spirit Mountain.",
+   "weather": "Snow lingers into May; autumn colour peaks in late September.",
+   "children": [
+    {
+     "name": "Duluth Traverse",
+     "kind": "area",
+     "lat": 46.76,
+     "lon": -92.15,
+     "note": "~65 km of linked singletrack end to end across the city"
+    },
+    {
+     "name": "Spirit Mountain",
+     "kind": "park",
+     "lat": 46.72,
+     "lon": -92.22,
+     "note": "Lift-served downhill and flow"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "A few shops rent trail bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ]
+   }
+  },
+  {
+   "id": "thredbo",
+   "name": "Thredbo",
+   "category": "mtb",
+   "country": "Australia",
+   "region": "New South Wales",
+   "zone": "aus",
+   "lat": -36.505,
+   "lon": 148.307,
+   "elev": [
+    1370,
+    1950
+   ],
+   "refElev": 1400,
+   "season": [
+    11,
+    4
+   ],
+   "best": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Canberra ~2.5 h; Sydney ~6 h",
+   "terrain": "Lift-served downhill, flow and long all-mountain trails; all levels",
+   "pitch": "Australia's highest lift-served riding, under Mount Kosciuszko: the Cannonball downhill, the beginner-friendly Kosciuszko Flow and the long All-Mountain Trail, all from the chairlift.",
+   "children": [
+    {
+     "name": "Thredbo MTB Park",
+     "kind": "park",
+     "lat": -36.505,
+     "lon": 148.3,
+     "note": "Chairlift-served Cannonball, Flow and All-Mountain trails"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Bike-park and trail bikes for hire in the village",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "dalton",
+   "name": "Dalton Highway (Haul Road)",
+   "category": "gravel",
+   "country": "USA",
+   "region": "Fairbanks to Deadhorse, Alaska",
+   "zone": "alaska",
+   "lat": 67.5,
+   "lon": -150.0,
+   "elev": [
+    100,
+    1450
+   ],
+   "refElev": 600,
+   "season": [
+    6,
+    8
+   ],
+   "best": [
+    6,
+    7,
+    8
+   ],
+   "crowds": 1,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Fairbanks (start), Deadhorse on the Arctic Ocean (end; fly out)",
+   "terrain": "Mostly gravel truck road with long hills and one big pass; intermediate, very remote",
+   "pitch": "The truck road to the Arctic oil fields: about 800 km from Fairbanks across the Yukon River and the Arctic Circle, over the Brooks Range at Atigun Pass and out across the tundra of the North Slope. Services are very few and far apart.",
+   "stats": {
+    "km": 800,
+    "days": "8–12",
+    "climb": 10000
+   },
+   "weather": "Mosquitoes in June and July; snow is possible at Atigun Pass in any month, and trucks throw dust and stones.",
+   "hire": "byo",
+   "hireNote": "There's nothing along the road; bring everything",
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "dempster",
+   "name": "Dempster Highway",
+   "category": "gravel",
+   "country": "Canada",
+   "region": "Dawson City to Inuvik, Yukon and NWT",
+   "zone": "alaska",
+   "lat": 66.0,
+   "lon": -137.0,
+   "elev": [
+    0,
+    1300
+   ],
+   "refElev": 600,
+   "season": [
+    6,
+    8
+   ],
+   "best": [
+    6,
+    7,
+    8
+   ],
+   "crowds": 1,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Dawson City (start; Whitehorse ~6 h), Inuvik (end), or on to Tuktoyaktuk",
+   "terrain": "Gravel highway across tundra and two mountain ranges; intermediate, very remote",
+   "pitch": "Canada's road to the Arctic: gravel nearly all the way from near Dawson City through Tombstone park, across the Arctic Circle and the Richardson Mountains to Inuvik, with a newer road on to the Arctic Ocean at Tuktoyaktuk. No services for the first 365 km.",
+   "stats": {
+    "km": 740,
+    "days": "8–12",
+    "climb": 6000
+   },
+   "weather": "Mud after rain, mosquitoes in midsummer, and grizzlies along the road.",
+   "hire": "byo",
+   "hireNote": "There's nothing along the road; bring everything",
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "silkroad",
+   "name": "Silk Road Mountain Race route",
+   "category": "mtb",
+   "country": "Kyrgyzstan",
+   "region": "Tian Shan mountains",
+   "zone": "centralasia",
+   "lat": 41.5,
+   "lon": 75.0,
+   "elev": [
+    700,
+    4000
+   ],
+   "refElev": 3000,
+   "season": [
+    7,
+    9
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 1,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Bishkek; start and finish change each year",
+   "terrain": "Dirt roads, jeep tracks and hike-a-bike over high passes; very advanced",
+   "pitch": "A roughly 1,900 km unsupported route through Kyrgyzstan's Tian Shan, over high passes, past yurt camps and alpine lakes, with about 80% off pavement. The route changes each year, and you can ride it outside the race.",
+   "stats": {
+    "km": 1900,
+    "days": "14–25",
+    "climb": 30000
+   },
+   "weather": "Cold nights at altitude, river crossings and few places to resupply.",
+   "hire": "byo",
+   "hireNote": "Set up for rough, remote bikepacking",
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "karakoram",
+   "name": "Karakoram Highway",
+   "category": "road",
+   "country": "Pakistan",
+   "region": "Islamabad to the Khunjerab Pass",
+   "zone": "himalaya",
+   "lat": 35.5,
+   "lon": 74.5,
+   "elev": [
+    500,
+    4700
+   ],
+   "refElev": 2000,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9,
+    10
+   ],
+   "crowds": 1,
+   "cost": 2,
+   "guide": "Recommended",
+   "airport": "Islamabad (start); Gilgit has flights back",
+   "terrain": "Paved mountain highway with landslide sections; advanced and remote",
+   "pitch": "One of the world's great mountain roads, up the Indus and Hunza valleys under Nanga Parbat and Rakaposhi, through Hunza's orchards to the Khunjerab Pass on the Chinese border at about 4,700 m.",
+   "stats": {
+    "km": 870,
+    "days": "12–18",
+    "climb": 9000
+   },
+   "weather": "Check current security advice before going; landslides can close the road.",
+   "hire": "byo",
+   "hireNote": "Tour operators supply bikes on supported trips; otherwise bring your own",
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "annapurna",
+   "name": "Annapurna Circuit",
+   "category": "mtb",
+   "country": "Nepal",
+   "region": "Besisahar to Pokhara via the Thorong La",
+   "zone": "himalaya",
+   "lat": 28.65,
+   "lon": 84.0,
+   "elev": [
+    800,
+    5416
+   ],
+   "refElev": 3000,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    10,
+    11
+   ],
+   "crowds": 3,
+   "cost": 1,
+   "guide": "Recommended",
+   "airport": "Kathmandu ~6 h by road to Besisahar; Pokhara at the end",
+   "terrain": "Jeep roads and singletrack with a long carry over a 5,416 m pass; advanced",
+   "pitch": "Ride around the Annapurna massif on jeep roads and old trekking trails, pushing and carrying the bike over the Thorong La at 5,416 m, then a long, technical descent to Muktinath and down the Kali Gandaki gorge. Teahouses all the way.",
+   "stats": {
+    "km": 390,
+    "days": "12–14",
+    "climb": 9000
+   },
+   "weather": "The monsoon runs June to September, and the pass can be snowbound in winter.",
+   "hire": "limited",
+   "hireNote": "Mountain bikes for hire in Kathmandu and Pokhara, and in Jomsom and Muktinath for the descent",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "touraotearoa",
+   "name": "Tour Aotearoa",
+   "category": "gravel",
+   "country": "New Zealand",
+   "region": "Cape Reinga to Bluff",
+   "zone": "nz",
+   "lat": -40.5,
+   "lon": 175.0,
+   "elev": [
+    0,
+    1000
+   ],
+   "refElev": 300,
+   "season": [
+    10,
+    4
+   ],
+   "best": [
+    11,
+    2,
+    3
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Auckland ~6 h to Cape Reinga (start); Invercargill near Bluff (end)",
+   "terrain": "Gravel trails, quiet roads, a beach and boat crossings; intermediate, long",
+   "pitch": "The length of New Zealand on its Great Rides and back roads, from Cape Reinga to Bluff, including a ride along 90 Mile Beach at low tide, forest trails and boat crossings.",
+   "stats": {
+    "km": 3000,
+    "days": "25–35",
+    "climb": 30000
+   },
+   "hire": "byo",
+   "hireNote": "Set up for long-distance bikepacking",
+   "kind": "route",
+   "support": "bikepacking"
+  },
+  {
+   "id": "transam",
+   "name": "TransAmerica Trail",
+   "category": "road",
+   "country": "USA",
+   "region": "Astoria, Oregon to Yorktown, Virginia",
+   "zone": "usc",
+   "lat": 39.0,
+   "lon": -98.0,
+   "elev": [
+    0,
+    3520
+   ],
+   "refElev": 1000,
+   "season": [
+    5,
+    9
+   ],
+   "best": [
+    6,
+    9
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Astoria (west end; Portland ~2 h), Yorktown (east end; Norfolk ~45 min)",
+   "terrain": "Rural two-lane roads across ten states and the Rockies; intermediate, very long",
+   "pitch": "America's classic coast-to-coast ride, mapped for the 1976 bicentennial: about 6,800 km through the Cascades, Yellowstone, the Rockies, the plains, the Ozarks and the Appalachians.",
+   "stats": {
+    "km": 6770,
+    "days": "60–90",
+    "climb": 66000
+   },
+   "hire": "byo",
+   "hireNote": "No one-way hire",
+   "kind": "route",
+   "support": "bikepacking"
+  },
+  {
+   "id": "oldghostroad",
+   "name": "Old Ghost Road",
+   "category": "mtb",
+   "country": "New Zealand",
+   "region": "Lyell to Seddonville, West Coast",
+   "zone": "nz",
+   "lat": -41.75,
+   "lon": 172.1,
+   "elev": [
+    100,
+    1340
+   ],
+   "refElev": 700,
+   "season": [
+    10,
+    4
+   ],
+   "best": [
+    11,
+    12,
+    2,
+    3,
+    4
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Westport ~45 min to Seddonville; Nelson ~3 h to Lyell",
+   "terrain": "Hand-built backcountry singletrack; advanced (grade 4)",
+   "pitch": "A gold miners' road that was never finished, now singletrack across the mountains of the West Coast, with booked huts in spectacular spots like Ghost Lake.",
+   "stats": {
+    "km": 85,
+    "days": "2–4",
+    "climb": 2500
+   },
+   "weather": "Snow is possible on the tops; sandflies lower down.",
+   "hire": "limited",
+   "hireNote": "Shuttle operators at both ends can arrange bikes; most riders bring their own",
    "kind": "route",
    "support": "bikepacking"
   }
