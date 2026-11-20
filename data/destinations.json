@@ -573,8 +573,8 @@
      "note": "Lift-served downhill above the village"
     }
    ],
-   "hire": "limited",
-   "hireNote": "A couple of shops by the trailhead; book ahead in summer",
+   "hire": "easy",
+   "hireNote": "East Burke Sports and the Kingdom Trails shop rent bikes by the trails; book ahead in summer",
    "kind": "base",
    "offers": {
     "mtb": [
@@ -1033,7 +1033,7 @@
     }
    ],
    "hire": "easy",
-   "hireNote": "Mostly through the shuttle and guiding companies",
+   "hireNote": "Several operators rent enduro and e-bikes, often with shuttle tours",
    "kind": "base",
    "offers": {
     "mtb": [
@@ -1141,7 +1141,7 @@
     }
    ],
    "hire": "limited",
-   "hireNote": "A few shops and guiding outfits in Aínsa",
+   "hireNote": "Mostly through guiding and shuttle outfits; more shops further east in Benasque and Castejón de Sos",
    "kind": "base",
    "offers": {
     "mtb": [
@@ -1374,8 +1374,8 @@
      "note": "Forest trails on Cape Town's doorstep"
     }
    ],
-   "hire": "limited",
-   "hireNote": "A few shops in Stellenbosch, more choice in Cape Town",
+   "hire": "easy",
+   "hireNote": "Plenty of shops, including a Specialized centre with a full rental fleet",
    "kind": "base",
    "offers": {
     "mtb": [
@@ -2045,8 +2045,8 @@
      "note": "Shorter, steady classic cols"
     }
    ],
-   "hire": "limited",
-   "hireNote": "A few shops in Luz and Argelès; book ahead in summer",
+   "hire": "easy",
+   "hireNote": "A few shops in Luz rent carbon road bikes and e-bikes; book ahead in summer",
    "kind": "base",
    "offers": {
     "road": [
@@ -2115,8 +2115,8 @@
      "note": "Cobbled wall to a chapel; up to ~20%"
     }
    ],
-   "hire": "limited",
-   "hireNote": "A few hire options, including at the Tour of Flanders centre",
+   "hire": "easy",
+   "hireNote": "Good road bikes at the Tour of Flanders Centre and a couple of other shops",
    "kind": "base",
    "offers": {
     "road": [
@@ -2178,7 +2178,7 @@
     }
    ],
    "hire": "limited",
-   "hireNote": "Few road-bike hire options; most riders bring their own",
+   "hireNote": "Hire is mostly set up for the Paris–Roubaix Challenge weekend; otherwise most riders bring their own",
    "kind": "base",
    "offers": {
     "road": [
@@ -2301,8 +2301,8 @@
      "note": "Historic cobbled hairpins to 2,106 m"
     }
    ],
-   "hire": "limited",
-   "hireNote": "A few shops in Andermatt and nearby towns",
+   "hire": "easy",
+   "hireNote": "A BMC test centre in Andermatt rents premium road bikes; a few other shops too",
    "kind": "base",
    "offers": {
     "road": [
@@ -2357,7 +2357,7 @@
     }
    ],
    "hire": "limited",
-   "hireNote": "A few shops in Oviedo; less choice than the Mediterranean bases",
+   "hireNote": "A few shops in Oviedo; a car helps to reach the climbs",
    "kind": "base",
    "offers": {
     "road": [
@@ -2407,7 +2407,7 @@
     }
    ],
    "hire": "limited",
-   "hireNote": "Giant stores rent road bikes, some with one-way returns",
+   "hireNote": "Giant by Hualien station rents road bikes; book ahead and check sizes",
    "kind": "base",
    "offers": {
     "road": [
@@ -2513,7 +2513,7 @@
     }
    ],
    "hire": "limited",
-   "hireNote": "A couple of shops in Pāʻia and Kahului rent good road bikes",
+   "hireNote": "Road-bike hire is scarce; Pāʻia shops mostly rent mountain bikes for the downhill tours",
    "kind": "base",
    "offers": {
     "road": [
@@ -2668,7 +2668,7 @@
     }
    ],
    "hire": "limited",
-   "hireNote": "Hire a road bike near the start; one-way returns usually need a tour company",
+   "hireNote": "No one-way hire: rent near the start and arrange the return, or go with a tour company",
    "kind": "route",
    "support": "hotel"
   },
@@ -2843,7 +2843,7 @@
    "terrain": "Rough, rocky prairie gravel; long and exposed",
    "pitch": "The tallgrass prairie of the Flint Hills is home to Unbound Gravel, the biggest race in gravel, held each spring on sharp flint roads around Emporia.",
    "hire": "limited",
-   "hireNote": "Few hire options; most riders bring their own",
+   "hireNote": "A couple of shops in Emporia rent bikes; call ahead, especially around Unbound",
    "kind": "base",
    "offers": {
     "gravel": [
@@ -3216,7 +3216,7 @@
    },
    "weather": "Summer is far too hot; winter can bring rain and snow on the high plateau.",
    "hire": "limited",
-   "hireNote": "Hire through local operators; self-supported riders usually bring their own",
+   "hireNote": "Hire mainly through tour operators; self-supported riders bring their own",
    "kind": "route",
    "support": "bikepacking"
   },
@@ -3296,7 +3296,7 @@
    },
    "weather": "Dry seasons are June–September and December–February.",
    "hire": "limited",
-   "hireNote": "Hire through operators in Kigali and Rubavu",
+   "hireNote": "A couple of outfits in Rubavu and Kigali hire mountain bikes",
    "kind": "route",
    "support": "bikepacking"
   }

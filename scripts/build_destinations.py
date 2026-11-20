@@ -430,7 +430,7 @@ ROUTES = {
   "atlas": "remote", "alps2ocean": "hotel", "jordanbiketrail": "bikepacking", "bajadivide": "remote", "congonile": "bikepacking",
 }
 # Bike hire, deliberately coarse so it stays true for years: easy | limited | byo (bring your own), plus a short note.
-# "# check" marks the ratings that are least certain.
+# The less obvious ratings were checked against shop and tourism listings in Nov 2026.
 HIRE = {
   "moab": ("easy", "Lots of shops with high-end full-suspension bikes; book ahead in spring and autumn"),
   "whistler": ("easy", "Bike-park and trail bikes all over the village"),
@@ -439,7 +439,7 @@ HIRE = {
   "bentonville": ("easy", "Plenty of shops, with trail, gravel and e-bikes"),
   "fruita": ("easy", "A few good shops in town renting trail bikes"),
   "crestedbutte": ("easy", "Shops in town and at the resort bike park"),
-  "kingdomtrails": ("limited", "A couple of shops by the trailhead; book ahead in summer"),  # check
+  "kingdomtrails": ("easy", "East Burke Sports and the Kingdom Trails shop rent bikes by the trails; book ahead in summer"),
   "bend": ("easy", "Plenty of shops renting trail and gravel bikes"),
   "pisgah": ("limited", "A few shops in Brevard; book ahead"),
   "finale": ("easy", "Dozens of shops and shuttle companies with high-end bikes and e-bikes"),
@@ -447,13 +447,13 @@ HIRE = {
   "lenzerheide": ("easy", "Bike-park, trail and e-bikes for hire in the village"),
   "saalbach": ("easy", "Bike-park, trail and e-bikes for hire in every village"),
   "garda": ("easy", "Many shops in Riva and Torbole, with mountain, road and e-bikes"),
-  "madeira": ("easy", "Mostly through the shuttle and guiding companies"),  # check
+  "madeira": ("easy", "Several operators rent enduro and e-bikes, often with shuttle tours"),
   "tweed": ("limited", "A couple of shops at Glentress and in Peebles"),
-  "ainsa": ("limited", "A few shops and guiding outfits in Aínsa"),  # check
+  "ainsa": ("limited", "Mostly through guiding and shuttle outfits; more shops further east in Benasque and Castejón de Sos"),
   "rotorua": ("easy", "Several shops right by the Whakarewarewa forest"),
   "queenstown": ("easy", "Plenty of shops, with bike-park, trail and e-bikes"),
   "derby": ("easy", "Several shops and shuttle companies in this small town"),
-  "capewinelands": ("limited", "A few shops in Stellenbosch, more choice in Cape Town"),  # check
+  "capewinelands": ("easy", "Plenty of shops, including a Specialized centre with a full rental fleet"),
   "uppermustang": ("byo", "Bikes hired in Pokhara or Kathmandu are basic; most riders bring their own or go with a tour operator"),
   "coloradotrail": ("byo", "Set up for bikepacking, with bags and a light load"),
   "kokopelli": ("limited", "Bikes can be hired in Fruita or Moab, but most riders bring their own"),
@@ -465,22 +465,22 @@ HIRE = {
   "stelvio": ("easy", "Several shops in Bormio renting road and e-bikes"),
   "oisans": ("easy", "Several shops in Bourg d'Oisans renting road bikes"),
   "ventoux": ("easy", "Shops in Bédoin and Malaucène rent road and e-bikes"),
-  "pyrenees": ("limited", "A few shops in Luz and Argelès; book ahead in summer"),  # check
-  "flanders": ("limited", "A few hire options, including at the Tour of Flanders centre"),  # check
-  "roubaix": ("limited", "Few road-bike hire options; most riders bring their own"),  # check
+  "pyrenees": ("easy", "A few shops in Luz rent carbon road bikes and e-bikes; book ahead in summer"),
+  "flanders": ("easy", "Good road bikes at the Tour of Flanders Centre and a couple of other shops"),
+  "roubaix": ("limited", "Hire is mostly set up for the Paris–Roubaix Challenge weekend; otherwise most riders bring their own"),
   "como": ("easy", "Road and e-bikes for hire around the lake"),
-  "swisspasses": ("limited", "A few shops in Andermatt and nearby towns"),  # check
-  "asturias": ("limited", "A few shops in Oviedo; less choice than the Mediterranean bases"),  # check
-  "taiwankom": ("limited", "Giant stores rent road bikes, some with one-way returns"),  # check
+  "swisspasses": ("easy", "A BMC test centre in Andermatt rents premium road bikes; a few other shops too"),
+  "asturias": ("limited", "A few shops in Oviedo; a car helps to reach the climbs"),
+  "taiwankom": ("limited", "Giant by Hualien station rents road bikes; book ahead and check sizes"),
   "boulder": ("easy", "Plenty of shops renting road and gravel bikes"),
-  "haleakala": ("limited", "A couple of shops in Pāʻia and Kahului rent good road bikes"),  # check
+  "haleakala": ("limited", "Road-bike hire is scarce; Pāʻia shops mostly rent mountain bikes for the downhill tours"),
   "danube": ("easy", "One-way hire along the route, including e-bikes"),
   "loire": ("easy", "One-way hire along the route, including e-bikes"),
-  "grandesalpes": ("limited", "Hire a road bike near the start; one-way returns usually need a tour company"),  # check
+  "grandesalpes": ("limited", "No one-way hire: rent near the start and arrange the return, or go with a tour company"),
   "shimanami": ("easy", "One-way hire at either end and at stations along the way, including e-bikes"),
   "lhasakathmandu": ("byo", "Most riders go with a tour operator, which may hire bikes; otherwise bring your own"),
   "tuscany": ("easy", "Road, gravel and e-bikes for hire in Siena and the Chianti towns"),
-  "flinthills": ("limited", "Few hire options; most riders bring their own"),  # check
+  "flinthills": ("limited", "A couple of shops in Emporia rent bikes; call ahead, especially around Unbound"),
   "steamboat": ("easy", "Several shops renting gravel and mountain bikes"),
   "cairngorms": ("limited", "A couple of shops in Aviemore"),
   "icelandhighlands": ("byo", "Hire in Reykjavík is limited and basic; most riders bring their own"),
@@ -489,9 +489,9 @@ HIRE = {
   "greatdivide": ("byo", "Set up for bikepacking; shops along the way can help with repairs"),
   "atlas": ("byo", "Tour operators in Marrakech hire bikes; otherwise bring your own"),
   "alps2ocean": ("easy", "Trail operators hire bikes and e-bikes, with luggage transfers and shuttles"),
-  "jordanbiketrail": ("limited", "Hire through local operators; self-supported riders usually bring their own"),  # check
+  "jordanbiketrail": ("limited", "Hire mainly through tour operators; self-supported riders bring their own"),
   "bajadivide": ("byo", "Set up for sand and long dry stretches"),
-  "congonile": ("limited", "Hire through operators in Kigali and Rubavu"),  # check
+  "congonile": ("limited", "A couple of outfits in Rubavu and Kigali hire mountain bikes"),
 }
 assert set(HIRE) == {d["id"] for d in DEST} and all(v[0] in ("easy", "limited", "byo") for v in HIRE.values())
 assert set(BASES) | set(ROUTES) == {d["id"] for d in DEST} and not set(BASES) & set(ROUTES), "every destination must be a base or a route"
