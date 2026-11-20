@@ -17,7 +17,7 @@ export const DEFS = {
   guide: `<b>Required</b>: you can't go without one (e.g. Tibet, Nepal's restricted areas).<br><b>Recommended</b>: most people use a guide or local outfitter.<br><b>Optional</b>: easy to do on your own.`,
   areas: `A few highlights to start with, not every ride: bike parks, trail areas, famous climbs or sections of a route. On the map they're the <b>small dots</b> joined to their base by dashed lines. Tap one for its own short card.`,
   route: `For multi-day routes: approximate total distance, the usual number of days, and total climbing. Riders vary a lot, and many routes have variants.`,
-  lookAround: `<b>Trail map</b> (mountain bike): Trailforks, with trails and difficulty.<br><b>Cycle map</b>: CyclOSM, showing bike lanes, paths and road surfaces worldwide.<br><b>Topo</b>: CalTopo's free topo map, for sizing up the terrain.<br><b>Web search</b>: a ready-made search for this place.`,
+  lookAround: `Links change with the kind of riding.<br><b>Trailforks</b> (mountain bike): every trail with difficulty, direction and recent trail reports.<br><b>Strava heatmap</b>: where riders actually go, set to this kind of riding. Zooming in close needs a free Strava login.<br><b>Komoot</b> (road and gravel): plan a route from here and see riders' favourite climbs and viewpoints.<br><b>Topo</b>: CalTopo's free topo map, for sizing up the terrain.<br><b>Climb profile</b> (climbs): a search for the climb's length and gradient.<br><b>Web search</b>: a ready-made search for this place.`,
 };
 
 export const info = (key) => `<span class="info" data-info="${key}" tabindex="0" role="button" aria-label="What does this mean?">i</span>`;

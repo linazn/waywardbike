@@ -628,23 +628,34 @@ function renderList() {
 }
 
 // ---------- detail ----------
-// Map links generated from coordinates.
-// Trail map: Trailforks (mountain bike trails). Cycle map: CyclOSM (bike lanes, paths, surfaces worldwide). Topo: CalTopo.
+// Map links generated from coordinates, chosen by the kind of riding:
+// mountain bike → Trailforks (trails, difficulty, conditions); road/gravel → Komoot (route planner, rider highlights);
+// everyone → Strava's heatmap (where people actually ride, set to the right sport) and CalTopo topo (terrain).
 const trailMapUrl = (lat, lon, z = 12) => `https://www.trailforks.com/map/?ll=${lat},${lon}&z=${z}`;
-const cycleMapUrl = (lat, lon, z = 12) => `https://www.cyclosm.org/#map=${z}/${lat}/${lon}/cyclosm`;
+const heatmapUrl = (lat, lon, z = 12, disc = "road") => `https://www.strava.com/maps/global-heatmap?sport=${({ mtb: "MountainBikeRide", gravel: "GravelRide", road: "Ride" })[disc]}&style=standard#${z}/${lat}/${lon}`;
+const komootUrl = (lat, lon, z = 12) => `https://www.komoot.com/plan/@${lat},${lon},${z}z`;
 const topoUrl = (lat, lon, z = 12) => `https://caltopo.com/map.html#ll=${lat},${lon}&z=${z}&b=mbt`;
+/** the disciplines a place (or one of its highlights) is about: a highlight's own kind wins */
+const discsOf = (d, c) => c ? (["area", "park"].includes(kidKind(c)) ? ["mtb"] : kidKind(c) === "climb" ? ["road"] : [d.category])
+  : d.offers ? Object.keys(d.offers) : [d.category];
 // A web search that lands on useful pages: the place's plain name (no bracketed lists), where it is, and what kind of riding.
 const plainName = (n) => n.replace(/\s*\(.*?\)\s*/g, " ").replace(/\s+/g, " ").trim();
 const searchUrl = (q) => `https://www.google.com/search?q=${encodeURIComponent(q)}`;
 const rideWord = (d) => ({ mtb: "mountain biking", road: "road cycling", gravel: "gravel riding" })[d.category];
 const destSearch = (d) => searchUrl(`${plainName(d.name)} ${d.country} ${d.stats ? "bike route" : rideWord(d)}`);
 const kidSearch = (c, d) => searchUrl(`${plainName(c.name)} ${d.region} ${kidKind(c) === "climb" ? "cycling climb" : rideWord(d)}`);
+const climbSearch = (c, d) => searchUrl(`${plainName(c.name)} ${d.country} climb profile gradient (PJAMM OR climbfinder)`);
 const tourSearch = (t, d) => searchUrl(`${plainName(t.name)} ${d.region} ${rideWord(d)}`);
 const searchLink = (url, label = "web search") => `<a href="${url}" target="_blank" rel="noopener" class="search-link" title="Search the web for this place"><svg viewBox="0 0 16 16" width="11" height="11" aria-hidden="true"><circle cx="6.5" cy="6.5" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 10l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>${label} ↗</a>`;
-const mapLinks = (d, short = false, lat = d.lat, lon = d.lon, z = d.stats ? 8 : d.children ? 11 : 12) => [
-  d.category === "mtb" && `<a href="${trailMapUrl(lat, lon, z)}" target="_blank" rel="noopener">${short ? "trails" : "trail map"} ↗</a>`,
-  `<a href="${cycleMapUrl(lat, lon, z)}" target="_blank" rel="noopener">cycle map ↗</a>`,
-  `<a href="${topoUrl(lat, lon, z)}" target="_blank" rel="noopener">topo ↗</a>`].filter(Boolean);
+const mapLinks = (d, short = false, lat = d.lat, lon = d.lon, z = d.stats ? 8 : d.children ? 11 : 12, c = null) => {
+  const ds = discsOf(d, c), main = c ? ds[0] : d.category;
+  const a = (url, label) => `<a href="${url}" target="_blank" rel="noopener">${label} ↗</a>`;
+  return [
+    ds.includes("mtb") && a(trailMapUrl(lat, lon, z), short ? "trails" : "Trailforks"),
+    a(heatmapUrl(lat, lon, z, main), short ? "heatmap" : "Strava heatmap"),
+    (ds.includes("road") || ds.includes("gravel")) && a(komootUrl(lat, lon, z), "Komoot"),
+    a(topoUrl(lat, lon, z), "topo")].filter(Boolean);
+};
 const hostLabel = (u) => { try { const h = new URL(u).hostname.replace(/^www\./, ""); return h; } catch { return u; } };
 const fcUrl = (d) => `https://api.open-meteo.com/v1/forecast?latitude=${d.lat}&longitude=${d.lon}&elevation=${d.refElev}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,wind_speed_10m_max&past_days=3&forecast_days=7&timezone=auto`;
 function openDetail(id, fly) {
@@ -694,7 +705,7 @@ function openSub(id, i) {
     <p class="pitch">${esc(c.note)}</p>
     ${c.more ? `<p style="font-size:14px;line-height:1.5">${esc(c.more)}</p>` : ""}
     <div class="section-title">Look it up</div>
-    <div class="sub-links">${[c.url && `<a href="${c.url}" target="_blank" rel="noopener">${hostLabel(c.url)} ↗</a>`, ...mapLinks(d, false, c.lat, c.lon, 13), searchLink(kidSearch(c, d))].filter(Boolean).join(" · ")}</div>
+    <div class="sub-links">${[c.url && `<a href="${c.url}" target="_blank" rel="noopener">${hostLabel(c.url)} ↗</a>`, ...mapLinks(d, false, c.lat, c.lon, 13, c), kidKind(c) === "climb" && searchLink(climbSearch(c, d), "climb profile"), searchLink(kidSearch(c, d))].filter(Boolean).join(" · ")}</div>
     <div class="section-title">Conditions, season &amp; essentials</div>
     <div class="callout">Shared with the whole destination: <b>${esc(plainName(d.name))}</b> has <b>${esc(condText(d).toLowerCase())}</b>, best ${d.best.map(m => MONTHS[m - 1]).join(", ") || "any month"}.
       <div style="margin-top:8px"><button class="btn primary" id="parentCard">Full card for ${esc(plainName(d.name))}</button>${STORIES[id] ? ` <button class="btn" id="readMore">Read more →</button>` : ""}</div></div>
