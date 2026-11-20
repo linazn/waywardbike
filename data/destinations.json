@@ -140,6 +140,13 @@
      "note": "~42 km, ~2,400 m descent from Burro Pass to the river (shuttle); advanced; opens ~June up top"
     },
     {
+     "name": "Captain Ahab",
+     "kind": "area",
+     "lat": 38.53,
+     "lon": -109.61,
+     "note": "Climb Amasa Back, then a ledgy slickrock descent above the Colorado; ~15 km loop; advanced"
+    },
+    {
      "name": "Klondike Bluffs",
      "kind": "area",
      "lat": 38.76,

@@ -50,6 +50,7 @@ D("moab", "Moab", "mtb", ["trails"], "usw", "USA", "Utah", 38.573, -109.550, [12
   "Red-rock desert riding on grippy sandstone, from the famous Slickrock loop to the Whole Enchilada, a big descent from alpine meadows to the Colorado River.",
   [K("Slickrock Trail", "area", 38.582, -109.518, "~17 km loop on bare sandstone; steep, technical, iconic"),
    K("Whole Enchilada", "area", 38.560, -109.330, "~42 km, ~2,400 m descent from Burro Pass to the river (shuttle); advanced; opens ~June up top"),
+   K("Captain Ahab", "area", 38.530, -109.610, "Climb Amasa Back, then a ledgy slickrock descent above the Colorado; ~15 km loop; advanced"),
    K("Klondike Bluffs", "area", 38.760, -109.720, "Flowy beginner–intermediate singletrack north of town; dinosaur tracks"),
    K("Mag 7", "area", 38.620, -109.700, "Linked rim trails with big canyon views (Gemini Bridges, Portal); intermediate–expert"),
    K("Navajo Rocks & Brand", "area", 38.650, -109.800, "Mellow-to-mid desert loops; good first days")]),
