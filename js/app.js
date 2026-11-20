@@ -16,6 +16,8 @@ const OFFERS = {
 const SUPPORT = { hotel: "Hotel-to-hotel", bikepacking: "Bikepacking", remote: "Remote" };
 const MULTI = { label: "Multi-day routes", color: "#6f6b52", desc: "Several days, one-way or loop" };
 const CHIPS = { ...OFFERS, multi: SUPPORT };
+const HIRE = { easy: "Easy to hire", limited: "Limited", byo: "Bring your own" };
+const hireText = (d) => d.hire ? `<b>${HIRE[d.hire]}</b>${d.hireNote ? `: ${esc(d.hireNote)}` : ""}` : "";
 const isRoute = (d) => d.kind === "route";
 /** riding conditions over the next 7 days: blue (good) / grey (mixed) / red (poor), out of season = white.
  *  Same red–grey–blue scale as the ski site's snow, which stays readable with colour blindness (unlike red–green). */
@@ -776,6 +778,7 @@ function renderDetail(id) {
       <dt>Crowds ${info("crowds")}</dt><dd>${meter(d.crowds)}</dd>
       <dt>Cost ${info("cost")}</dt><dd>${meter(d.cost, 5)}</dd>
       <dt>Guide ${info("guide")}</dt><dd>${esc(d.guide)}</dd>
+      <dt>Bike hire ${info("hire")}</dt><dd>${hireText(d)}</dd>
       <dt>Getting there</dt><dd>${esc(d.airport)}</dd>
       <dt>Look it up ${info("lookAround")}</dt><dd>${[...mapLinks(d), searchLink(destSearch(d))].join(" · ")}</dd>
       ${d.links?.website ? `<dt>Website</dt><dd><a href="${d.links.website}" target="_blank" rel="noopener">${hostLabel(d.links.website)} ↗</a></dd>` : ""}
@@ -843,6 +846,7 @@ function openStory(id, push = true) {
       <dt>Cost ${info("cost")}</dt><dd>${meter(d.cost, 5)}</dd>
       <dt>Crowds ${info("crowds")}</dt><dd>${meter(d.crowds, 5)}</dd>
       <dt>Guide ${info("guide")}</dt><dd>${esc(d.guide)}</dd>
+      <dt>Bike hire ${info("hire")}</dt><dd>${hireText(d)}</dd>
       <dt>Getting there</dt><dd>${esc(d.airport)}</dd>
     </dl>
     <div class="story-links">${[...links.map(([l, u]) => `<a href="${u}" target="_blank" rel="noopener">${esc(l)} ↗</a>`), searchLink(destSearch(d))].join(" · ")}</div>

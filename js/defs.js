@@ -14,6 +14,7 @@ export const DEFS = {
   crowds: `Curated 1–5 rating of how busy it feels in peak season.<br>1 = empty · 3 = normal busy · 5 = crowded trails, roads or lift lines.`,
   crowdFilter: `Filters on the crowds rating.<br><b>Skip the busiest</b> hides places rated 4–5.<br><b>Quiet only</b> keeps places rated 1–2.`,
   cost: `Rough all-in cost per person per day (lodging, food, lifts or shuttles, guiding where it's the norm; not flights or your bike).<br>1 = under $100 · 2 = $100–200 · 3 = $200–350 · 4 = $350–600 · 5 = $600+.`,
+  hire: `<b>Easy to hire</b>: plenty of shops with good bikes; flying in without a bike is normal.<br><b>Limited</b>: a shop or two; book ahead, and expect less choice of sizes and models.<br><b>Bring your own</b>: hire is rare or basic, so most riders bring their own bike.<br>A rough guide that changes slowly, so check the shops before you go.`,
   guide: `<b>Required</b>: you can't go without one (e.g. Tibet, Nepal's restricted areas).<br><b>Recommended</b>: most people use a guide or local outfitter.<br><b>Optional</b>: easy to do on your own.`,
   areas: `A few highlights to start with, not every ride: bike parks, trail areas, famous climbs or sections of a route. On the map they're the <b>small dots</b> joined to their base by dashed lines. Tap one for its own short card.`,
   route: `For multi-day routes: approximate total distance, the usual number of days, and total climbing. Riders vary a lot, and many routes have variants.`,
