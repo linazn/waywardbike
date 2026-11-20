@@ -276,7 +276,8 @@ function initMap() {
     bindZoneEvents();
     fitAll(false);
     renderZones();
-    map.once("idle", () => { map.resize(); fitAll(false); renderZones(); }); // re-fit once the tray/layout has settled
+    if (location.hash.startsWith("#place/")) routeFromHash(); // a shared link: fly straight there
+    map.once("idle", () => { map.resize(); if (!state.selected) fitAll(false); renderZones(); }); // re-fit once the tray/layout has settled (unless a place is already open)
   });
 
   map.on("click", "clusters", async (e) => {
@@ -947,6 +948,5 @@ async function boot() {
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") { if (!$("#modal").classList.contains("hidden")) closeModal(); else if ($("#sidebar").classList.contains("open")) { $("#sidebar").classList.remove("open"); document.body.classList.remove("sb-open"); } hideTip(); } });
   window.addEventListener("popstate", routeFromHash);
   window.addEventListener("hashchange", routeFromHash);
-  if (location.hash.startsWith("#place/")) map.once("idle", routeFromHash);
 }
 boot();
