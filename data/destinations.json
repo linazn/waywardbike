@@ -3471,6 +3471,13 @@
      "lat": 37.05,
      "lon": -113.53,
      "note": "Rolling, pumpy desert trail; beginner–intermediate"
+    },
+    {
+     "name": "Hurricane Rim Loop",
+     "kind": "area",
+     "lat": 37.17,
+     "lon": -113.33,
+     "note": "~39 km IMBA Epic around the rim above Hurricane"
     }
    ],
    "hire": "easy",
@@ -5103,6 +5110,13 @@
      "lat": 46.83,
      "lon": 9.81,
      "note": "Long, high singletrack descents"
+    },
+    {
+     "name": "Alps Epic Trail",
+     "kind": "area",
+     "lat": 46.7,
+     "lon": 9.8,
+     "note": "~39 km IMBA Epic from Davos down to Filisur"
     }
    ],
    "hire": "easy",
@@ -7299,6 +7313,13 @@
      "lat": 43.77,
      "lon": -122.42,
      "note": "Shuttle up, then ~1,400 m of descent through big trees"
+    },
+    {
+     "name": "Waldo Lake Loop",
+     "kind": "area",
+     "lat": 43.72,
+     "lon": -122.04,
+     "note": "~31 km IMBA Epic around a clear alpine lake"
     }
    ],
    "hire": "limited",
@@ -7733,6 +7754,307 @@
    "weather": "Snow is possible on the tops; sandflies lower down.",
    "hire": "limited",
    "hireNote": "Shuttle operators at both ends can arrange bikes; most riders bring their own",
+   "kind": "route",
+   "support": "bikepacking"
+  },
+  {
+   "id": "tetons",
+   "name": "Jackson & Teton Valley",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Wyoming and Idaho",
+   "zone": "usw",
+   "lat": 43.48,
+   "lon": -110.762,
+   "elev": [
+    1850,
+    3000
+   ],
+   "refElev": 1900,
+   "season": [
+    6,
+    10
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Jackson Hole airport ~15 min; Idaho Falls ~2 h",
+   "terrain": "Two lift-served bike parks plus steep, rooty mountain singletrack; all levels",
+   "pitch": "An IMBA Ride Center on both sides of the Tetons, with lift-served bike parks at Jackson Hole and Grand Targhee and steep, volunteer-built descents off Teton Pass.",
+   "children": [
+    {
+     "name": "Jackson Hole Mountain Resort",
+     "kind": "park",
+     "lat": 43.588,
+     "lon": -110.828,
+     "note": "Lift-served flow, jump and tech trails at Teton Village"
+    },
+    {
+     "name": "Teton Pass",
+     "kind": "area",
+     "lat": 43.497,
+     "lon": -110.955,
+     "note": "Steep, technical downhill trails; no lift, so pedal or shuttle up"
+    },
+    {
+     "name": "Grand Targhee",
+     "kind": "park",
+     "lat": 43.789,
+     "lon": -110.958,
+     "note": "Lift-served park and the Grand Targhee Loop, an IMBA Epic"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Rentals at Jackson Hole, Grand Targhee and shops in Jackson and Driggs",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "snowshoe",
+   "name": "Snowshoe",
+   "category": "mtb",
+   "country": "USA",
+   "region": "West Virginia",
+   "zone": "usc",
+   "lat": 38.41,
+   "lon": -79.994,
+   "elev": [
+    1000,
+    1480
+   ],
+   "refElev": 1450,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    6,
+    7,
+    9
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Pittsburgh or Charlotte ~4.5 h; Lewisburg ~1.5 h",
+   "terrain": "Lift-served downhill and flow on wet, rooty, rocky Appalachian ground; all levels",
+   "pitch": "The East's big lift-served bike park and a UCI World Cup venue, with 40+ trails and about 450 m of vertical from a ski village on top of the mountain.",
+   "children": [
+    {
+     "name": "Snowshoe Bike Park",
+     "kind": "park",
+     "lat": 38.41,
+     "lon": -79.994,
+     "note": "40+ trails served by two high-speed lifts"
+    },
+    {
+     "name": "Snowshoe backcountry",
+     "kind": "area",
+     "lat": 38.38,
+     "lon": -80.0,
+     "note": "Cross-country trails across the ridge"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Bike-park rentals in the village",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "cuyuna",
+   "name": "Cuyuna",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Minnesota",
+   "zone": "usc",
+   "lat": 46.482,
+   "lon": -93.958,
+   "elev": [
+    370,
+    420
+   ],
+   "refElev": 380,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    6,
+    7,
+    9,
+    10
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Minneapolis ~2.5 h; Brainerd ~30 min",
+   "terrain": "Short, steep, flowy singletrack on red iron-ore dirt; all levels",
+   "pitch": "Old open-pit iron mines turned into an IMBA Ride Center: red-dirt singletrack winding between turquoise flooded mine pits outside the small towns of Crosby and Ironton.",
+   "children": [
+    {
+     "name": "Cuyuna Country State Recreation Area",
+     "kind": "area",
+     "lat": 46.49,
+     "lon": -93.97,
+     "note": "Purpose-built singletrack around the mine lakes"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Shops in Crosby and Ironton rent trail bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "mtbuller",
+   "name": "Mt Buller",
+   "category": "mtb",
+   "country": "Australia",
+   "region": "Victoria",
+   "zone": "aus",
+   "lat": -37.146,
+   "lon": 146.438,
+   "elev": [
+    800,
+    1800
+   ],
+   "refElev": 1600,
+   "season": [
+    12,
+    4
+   ],
+   "best": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Melbourne ~3 h",
+   "terrain": "Alpine singletrack, lift-served descents and a long backcountry epic; all levels",
+   "pitch": "Australia's first IMBA Ride Center, at an alpine ski resort with 100+ km of trails, shuttled and lift-served descents, and the Australian Alpine Epic, the Southern Hemisphere's first IMBA Epic.",
+   "children": [
+    {
+     "name": "Mt Buller Bike Park",
+     "kind": "park",
+     "lat": -37.146,
+     "lon": 146.44,
+     "note": "Lift-served and shuttled descents from the summit"
+    },
+    {
+     "name": "Australian Alpine Epic",
+     "kind": "area",
+     "lat": -37.12,
+     "lon": 146.47,
+     "note": "~46 km of high-country singletrack to the Delatite River; 6–8 h"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Bike-park and trail bikes for hire in the village",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "bigbend",
+   "name": "Fresno–Sauceda Loop (Big Bend)",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Big Bend Ranch State Park, Texas",
+   "zone": "usc",
+   "lat": 29.3,
+   "lon": -103.83,
+   "elev": [
+    700,
+    1500
+   ],
+   "refElev": 900,
+   "season": [
+    10,
+    4
+   ],
+   "best": [
+    11,
+    2,
+    3
+   ],
+   "crowds": 1,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Lajitas (start); El Paso or Midland ~5 h",
+   "terrain": "Remote desert singletrack, creek beds and 4x4 roads; very advanced",
+   "pitch": "An IMBA Epic through the Chihuahuan Desert near the Mexican border: a long, remote loop of singletrack, rocky creek beds and old ranch roads in one of the emptiest corners of Texas.",
+   "stats": {
+    "km": 95,
+    "days": "1–2",
+    "climb": 1200
+   },
+   "weather": "Brutally hot from mid-April to September; carry lots of water.",
+   "hire": "limited",
+   "hireNote": "A shop in Lajitas or Terlingua rents bikes; most riders bring their own",
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "laugavegur",
+   "name": "Laugavegur",
+   "category": "mtb",
+   "country": "Iceland",
+   "region": "Landmannalaugar to Skógar",
+   "zone": "iceland",
+   "lat": 63.8,
+   "lon": -19.25,
+   "elev": [
+    200,
+    1100
+   ],
+   "refElev": 600,
+   "season": [
+    7,
+    9
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Reykjavík ~3–4 h by highland bus to Landmannalaugar",
+   "terrain": "Volcanic singletrack and river fords, with long stretches of pushing and carrying the bike; advanced",
+   "pitch": "Iceland's famous hiking trail, ridden across rhyolite mountains, black lava sand and glacier rivers between Landmannalaugar and Þórsmörk, then over the Fimmvörðuháls pass between two glaciers to Skógar. It's an IMBA Epic.",
+   "stats": {
+    "km": 79,
+    "days": "2–3",
+    "climb": 2200
+   },
+   "weather": "Expect long push-and-carry sections on steep, loose climbs, snowfields and the Fimmvörðuháls pass. Busy with hikers in July and August, so ride early or late; it's a protected area, and you can only camp at the huts.",
+   "hire": "byo",
+   "hireNote": "Bring your own; buses to Landmannalaugar carry bikes",
    "kind": "route",
    "support": "bikepacking"
   }
