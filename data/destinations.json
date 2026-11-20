@@ -45,6 +45,10 @@
    "name": "Iceland",
    "macro": "eu"
   },
+  "nordic": {
+   "name": "Scandinavia",
+   "macro": "eu"
+  },
   "benelux": {
    "name": "Belgium",
    "macro": "eu"
@@ -61,8 +65,12 @@
    "name": "Italy",
    "macro": "eu"
   },
+  "slovenia": {
+   "name": "Slovenia",
+   "macro": "eu"
+  },
   "iberia": {
-   "name": "Spain",
+   "name": "Spain & Portugal",
    "macro": "eu"
   },
   "atlantic": {
@@ -1923,6 +1931,13 @@
      "lat": 45.227,
      "lon": 6.205,
      "note": "~30 km of varied climbing to 2,067 m"
+    },
+    {
+     "name": "Alpe d'Huez bike park",
+     "kind": "park",
+     "lat": 45.092,
+     "lon": 6.07,
+     "note": "Lift-served trails, and the Megavalanche descent from the glacier"
     }
    ],
    "hire": "easy",
@@ -1931,6 +1946,9 @@
    "offers": {
     "road": [
      "climbs"
+    ],
+    "mtb": [
+     "lift"
     ]
    }
   },
@@ -4860,6 +4878,1294 @@
    "hireNote": "No one-way hire",
    "kind": "route",
    "support": "bikepacking"
+  },
+  {
+   "id": "fortwilliam",
+   "name": "Fort William",
+   "category": "mtb",
+   "country": "UK",
+   "region": "Scotland",
+   "zone": "uk",
+   "lat": 56.82,
+   "lon": -5.105,
+   "elev": [
+    0,
+    650
+   ],
+   "refElev": 100,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Inverness ~1.5 h; Glasgow ~2.5 h",
+   "terrain": "Rocky World Cup downhill, forest trails and wild highland rides; all levels",
+   "pitch": "The self-styled outdoor capital of the UK, under Ben Nevis: the Nevis Range gondola serves the famous World Cup downhill, with forest trails below and wild natural rides through the glens.",
+   "weather": "Often wet, and the midges bite in summer; May, June and September are usually best.",
+   "children": [
+    {
+     "name": "Nevis Range downhill",
+     "kind": "park",
+     "lat": 56.85,
+     "lon": -4.98,
+     "note": "Gondola-served World Cup track; rocky and brutal"
+    },
+    {
+     "name": "Witch's Trails",
+     "kind": "area",
+     "lat": 56.855,
+     "lon": -4.99,
+     "note": "Cross-country loops at the foot of Aonach Mòr"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Nevis Range and a couple of shops in town rent bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "bikeparkwales",
+   "name": "Merthyr Tydfil (Bike Park Wales)",
+   "category": "mtb",
+   "country": "UK",
+   "region": "Wales",
+   "zone": "uk",
+   "lat": 51.747,
+   "lon": -3.378,
+   "elev": [
+    150,
+    500
+   ],
+   "refElev": 300,
+   "season": [
+    1,
+    12
+   ],
+   "best": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Cardiff ~45 min; Bristol ~1.5 h",
+   "terrain": "Uplift-served flow, jump and tech trails; all levels",
+   "pitch": "Britain's biggest bike park, with van uplift to the top of dozens of graded trails, and older South Wales trail centres like Afan close by.",
+   "weather": "Rideable all year, but often wet.",
+   "children": [
+    {
+     "name": "Bike Park Wales",
+     "kind": "park",
+     "lat": 51.723,
+     "lon": -3.354,
+     "note": "Van uplift; dozens of graded trails from blue flow to black tech"
+    },
+    {
+     "name": "Afan Forest Park",
+     "kind": "area",
+     "lat": 51.64,
+     "lon": -3.72,
+     "note": "One of Wales' original trail centres; long, rocky loops"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "The bike park rents downhill, trail and e-bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "livigno",
+   "name": "Livigno",
+   "category": "mtb",
+   "country": "Italy",
+   "region": "Lombardy",
+   "zone": "italy",
+   "lat": 46.538,
+   "lon": 10.135,
+   "elev": [
+    1800,
+    2800
+   ],
+   "refElev": 1900,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Bergamo or Milan ~3.5 h; Zurich ~3.5 h",
+   "terrain": "Lift-served bike parks and high-alpine trails; all levels",
+   "pitch": "A high, duty-free valley near the Swiss border, with the Mottolino bike park, long high-alpine trails, and the Stelvio and Gavia passes not far away for road riders.",
+   "children": [
+    {
+     "name": "Mottolino Bike Park",
+     "kind": "park",
+     "lat": 46.537,
+     "lon": 10.155,
+     "note": "Lift-served downhill, flow and jump lines"
+    },
+    {
+     "name": "Carosello 3000",
+     "kind": "park",
+     "lat": 46.525,
+     "lon": 10.12,
+     "note": "Long, natural-feeling descents from ~2,800 m"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Plenty of shops renting bike-park, trail and e-bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "davos",
+   "name": "Davos & Klosters",
+   "category": "mtb",
+   "country": "Switzerland",
+   "region": "Graubünden",
+   "zone": "alps",
+   "lat": 46.8,
+   "lon": 9.836,
+   "elev": [
+    1100,
+    2850
+   ],
+   "refElev": 1600,
+   "season": [
+    6,
+    10
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 5,
+   "guide": "Optional",
+   "airport": "Zurich ~2.5 h",
+   "terrain": "A huge network of signed singletrack and flow trails, lift-served; all levels",
+   "pitch": "One of the biggest signed trail networks in the Alps, with lifts that carry bikes up most of the mountains, long natural singletrack and built flow trails.",
+   "children": [
+    {
+     "name": "Jakobshorn flow trails",
+     "kind": "park",
+     "lat": 46.778,
+     "lon": 9.85,
+     "note": "Built flow trails from the Jakobshorn lift"
+    },
+    {
+     "name": "Weissfluhjoch to Klosters",
+     "kind": "area",
+     "lat": 46.83,
+     "lon": 9.81,
+     "note": "Long, high singletrack descents"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Trail and e-bikes for hire in both villages",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ]
+   }
+  },
+  {
+   "id": "verbier",
+   "name": "Verbier",
+   "category": "mtb",
+   "country": "Switzerland",
+   "region": "Valais",
+   "zone": "alps",
+   "lat": 46.097,
+   "lon": 7.228,
+   "elev": [
+    800,
+    3000
+   ],
+   "refElev": 1500,
+   "season": [
+    6,
+    10
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 5,
+   "guide": "Optional",
+   "airport": "Geneva ~2 h",
+   "terrain": "Lift-served bike park and big, steep natural trails; intermediate to expert",
+   "pitch": "A lift-served bike park above a famous ski village, and long, steep natural trails across the 4 Vallées.",
+   "children": [
+    {
+     "name": "Verbier Bike Park",
+     "kind": "park",
+     "lat": 46.098,
+     "lon": 7.235,
+     "note": "Lift-served downhill, flow and jump lines"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Bike-park and trail bikes for hire in the village",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "innsbruck",
+   "name": "Innsbruck",
+   "category": "mtb",
+   "country": "Austria",
+   "region": "Tyrol",
+   "zone": "alps",
+   "lat": 47.269,
+   "lon": 11.404,
+   "elev": [
+    570,
+    2000
+   ],
+   "refElev": 800,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Innsbruck ~10 min",
+   "terrain": "Steep singletrack and lift-served trails straight from the city; all levels",
+   "pitch": "An Alpine city where cable cars take bikes up from town to steep, technical singletrack, with a lift-served bike park on the edge of the city and big road climbs in every direction.",
+   "children": [
+    {
+     "name": "Nordkette Singletrail",
+     "kind": "area",
+     "lat": 47.3,
+     "lon": 11.38,
+     "note": "Very steep and technical; experts only"
+    },
+    {
+     "name": "Bikepark Innsbruck",
+     "kind": "park",
+     "lat": 47.233,
+     "lon": 11.375,
+     "note": "Lift-served park in Mutters, just south of the city"
+    },
+    {
+     "name": "Kühtai",
+     "kind": "climb",
+     "lat": 47.215,
+     "lon": 11.02,
+     "note": "Long climb to ~2,000 m west of the city"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Several shops renting mountain, road and e-bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ],
+    "road": [
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "solden",
+   "name": "Sölden (Ötztal)",
+   "category": "mtb",
+   "country": "Austria",
+   "region": "Tyrol",
+   "zone": "alps",
+   "lat": 46.966,
+   "lon": 11.007,
+   "elev": [
+    1350,
+    2900
+   ],
+   "refElev": 1400,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Innsbruck ~1.5 h",
+   "terrain": "Lift-served trails and big alpine passes; all levels",
+   "pitch": "A high ski village with a lift-served network of flow and natural trails, and the Timmelsjoch road pass to Italy, the high point of the Ötztaler Radmarathon.",
+   "children": [
+    {
+     "name": "Bike Republic Sölden",
+     "kind": "park",
+     "lat": 46.966,
+     "lon": 11.007,
+     "note": "Lift-served flow and natural trails"
+    },
+    {
+     "name": "Timmelsjoch",
+     "kind": "climb",
+     "lat": 46.905,
+     "lon": 11.097,
+     "note": "To 2,474 m on the Italian border; open about June–October"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Bike-park, trail and e-bikes for hire in the village",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ],
+    "road": [
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "lousa",
+   "name": "Lousã",
+   "category": "mtb",
+   "country": "Portugal",
+   "region": "Coimbra",
+   "zone": "iberia",
+   "lat": 40.112,
+   "lon": -8.248,
+   "elev": [
+    200,
+    1200
+   ],
+   "refElev": 400,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    10
+   ],
+   "crowds": 1,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Coimbra ~30 min; Porto ~2 h; Lisbon ~2.5 h",
+   "terrain": "Steep, loamy enduro trails with shuttles; intermediate to expert",
+   "pitch": "A quiet hill town in central Portugal with steep enduro trails through the schist villages of the Serra da Lousã, served by shuttle companies and used for international enduro races.",
+   "weather": "Summer is hot and brings wildfire risk; winter is mild but wet.",
+   "children": [
+    {
+     "name": "Serra da Lousã",
+     "kind": "area",
+     "lat": 40.08,
+     "lon": -8.21,
+     "note": "Shuttled enduro descents past schist villages"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "The shuttle companies rent enduro and e-bikes; book ahead",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "are",
+   "name": "Åre",
+   "category": "mtb",
+   "country": "Sweden",
+   "region": "Jämtland",
+   "zone": "nordic",
+   "lat": 63.399,
+   "lon": 13.081,
+   "elev": [
+    380,
+    1270
+   ],
+   "refElev": 500,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    7,
+    8
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Åre Östersund ~1 h; Stockholm ~6.5 h by train",
+   "terrain": "Lift-served bike park and Nordic trail riding; all levels",
+   "pitch": "Scandinavia's biggest bike park, on the slopes of Åreskutan, with dozens of lift-served trails and natural singletrack through birch and open fell.",
+   "weather": "Long light evenings in summer; mosquitoes in July.",
+   "children": [
+    {
+     "name": "Åre Bike Park",
+     "kind": "park",
+     "lat": 63.4,
+     "lon": 13.08,
+     "note": "Lift-served downhill, flow and jump lines"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "The bike park and shops in the village rent downhill and trail bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "hafjell",
+   "name": "Hafjell (Lillehammer)",
+   "category": "mtb",
+   "country": "Norway",
+   "region": "Innlandet",
+   "zone": "nordic",
+   "lat": 61.235,
+   "lon": 10.448,
+   "elev": [
+    200,
+    1050
+   ],
+   "refElev": 400,
+   "season": [
+    6,
+    10
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 2,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Oslo airport ~1.5 h",
+   "terrain": "Lift-served bike park and rooty forest trails; all levels",
+   "pitch": "Norway's best-known bike park, on an Olympic ski hill above Lillehammer, with gondola-served flow and downhill and rooty Norwegian forest trails.",
+   "children": [
+    {
+     "name": "Hafjell Bike Park",
+     "kind": "park",
+     "lat": 61.235,
+     "lon": 10.448,
+     "note": "Gondola-served flow, jump and downhill trails"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "The bike park rents downhill and trail bikes",
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "bovec",
+   "name": "Bovec (Soča Valley)",
+   "category": "road",
+   "country": "Slovenia",
+   "region": "Julian Alps",
+   "zone": "slovenia",
+   "lat": 46.338,
+   "lon": 13.552,
+   "elev": [
+    400,
+    2100
+   ],
+   "refElev": 450,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    6,
+    9
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Ljubljana ~2.5 h; Trieste ~1.5 h",
+   "terrain": "Big, quiet mountain passes and old military mule tracks; intermediate to advanced",
+   "pitch": "An emerald river valley under the Julian Alps, with the Vršič and Mangart road climbs, First World War mule tracks for mountain bikes, and rafting on the Soča.",
+   "children": [
+    {
+     "name": "Mangart Road",
+     "kind": "climb",
+     "lat": 46.44,
+     "lon": 13.64,
+     "note": "Slovenia's highest road, to ~2,050 m"
+    },
+    {
+     "name": "Vršič Pass",
+     "kind": "climb",
+     "lat": 46.433,
+     "lon": 13.743,
+     "note": "Cobbled hairpins to 1,611 m"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "A few outfitters rent mountain and e-bikes; road bikes are scarcer",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs"
+    ],
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "ardennes",
+   "name": "Liège (Ardennes)",
+   "category": "road",
+   "country": "Belgium",
+   "region": "Wallonia",
+   "zone": "benelux",
+   "lat": 50.633,
+   "lon": 5.567,
+   "elev": [
+    60,
+    600
+   ],
+   "refElev": 250,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Brussels ~1 h",
+   "terrain": "Short, steep climbs on rolling forest roads; intermediate to advanced",
+   "pitch": "The hills of Liège–Bastogne–Liège, the oldest of the Classics: short, steep climbs like La Redoute through forest and river valleys.",
+   "children": [
+    {
+     "name": "Côte de La Redoute",
+     "kind": "climb",
+     "lat": 50.483,
+     "lon": 5.7,
+     "note": "~2 km at ~9%; steep and famous"
+    },
+    {
+     "name": "Côte de la Roche-aux-Faucons",
+     "kind": "climb",
+     "lat": 50.545,
+     "lon": 5.585,
+     "note": "Steep and close to the finish of the Classic"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "A few shops rent road bikes; many riders bring their own",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "day",
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "grancanaria",
+   "name": "Gran Canaria",
+   "category": "road",
+   "country": "Spain",
+   "region": "Canary Islands",
+   "zone": "atlantic",
+   "lat": 27.76,
+   "lon": -15.58,
+   "elev": [
+    0,
+    1950
+   ],
+   "refElev": 300,
+   "season": [
+    1,
+    12
+   ],
+   "best": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Gran Canaria airport ~30 min",
+   "terrain": "Long climbs on quiet mountain roads from the coast; intermediate to advanced",
+   "pitch": "A winter training island like Tenerife, with warm coastal resorts and long, steep climbs into the volcanic interior, up to Pico de las Nieves at nearly 1,950 m.",
+   "children": [
+    {
+     "name": "Pico de las Nieves",
+     "kind": "climb",
+     "lat": 27.96,
+     "lon": -15.57,
+     "note": "From sea level to ~1,950 m"
+    },
+    {
+     "name": "Soria",
+     "kind": "climb",
+     "lat": 27.912,
+     "lon": -15.716,
+     "note": "Steep, quiet climb past reservoirs"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Plenty of shops in the southern resorts renting road bikes",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs",
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "annecy",
+   "name": "Annecy",
+   "category": "road",
+   "country": "France",
+   "region": "Haute-Savoie",
+   "zone": "france",
+   "lat": 45.899,
+   "lon": 6.129,
+   "elev": [
+    450,
+    1700
+   ],
+   "refElev": 500,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Geneva ~45 min",
+   "terrain": "Lake roads and big Alpine climbs; all levels",
+   "pitch": "A lake town with a flat, car-free cycle path along the water and Tour de France climbs straight from the shore: the Col de la Forclaz, the Semnoz and the Aravis passes.",
+   "children": [
+    {
+     "name": "Col de la Forclaz de Montmin",
+     "kind": "climb",
+     "lat": 45.81,
+     "lon": 6.25,
+     "note": "Steep, with paragliders launching from the top"
+    },
+    {
+     "name": "Semnoz",
+     "kind": "climb",
+     "lat": 45.8,
+     "lon": 6.1,
+     "note": "~18 km to ~1,700 m above the lake"
+    },
+    {
+     "name": "Col des Aravis",
+     "kind": "climb",
+     "lat": 45.873,
+     "lon": 6.464,
+     "note": "Classic pass toward Mont Blanc"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Plenty of shops renting road and e-bikes around the lake",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs",
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "sansebastian",
+   "name": "San Sebastián (Basque Country)",
+   "category": "road",
+   "country": "Spain",
+   "region": "Basque Country",
+   "zone": "iberia",
+   "lat": 43.318,
+   "lon": -1.982,
+   "elev": [
+    0,
+    1000
+   ],
+   "refElev": 100,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "San Sebastián ~20 min; Bilbao ~1.2 h",
+   "terrain": "Steep green hills and coastal roads; intermediate to advanced",
+   "pitch": "A food capital on the Bay of Biscay, with short, savage climbs like Jaizkibel above the sea and a Basque cycling culture that fills the roadsides on race days.",
+   "weather": "Green for a reason: rain is likely in any month.",
+   "children": [
+    {
+     "name": "Jaizkibel",
+     "kind": "climb",
+     "lat": 43.35,
+     "lon": -1.85,
+     "note": "~8 km above the sea; a Clásica San Sebastián classic"
+    }
+   ],
+   "hire": "easy",
+   "hireNote": "Several shops renting road bikes",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "day",
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "sierranevada",
+   "name": "Granada (Sierra Nevada)",
+   "category": "road",
+   "country": "Spain",
+   "region": "Andalusia",
+   "zone": "iberia",
+   "lat": 37.177,
+   "lon": -3.599,
+   "elev": [
+    700,
+    3300
+   ],
+   "refElev": 800,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    9,
+    10
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Granada ~20 min; Málaga ~1.5 h",
+   "terrain": "One of Europe's biggest road climbs, and dry, sunny back roads; intermediate to advanced",
+   "pitch": "Granada, home of the Alhambra, sits at the foot of one of the longest climbs in Europe: the road up the Sierra Nevada toward the Pico Veleta, over 3,000 m and among the highest paved roads in Europe.",
+   "weather": "Summer is very hot in Granada; the top is snowbound from about November to May.",
+   "children": [
+    {
+     "name": "Pico Veleta",
+     "kind": "climb",
+     "lat": 37.06,
+     "lon": -3.37,
+     "note": "~40 km and ~2,500 m of climbing from Granada; the top is closed to cars"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "A few shops in Granada rent road bikes",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "grossglockner",
+   "name": "Heiligenblut (Grossglockner)",
+   "category": "road",
+   "country": "Austria",
+   "region": "Carinthia",
+   "zone": "alps",
+   "lat": 47.04,
+   "lon": 12.843,
+   "elev": [
+    1300,
+    2570
+   ],
+   "refElev": 1300,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Salzburg ~2.5 h; Innsbruck ~2.5 h",
+   "terrain": "A famous toll road with long, steady hairpin climbs; intermediate to advanced",
+   "pitch": "The Grossglockner High Alpine Road climbs past Austria's highest peak and the Pasterze glacier, with long climbs from both sides of the Hohe Tauern.",
+   "weather": "The high road is usually open from May to early November.",
+   "children": [
+    {
+     "name": "Hochtor",
+     "kind": "climb",
+     "lat": 47.083,
+     "lon": 12.842,
+     "note": "Road summit at ~2,500 m; long climbs from both sides"
+    },
+    {
+     "name": "Kaiser-Franz-Josefs-Höhe",
+     "kind": "climb",
+     "lat": 47.074,
+     "lon": 12.751,
+     "note": "Spur to the glacier viewpoint"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "A few shops in the valleys, mostly e-bikes",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "etna",
+   "name": "Nicolosi (Etna)",
+   "category": "road",
+   "country": "Italy",
+   "region": "Sicily",
+   "zone": "italy",
+   "lat": 37.616,
+   "lon": 15.021,
+   "elev": [
+    0,
+    1900
+   ],
+   "refElev": 700,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    10
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Catania ~30 min",
+   "terrain": "Long volcano climbs through lava fields; intermediate to advanced",
+   "pitch": "Climb an active volcano from the sea: several roads wind up through orchards, pine and black lava fields to the Rifugio Sapienza near 1,900 m, a Giro d'Italia summit finish.",
+   "weather": "Summer is hot at the bottom; eruptions occasionally close the upper roads.",
+   "children": [
+    {
+     "name": "Etna from Nicolosi",
+     "kind": "climb",
+     "lat": 37.7,
+     "lon": 15.0,
+     "note": "~20 km to Rifugio Sapienza at ~1,900 m"
+    }
+   ],
+   "hire": "limited",
+   "hireNote": "A few shops in Catania and the Etna villages rent road bikes",
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "raidpyreneen",
+   "name": "Raid Pyrénéen",
+   "category": "road",
+   "country": "France",
+   "region": "Atlantic to the Mediterranean",
+   "zone": "france",
+   "lat": 42.9,
+   "lon": 0.8,
+   "elev": [
+    0,
+    2115
+   ],
+   "refElev": 1000,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    6,
+    7,
+    9
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Biarritz near the start (Hendaye); Perpignan near the end (Cerbère)",
+   "terrain": "Mountain roads over 18 cols; advanced",
+   "pitch": "Atlantic to Mediterranean across the French Pyrenees, over 18 cols including the Aubisque, Tourmalet and Aspin. The classic challenge is to finish within 100 hours.",
+   "stats": {
+    "km": 720,
+    "days": "5–10",
+    "climb": 11000
+   },
+   "hire": "limited",
+   "hireNote": "No one-way hire; bring your own or go with a tour company",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "transalp",
+   "name": "Transalp (Garmisch to Lake Garda)",
+   "category": "mtb",
+   "country": "Germany, Austria, Italy",
+   "region": "Bavaria to Lake Garda",
+   "zone": "alps",
+   "lat": 47.0,
+   "lon": 11.0,
+   "elev": [
+    65,
+    2600
+   ],
+   "refElev": 1500,
+   "season": [
+    7,
+    9
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Munich ~1.5 h to the start; Verona ~1.5 h from Riva",
+   "terrain": "Gravel tracks, mule paths and high passes; intermediate to advanced, with some pushing",
+   "pitch": "The classic alpine crossing by mountain bike, from Bavaria over the Austrian and Italian Alps to Lake Garda, on well-known routes like the Albrecht and Joe routes.",
+   "stats": {
+    "km": 450,
+    "days": "6–8",
+    "climb": 12000
+   },
+   "hire": "limited",
+   "hireNote": "Tour companies hire bikes and move luggage; otherwise bring your own",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "claudia",
+   "name": "Via Claudia Augusta",
+   "category": "road",
+   "country": "Germany, Austria, Italy",
+   "region": "Füssen to Verona",
+   "zone": "alps",
+   "lat": 46.9,
+   "lon": 10.7,
+   "elev": [
+    60,
+    1500
+   ],
+   "refElev": 800,
+   "season": [
+    5,
+    9
+   ],
+   "best": [
+    6,
+    9
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Munich ~2 h to Füssen (start); Verona at the end",
+   "terrain": "Cycle paths and quiet roads over the Reschen Pass; easy to intermediate",
+   "pitch": "Follow an old Roman road from Bavaria over the Fern and Reschen passes and down through the apple orchards of the Adige valley to Verona, mostly on traffic-free paths.",
+   "stats": {
+    "km": 460,
+    "days": "6–8",
+    "climb": 3000
+   },
+   "hire": "easy",
+   "hireNote": "One-way hire with luggage transfers is easy to arrange",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "bodensee",
+   "name": "Lake Constance loop",
+   "category": "road",
+   "country": "Germany, Austria, Switzerland",
+   "region": "Lake Constance",
+   "zone": "alps",
+   "lat": 47.6,
+   "lon": 9.4,
+   "elev": [
+    395,
+    450
+   ],
+   "refElev": 400,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9
+   ],
+   "crowds": 4,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Zurich ~1 h; Friedrichshafen is on the lake",
+   "terrain": "Flat lakeside cycle paths; easy",
+   "pitch": "A flat, easy loop around one of Europe's biggest lakes, through three countries, with vineyards, island gardens and ferries to skip a section.",
+   "stats": {
+    "km": 260,
+    "days": "3–5",
+    "climb": 600
+   },
+   "hire": "easy",
+   "hireNote": "Plenty of hire around the lake, including one-way and e-bikes",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "hebrides",
+   "name": "Hebridean Way",
+   "category": "road",
+   "country": "UK",
+   "region": "Outer Hebrides, Scotland",
+   "zone": "uk",
+   "lat": 57.5,
+   "lon": -7.3,
+   "elev": [
+    0,
+    200
+   ],
+   "refElev": 50,
+   "season": [
+    5,
+    9
+   ],
+   "best": [
+    5,
+    6,
+    9
+   ],
+   "crowds": 1,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Ferry from Oban to Barra (start); ferry from Stornoway (end)",
+   "terrain": "Quiet single-track roads, causeways and two ferries; easy to intermediate, but windy",
+   "pitch": "Ten islands linked by causeways and ferries, from Vatersay to the Butt of Lewis: white-sand beaches, Gaelic villages and standing stones, and a lot of wind.",
+   "stats": {
+    "km": 300,
+    "days": "4–6",
+    "climb": 2500
+   },
+   "hire": "limited",
+   "hireNote": "A couple of shops on the islands; no one-way hire",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "c2c",
+   "name": "Coast to Coast (C2C)",
+   "category": "road",
+   "country": "UK",
+   "region": "Northern England",
+   "zone": "uk",
+   "lat": 54.7,
+   "lon": -2.6,
+   "elev": [
+    0,
+    610
+   ],
+   "refElev": 300,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Whitehaven or Workington (start); Sunderland or Tynemouth (end)",
+   "terrain": "Lanes, cycle paths and some rough tracks over the Pennines; intermediate",
+   "pitch": "Britain's most popular long-distance ride, from the Irish Sea through the northern Lake District and over the Pennines to the North Sea.",
+   "stats": {
+    "km": 220,
+    "days": "3–5",
+    "climb": 3500
+   },
+   "hire": "limited",
+   "hireNote": "Local companies hire bikes and bring them back from the finish",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "highland550",
+   "name": "Highland Trail 550",
+   "category": "mtb",
+   "country": "UK",
+   "region": "Scottish Highlands",
+   "zone": "uk",
+   "lat": 57.3,
+   "lon": -5.0,
+   "elev": [
+    0,
+    900
+   ],
+   "refElev": 300,
+   "season": [
+    5,
+    9
+   ],
+   "best": [
+    5,
+    6,
+    9
+   ],
+   "crowds": 1,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Tyndrum (start and end); Glasgow ~2 h",
+   "terrain": "Rough singletrack, bog and river crossings with hike-a-bike; very advanced",
+   "pitch": "A tough, self-supported loop through the wildest parts of the Scottish Highlands on stalkers' paths and old drove roads, with long hike-a-bike sections and few places to resupply.",
+   "stats": {
+    "km": 885,
+    "days": "7–14",
+    "climb": 16000
+   },
+   "weather": "Midges in summer; river crossings can be impassable after rain.",
+   "hire": "byo",
+   "hireNote": "Set up for rough bikepacking",
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "camino",
+   "name": "Camino de Santiago",
+   "category": "gravel",
+   "country": "Spain",
+   "region": "Saint-Jean-Pied-de-Port to Santiago",
+   "zone": "iberia",
+   "lat": 42.6,
+   "lon": -5.5,
+   "elev": [
+    250,
+    1500
+   ],
+   "refElev": 800,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9,
+    10
+   ],
+   "crowds": 4,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Biarritz ~1 h to the start; Santiago airport at the end",
+   "terrain": "Dirt pilgrim paths and quiet roads; intermediate",
+   "pitch": "The medieval pilgrim way across northern Spain (the Camino Francés), through Pamplona, Burgos and León and over the Galician hills to Santiago, with cheap pilgrim hostels all the way. Bikes can follow the paths or the parallel roads.",
+   "stats": {
+    "km": 780,
+    "days": "10–15",
+    "climb": 11000
+   },
+   "weather": "The Meseta is hot in July and August; Galicia is often wet.",
+   "hire": "easy",
+   "hireNote": "Several companies hire bikes one way and collect them in Santiago",
+   "kind": "route",
+   "support": "hotel"
   }
  ]
 }
