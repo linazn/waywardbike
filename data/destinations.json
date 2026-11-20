@@ -1,0 +1,3184 @@
+{
+ "_about": "Curated seed list for Wayward Bike. Each destination is one of two kinds. kind=base: a town you stay in and ride out from. offers = what you can ride from it, by discipline: mtb: lift (lifts & shuttles), trails (trail centres and natural trails) · road: day, climbs, cobbles · gravel: day. category = its main discipline (sets the dot colour). kind=route: a multi-day route, one-way or loop (you move on each night); category = main surface; support = hotel | bikepacking | remote. season/best are month numbers (season wraps if start > end). elev = [low, high] m; refElev = where riding conditions are modelled. stats: km, days, climb (m) for routes. children = a few highlights (not every ride): kind area | park | climb | section, with a short note.",
+ "macros": {
+  "na": "North America",
+  "eu": "Europe",
+  "asia": "Asia",
+  "oce": "Australia & New Zealand",
+  "sa": "Latin America",
+  "af": "Africa & Middle East"
+ },
+ "zones": {
+  "bc": {
+   "name": "Western Canada",
+   "macro": "na"
+  },
+  "usw": {
+   "name": "US West & Rockies",
+   "macro": "na"
+  },
+  "hawaii": {
+   "name": "Hawaii",
+   "macro": "na"
+  },
+  "usc": {
+   "name": "Central & Eastern US",
+   "macro": "na"
+  },
+  "mexico": {
+   "name": "Mexico",
+   "macro": "sa"
+  },
+  "patagonia": {
+   "name": "Patagonia",
+   "macro": "sa"
+  },
+  "uk": {
+   "name": "Britain",
+   "macro": "eu"
+  },
+  "iceland": {
+   "name": "Iceland",
+   "macro": "eu"
+  },
+  "benelux": {
+   "name": "Belgium",
+   "macro": "eu"
+  },
+  "france": {
+   "name": "France",
+   "macro": "eu"
+  },
+  "alps": {
+   "name": "Switzerland & Austria",
+   "macro": "eu"
+  },
+  "italy": {
+   "name": "Italy",
+   "macro": "eu"
+  },
+  "iberia": {
+   "name": "Spain",
+   "macro": "eu"
+  },
+  "atlantic": {
+   "name": "Atlantic islands",
+   "macro": "eu"
+  },
+  "africa": {
+   "name": "Africa",
+   "macro": "af"
+  },
+  "mideast": {
+   "name": "Middle East",
+   "macro": "af"
+  },
+  "centralasia": {
+   "name": "Central Asia",
+   "macro": "asia"
+  },
+  "himalaya": {
+   "name": "Himalaya & Tibet",
+   "macro": "asia"
+  },
+  "eastasia": {
+   "name": "Japan & Taiwan",
+   "macro": "asia"
+  },
+  "aus": {
+   "name": "Australia",
+   "macro": "oce"
+  },
+  "nz": {
+   "name": "New Zealand",
+   "macro": "oce"
+  }
+ },
+ "destinations": [
+  {
+   "id": "moab",
+   "name": "Moab",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Utah",
+   "zone": "usw",
+   "lat": 38.573,
+   "lon": -109.55,
+   "elev": [
+    1200,
+    3400
+   ],
+   "refElev": 1400,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    10
+   ],
+   "crowds": 4,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Grand Junction ~2 h, Salt Lake City ~4 h, Las Vegas ~6.5 h",
+   "terrain": "Slickrock, ledges and desert singletrack; intermediate to expert",
+   "pitch": "Red-rock desert riding on grippy sandstone, from the famous Slickrock loop to the Whole Enchilada, a big descent from alpine meadows to the Colorado River.",
+   "children": [
+    {
+     "name": "Slickrock Trail",
+     "kind": "area",
+     "lat": 38.582,
+     "lon": -109.518,
+     "note": "~17 km loop on bare sandstone; steep, technical, iconic"
+    },
+    {
+     "name": "Whole Enchilada",
+     "kind": "area",
+     "lat": 38.56,
+     "lon": -109.33,
+     "note": "~42 km, ~2,400 m descent from Burro Pass to the river (shuttle); advanced; opens ~June up top"
+    },
+    {
+     "name": "Klondike Bluffs",
+     "kind": "area",
+     "lat": 38.76,
+     "lon": -109.72,
+     "note": "Flowy beginner–intermediate singletrack north of town; dinosaur tracks"
+    },
+    {
+     "name": "Mag 7",
+     "kind": "area",
+     "lat": 38.62,
+     "lon": -109.7,
+     "note": "Linked rim trails with big canyon views (Gemini Bridges, Portal); intermediate–expert"
+    },
+    {
+     "name": "Navajo Rocks & Brand",
+     "kind": "area",
+     "lat": 38.65,
+     "lon": -109.8,
+     "note": "Mellow-to-mid desert loops; good first days"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "whistler",
+   "name": "Whistler",
+   "category": "mtb",
+   "country": "Canada",
+   "region": "British Columbia",
+   "zone": "bc",
+   "lat": 50.116,
+   "lon": -122.957,
+   "elev": [
+    650,
+    2180
+   ],
+   "refElev": 1100,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 5,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Vancouver ~2 h by road (Sea to Sky Highway)",
+   "terrain": "Lift-served bike park and valley singletrack; all levels, very steep at the top end",
+   "pitch": "The world's best-known bike park, with 70+ lift-served trails from beginner flow to pro jump lines, plus a huge network of hand-built valley singletrack.",
+   "children": [
+    {
+     "name": "Whistler Mountain Bike Park",
+     "kind": "park",
+     "lat": 50.108,
+     "lon": -122.952,
+     "note": "~1,500 m lift-served vertical, 70+ trails; Top of the World opens mid-summer"
+    },
+    {
+     "name": "Lost Lake",
+     "kind": "area",
+     "lat": 50.128,
+     "lon": -122.938,
+     "note": "Beginner-friendly cross-country loops beside the village"
+    },
+    {
+     "name": "Westside & Comfortably Numb",
+     "kind": "area",
+     "lat": 50.14,
+     "lon": -122.99,
+     "note": "Rooty, rocky BC-style tech; Comfortably Numb is a ~25 km classic"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "squamish",
+   "name": "Squamish",
+   "category": "mtb",
+   "country": "Canada",
+   "region": "British Columbia",
+   "zone": "bc",
+   "lat": 49.701,
+   "lon": -123.156,
+   "elev": [
+    0,
+    1000
+   ],
+   "refElev": 300,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Vancouver ~1 h",
+   "terrain": "Steep granite slabs, roots and loamy forest; intermediate to expert",
+   "pitch": "Steep, technical forest trails on granite between Vancouver and Whistler. Locals call it the 'Sea to Sky' style: roll-ins, slabs and roots.",
+   "children": [
+    {
+     "name": "Diamond Head / Garibaldi Highlands",
+     "kind": "area",
+     "lat": 49.74,
+     "lon": -123.11,
+     "note": "Classic tech: Half Nelson, Pseudo-Tsuga"
+    },
+    {
+     "name": "Alice Lake",
+     "kind": "area",
+     "lat": 49.775,
+     "lon": -123.12,
+     "note": "Mellower loops and family riding"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "sedona",
+   "name": "Sedona",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Arizona",
+   "zone": "usw",
+   "lat": 34.87,
+   "lon": -111.761,
+   "elev": [
+    1250,
+    1550
+   ],
+   "refElev": 1350,
+   "season": [
+    10,
+    5
+   ],
+   "best": [
+    3,
+    4,
+    10,
+    11
+   ],
+   "crowds": 4,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Phoenix ~2 h, Flagstaff ~45 min",
+   "terrain": "Red-rock singletrack with ledges and exposure; intermediate to expert",
+   "pitch": "Desert singletrack among red-rock spires, with famous exposed lines like Hiline and Hangover. A winter and shoulder-season classic when the mountains are snowed in.",
+   "weather": "Summer is very hot; July–September also brings monsoon storms.",
+   "children": [
+    {
+     "name": "Hiline & Slim Shady",
+     "kind": "area",
+     "lat": 34.81,
+     "lon": -111.79,
+     "note": "South-side loops: flowy Slim Shady, exposed Hiline"
+    },
+    {
+     "name": "Hangover & Munds Wagon",
+     "kind": "area",
+     "lat": 34.86,
+     "lon": -111.73,
+     "note": "Cliffside slickrock; expert, with real exposure"
+    },
+    {
+     "name": "West Sedona (Thunder Mountain)",
+     "kind": "area",
+     "lat": 34.88,
+     "lon": -111.8,
+     "note": "Close-to-town tech loops"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "bentonville",
+   "name": "Bentonville",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Arkansas",
+   "zone": "usc",
+   "lat": 36.373,
+   "lon": -94.209,
+   "elev": [
+    300,
+    450
+   ],
+   "refElev": 380,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    10
+   ],
+   "crowds": 3,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Northwest Arkansas airport (XNA) ~25 min",
+   "terrain": "Purpose-built flow and jump trails from town; all levels",
+   "pitch": "Hundreds of kilometres of purpose-built trails start from downtown, funded by the Walton family. It's become the 'mountain bike capital of the world' in America's least likely state.",
+   "children": [
+    {
+     "name": "Slaughter Pen",
+     "kind": "area",
+     "lat": 36.39,
+     "lon": -94.225,
+     "note": "The original network: jump lines and flow, right from town"
+    },
+    {
+     "name": "Coler Mountain Bike Preserve",
+     "kind": "area",
+     "lat": 36.365,
+     "lon": -94.24,
+     "note": "Downhill-style lines, drops and a bike-in café"
+    },
+    {
+     "name": "Back 40 (Bella Vista)",
+     "kind": "area",
+     "lat": 36.47,
+     "lon": -94.29,
+     "note": "~50 km loop of rocky, rooty singletrack"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ],
+    "gravel": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "fruita",
+   "name": "Fruita",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Colorado",
+   "zone": "usw",
+   "lat": 39.159,
+   "lon": -108.729,
+   "elev": [
+    1400,
+    1800
+   ],
+   "refElev": 1450,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    9,
+    10
+   ],
+   "crowds": 3,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Grand Junction ~20 min",
+   "terrain": "Desert ridgelines and buff singletrack; beginner to advanced",
+   "pitch": "A small desert town with two big networks: the fast ridge-top trails of 18 Road and the river-canyon loops of Kokopelli. Laid-back and cheaper than Moab, 2 hours away.",
+   "children": [
+    {
+     "name": "18 Road (Bookcliffs)",
+     "kind": "area",
+     "lat": 39.32,
+     "lon": -108.7,
+     "note": "Fast, flowy ridgelines like Zippity Do Da"
+    },
+    {
+     "name": "Kokopelli Loops (Mary's Loop)",
+     "kind": "area",
+     "lat": 39.19,
+     "lon": -108.82,
+     "note": "Canyon-rim tech above the Colorado River"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "crestedbutte",
+   "name": "Crested Butte",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Colorado",
+   "zone": "usw",
+   "lat": 38.87,
+   "lon": -106.988,
+   "elev": [
+    2700,
+    3700
+   ],
+   "refElev": 3000,
+   "season": [
+    6,
+    10
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Gunnison ~45 min; Denver ~4.5 h",
+   "terrain": "High-alpine singletrack through aspen and wildflowers; intermediate to advanced",
+   "pitch": "One of the birthplaces of mountain biking, with high alpine singletrack like the 401 Trail through summer wildflowers, plus a lift-served bike park.",
+   "weather": "Afternoon thunderstorms are common in July and August: start early.",
+   "children": [
+    {
+     "name": "401 Trail",
+     "kind": "area",
+     "lat": 38.96,
+     "lon": -107.01,
+     "note": "~25 km loop topping out ~3,500 m; wildflowers in July"
+    },
+    {
+     "name": "Evolution Bike Park",
+     "kind": "park",
+     "lat": 38.898,
+     "lon": -106.966,
+     "note": "Lift-served park on Mt Crested Butte"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ],
+    "gravel": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "kingdomtrails",
+   "name": "East Burke (Kingdom Trails)",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Vermont",
+   "zone": "usc",
+   "lat": 44.59,
+   "lon": -71.95,
+   "elev": [
+    300,
+    700
+   ],
+   "refElev": 450,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    6,
+    9,
+    10
+   ],
+   "crowds": 4,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Burlington ~1.5 h, Boston ~3 h",
+   "terrain": "Flowy, rooty New England singletrack on private land; all levels",
+   "pitch": "A huge network across farmland and forest around East Burke, built through agreements with dozens of private landowners. Autumn colours make late September special.",
+   "children": [
+    {
+     "name": "Darling Hill",
+     "kind": "area",
+     "lat": 44.58,
+     "lon": -71.96,
+     "note": "The classic flow trails (Kitchel, Sidewinder)"
+    },
+    {
+     "name": "Burke Mountain Bike Park",
+     "kind": "park",
+     "lat": 44.571,
+     "lon": -71.893,
+     "note": "Lift-served downhill above the village"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ]
+   }
+  },
+  {
+   "id": "bend",
+   "name": "Bend",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Oregon",
+   "zone": "usw",
+   "lat": 44.058,
+   "lon": -121.315,
+   "elev": [
+    1100,
+    2000
+   ],
+   "refElev": 1300,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    6,
+    7,
+    9
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Redmond (RDM) ~25 min, Portland ~3.5 h",
+   "terrain": "Fast volcanic singletrack through pine forest; beginner to advanced",
+   "pitch": "A sunny high-desert town with smooth, fast trails starting at the edge of town, from Phil's Trail network to the high-country lines on Mt Bachelor.",
+   "children": [
+    {
+     "name": "Phil's Trail network",
+     "kind": "area",
+     "lat": 44.03,
+     "lon": -121.38,
+     "note": "Dozens of linked loops 10 minutes from downtown"
+    },
+    {
+     "name": "Tumalo Creek & Mrazek",
+     "kind": "area",
+     "lat": 44.04,
+     "lon": -121.5,
+     "note": "Longer, higher, with waterfalls and big descents"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ],
+    "gravel": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "pisgah",
+   "name": "Brevard (Pisgah)",
+   "category": "mtb",
+   "country": "USA",
+   "region": "North Carolina",
+   "zone": "usc",
+   "lat": 35.234,
+   "lon": -82.734,
+   "elev": [
+    650,
+    1800
+   ],
+   "refElev": 900,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    10
+   ],
+   "crowds": 3,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Asheville ~45 min",
+   "terrain": "Rocky, rooty, steep Appalachian singletrack; advanced",
+   "pitch": "Old-school, technical riding in the Pisgah National Forest: long climbs, loose rock and roots, and some of the toughest trails in the East.",
+   "children": [
+    {
+     "name": "Pisgah Ranger District trails",
+     "kind": "area",
+     "lat": 35.29,
+     "lon": -82.78,
+     "note": "Black Mountain, Farlow Gap: long and gnarly"
+    },
+    {
+     "name": "DuPont State Forest",
+     "kind": "area",
+     "lat": 35.19,
+     "lon": -82.62,
+     "note": "Smoother slickrock and waterfalls; friendlier"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "finale",
+   "name": "Finale Ligure",
+   "category": "mtb",
+   "country": "Italy",
+   "region": "Liguria",
+   "zone": "italy",
+   "lat": 44.169,
+   "lon": 8.343,
+   "elev": [
+    0,
+    1000
+   ],
+   "refElev": 300,
+   "season": [
+    1,
+    12
+   ],
+   "best": [
+    3,
+    4,
+    5,
+    10,
+    11
+   ],
+   "crowds": 4,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Genoa ~1 h, Nice ~2 h",
+   "terrain": "Rocky, loose enduro trails from the hills to the sea; intermediate to expert",
+   "pitch": "Enduro trails that end at the beach, with shuttles running all day and a riding season that lasts all winter. The old Enduro World Series finale made it famous.",
+   "weather": "Rides all year; July and August are hot and busy.",
+   "children": [
+    {
+     "name": "Feglino & Base NATO area",
+     "kind": "area",
+     "lat": 44.2,
+     "lon": 8.3,
+     "note": "Shuttle-served descents: Roller Coaster, DH Kill"
+    },
+    {
+     "name": "Varigotti & Perti",
+     "kind": "area",
+     "lat": 44.18,
+     "lon": 8.4,
+     "note": "Coastal lines with sea views"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ],
+    "road": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "morzine",
+   "name": "Morzine (Portes du Soleil)",
+   "category": "mtb",
+   "country": "France / Switzerland",
+   "region": "Haute-Savoie",
+   "zone": "france",
+   "lat": 46.179,
+   "lon": 6.709,
+   "elev": [
+    1000,
+    2300
+   ],
+   "refElev": 1500,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    7,
+    8
+   ],
+   "crowds": 4,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Geneva ~1.5 h",
+   "terrain": "Lift-served bike parks and big-mountain singletrack; intermediate to expert",
+   "pitch": "A dozen linked bike parks across France and Switzerland on one pass, with famously rough, braking-bump-ridden downhill tracks and a huge summer scene.",
+   "children": [
+    {
+     "name": "Pleney (Morzine)",
+     "kind": "park",
+     "lat": 46.17,
+     "lon": 6.7,
+     "note": "Steep, rough classic downhill trails"
+    },
+    {
+     "name": "Les Gets Bike Park",
+     "kind": "park",
+     "lat": 46.159,
+     "lon": 6.669,
+     "note": "Flow, jumps and a former World Cup track"
+    },
+    {
+     "name": "Châtel Bike Park",
+     "kind": "park",
+     "lat": 46.27,
+     "lon": 6.84,
+     "note": "Big jump lines and slopestyle features"
+    },
+    {
+     "name": "Champéry (Switzerland)",
+     "kind": "park",
+     "lat": 46.177,
+     "lon": 6.87,
+     "note": "Swiss side: steep World Cup downhill"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ],
+    "road": [
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "lenzerheide",
+   "name": "Lenzerheide",
+   "category": "mtb",
+   "country": "Switzerland",
+   "region": "Graubünden",
+   "zone": "alps",
+   "lat": 46.729,
+   "lon": 9.558,
+   "elev": [
+    1450,
+    2860
+   ],
+   "refElev": 1800,
+   "season": [
+    6,
+    10
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Zurich ~2 h by train",
+   "terrain": "Bike kingdom of flow trails, World Cup tracks and alpine singletrack; all levels",
+   "pitch": "A Swiss resort that rebuilt itself around biking, with flow trails, a World Cup downhill track and long alpine rides with lifts and trains for the uphill.",
+   "children": [
+    {
+     "name": "Bike Kingdom (Rothorn)",
+     "kind": "park",
+     "lat": 46.735,
+     "lon": 9.57,
+     "note": "Flow lines, jump trails and the World Cup track"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "saalbach",
+   "name": "Saalbach-Leogang",
+   "category": "mtb",
+   "country": "Austria",
+   "region": "Salzburg",
+   "zone": "alps",
+   "lat": 47.39,
+   "lon": 12.64,
+   "elev": [
+    800,
+    2100
+   ],
+   "refElev": 1300,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "crowds": 4,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Salzburg ~1.5 h, Munich ~2.5 h",
+   "terrain": "Lift-served flow and freeride lines across two valleys; all levels",
+   "pitch": "Austria's biggest bike area: many lifts, long flow trails and a regular World Cup downhill venue at Leogang.",
+   "children": [
+    {
+     "name": "Bikepark Leogang",
+     "kind": "park",
+     "lat": 47.44,
+     "lon": 12.76,
+     "note": "World Cup downhill, jump lines and a pump track"
+    },
+    {
+     "name": "Saalbach Hacklberg & Z-Line",
+     "kind": "park",
+     "lat": 47.39,
+     "lon": 12.63,
+     "note": "Long flow and freeride lines"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "garda",
+   "name": "Riva del Garda (Lake Garda)",
+   "category": "mtb",
+   "country": "Italy",
+   "region": "Trentino",
+   "zone": "italy",
+   "lat": 45.885,
+   "lon": 10.841,
+   "elev": [
+    65,
+    2200
+   ],
+   "refElev": 400,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ],
+   "crowds": 4,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Verona ~1 h, Milan ~2 h",
+   "terrain": "Rocky old military tracks and singletrack above the lake; intermediate to expert",
+   "pitch": "Big climbs on old military roads, rocky descents and a lakeside town with gelato at the end. Monte Altissimo and Tremalzo are the classics.",
+   "children": [
+    {
+     "name": "Tremalzo",
+     "kind": "area",
+     "lat": 45.84,
+     "lon": 10.7,
+     "note": "Old military road with tunnels and hairpins; huge views"
+    },
+    {
+     "name": "Monte Altissimo",
+     "kind": "area",
+     "lat": 45.81,
+     "lon": 10.88,
+     "note": "~2,000 m climb, long rocky descent to the lake"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ],
+    "road": [
+     "day",
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "madeira",
+   "name": "Madeira",
+   "category": "mtb",
+   "country": "Portugal",
+   "region": "Madeira",
+   "zone": "atlantic",
+   "lat": 32.65,
+   "lon": -16.91,
+   "elev": [
+    0,
+    1860
+   ],
+   "refElev": 800,
+   "season": [
+    1,
+    12
+   ],
+   "best": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Funchal airport",
+   "terrain": "Steep enduro trails from mountains to sea, with shuttles; intermediate to expert",
+   "pitch": "Volcanic island enduro with shuttles, rides from the clouds to the ocean through laurel forest, and mild weather all year.",
+   "weather": "Mild year-round; the north side and high ground are often in cloud.",
+   "children": [
+    {
+     "name": "Paul da Serra plateau",
+     "kind": "area",
+     "lat": 32.74,
+     "lon": -17.05,
+     "note": "High moorland starts, long descents"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ]
+   }
+  },
+  {
+   "id": "tweed",
+   "name": "Peebles (Tweed Valley)",
+   "category": "mtb",
+   "country": "UK",
+   "region": "Scottish Borders",
+   "zone": "uk",
+   "lat": 55.62,
+   "lon": -3.06,
+   "elev": [
+    150,
+    600
+   ],
+   "refElev": 300,
+   "season": [
+    1,
+    12
+   ],
+   "best": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Edinburgh ~1 h",
+   "terrain": "Forest trail centres, enduro and steep natural tracks; all levels",
+   "pitch": "Scotland's riding heartland, with the Glentress trail centre, the steep tracks of Innerleithen and the Golfie, and the Enduro World Series has raced here.",
+   "weather": "Rides all year, but it's often wet: summer is the most reliable.",
+   "children": [
+    {
+     "name": "Glentress",
+     "kind": "area",
+     "lat": 55.67,
+     "lon": -3.15,
+     "note": "Waymarked trail centre: blue to black, plus skills park"
+    },
+    {
+     "name": "Innerleithen & the Golfie",
+     "kind": "area",
+     "lat": 55.615,
+     "lon": -3.06,
+     "note": "Steep downhill and enduro tracks with uplift days"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ]
+   }
+  },
+  {
+   "id": "ainsa",
+   "name": "Aínsa (Zona Zero)",
+   "category": "mtb",
+   "country": "Spain",
+   "region": "Aragon, Pyrenees",
+   "zone": "iberia",
+   "lat": 42.418,
+   "lon": 0.14,
+   "elev": [
+    500,
+    2000
+   ],
+   "refElev": 700,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Barcelona ~3.5 h, Zaragoza ~2.5 h",
+   "terrain": "Over 1,000 km of waymarked trails, rocky and natural; all levels",
+   "pitch": "A medieval hilltop village in the Spanish Pyrenees surrounded by one of Europe's biggest waymarked trail networks. Quiet, cheap and technical.",
+   "children": [
+    {
+     "name": "Zona Zero network",
+     "kind": "area",
+     "lat": 42.43,
+     "lon": 0.13,
+     "note": "Waymarked enduro and XC routes around Aínsa and Boltaña"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "rotorua",
+   "name": "Rotorua",
+   "category": "mtb",
+   "country": "New Zealand",
+   "region": "Bay of Plenty",
+   "zone": "nz",
+   "lat": -38.138,
+   "lon": 176.25,
+   "elev": [
+    280,
+    750
+   ],
+   "refElev": 350,
+   "season": [
+    1,
+    12
+   ],
+   "best": [
+    11,
+    12,
+    1,
+    2,
+    3
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Rotorua airport; Auckland ~3 h",
+   "terrain": "Loamy flow trails in redwood forest, plus a gondola bike park; all levels",
+   "pitch": "Flowing trails through giant redwoods and pine, starting at the edge of town, with geothermal pools for afterwards. Whakarewarewa Forest is the heart.",
+   "children": [
+    {
+     "name": "Whakarewarewa Forest",
+     "kind": "area",
+     "lat": -38.17,
+     "lon": 176.275,
+     "note": "~200 km of graded trails among the redwoods"
+    },
+    {
+     "name": "Skyline Rotorua",
+     "kind": "park",
+     "lat": -38.12,
+     "lon": 176.225,
+     "note": "Gondola-served flow and jump trails"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ]
+   }
+  },
+  {
+   "id": "queenstown",
+   "name": "Queenstown",
+   "category": "mtb",
+   "country": "New Zealand",
+   "region": "Otago",
+   "zone": "nz",
+   "lat": -45.031,
+   "lon": 168.663,
+   "elev": [
+    310,
+    1600
+   ],
+   "refElev": 600,
+   "season": [
+    10,
+    4
+   ],
+   "best": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "crowds": 4,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Queenstown airport",
+   "terrain": "Gondola bike park, alpine singletrack and heli drops; intermediate to expert",
+   "pitch": "A gondola straight from town to a big bike park, alpine trails at Coronet Peak and Cardrona, and heli-biking into the high country.",
+   "children": [
+    {
+     "name": "Queenstown Bike Park (Skyline)",
+     "kind": "park",
+     "lat": -45.03,
+     "lon": 168.65,
+     "note": "Gondola-served, ~30 trails"
+    },
+    {
+     "name": "Coronet Peak & Cardrona",
+     "kind": "park",
+     "lat": -44.92,
+     "lon": 168.735,
+     "note": "Alpine bike parks over summer"
+    },
+    {
+     "name": "Seven Mile",
+     "kind": "area",
+     "lat": -45.05,
+     "lon": 168.58,
+     "note": "Forest singletrack on the lake road"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "lift",
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "derby",
+   "name": "Derby (Blue Derby)",
+   "category": "mtb",
+   "country": "Australia",
+   "region": "Tasmania",
+   "zone": "aus",
+   "lat": -41.15,
+   "lon": 147.8,
+   "elev": [
+    150,
+    900
+   ],
+   "refElev": 300,
+   "season": [
+    10,
+    5
+   ],
+   "best": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Launceston ~1.5 h",
+   "terrain": "Purpose-built flow and tech trails through rainforest; all levels",
+   "pitch": "An old tin-mining town in northeast Tasmania revived by the Blue Derby trails: rainforest, granite and creek crossings, with shuttles to the top of the network.",
+   "children": [
+    {
+     "name": "Blue Tier",
+     "kind": "area",
+     "lat": -41.19,
+     "lon": 147.94,
+     "note": "Big descent from the alpine plateau; shuttle up"
+    },
+    {
+     "name": "Derby core network",
+     "kind": "area",
+     "lat": -41.15,
+     "lon": 147.8,
+     "note": "Linked loops right from the village"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails",
+     "lift"
+    ]
+   }
+  },
+  {
+   "id": "capewinelands",
+   "name": "Stellenbosch",
+   "category": "mtb",
+   "country": "South Africa",
+   "region": "Western Cape",
+   "zone": "africa",
+   "lat": -33.934,
+   "lon": 18.861,
+   "elev": [
+    100,
+    1000
+   ],
+   "refElev": 300,
+   "season": [
+    1,
+    12
+   ],
+   "best": [
+    3,
+    4,
+    10,
+    11
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Cape Town ~45 min",
+   "terrain": "Singletrack through vineyards and fynbos mountains; all levels",
+   "pitch": "Trails among vineyards and mountains half an hour from Cape Town, from Jonkershoek's steep enduro to the Cape Epic stage routes.",
+   "weather": "Winter (June–August) is the rainy season in the Cape.",
+   "children": [
+    {
+     "name": "Jonkershoek",
+     "kind": "area",
+     "lat": -33.98,
+     "lon": 18.95,
+     "note": "Steep mountain trails in a nature reserve"
+    },
+    {
+     "name": "Tokai & Table Mountain",
+     "kind": "area",
+     "lat": -34.05,
+     "lon": 18.42,
+     "note": "Forest trails on Cape Town's doorstep"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "mtb": [
+     "trails"
+    ],
+    "road": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "uppermustang",
+   "name": "Upper Mustang",
+   "category": "mtb",
+   "country": "Nepal",
+   "region": "Mustang",
+   "zone": "himalaya",
+   "lat": 29.0,
+   "lon": 83.85,
+   "elev": [
+    2700,
+    4000
+   ],
+   "refElev": 3500,
+   "season": [
+    4,
+    11
+   ],
+   "best": [
+    5,
+    6,
+    9,
+    10
+   ],
+   "crowds": 1,
+   "cost": 4,
+   "guide": "Required",
+   "airport": "Pokhara, then flight or jeep to Jomsom",
+   "terrain": "Jeep tracks and singletrack in high desert; strong intermediate",
+   "pitch": "A ride through the former Kingdom of Lo, a Tibetan-Buddhist high desert in Nepal's rain shadow, from Jomsom to the walled town of Lo Manthang.",
+   "stats": {
+    "km": 200,
+    "days": "7–10",
+    "climb": 6000
+   },
+   "weather": "Lies in the Himalayan rain shadow, so it's rideable even in the monsoon (June–August).",
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "coloradotrail",
+   "name": "Colorado Trail",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Colorado",
+   "zone": "usw",
+   "lat": 39.25,
+   "lon": -106.3,
+   "elev": [
+    1700,
+    4000
+   ],
+   "refElev": 3200,
+   "season": [
+    7,
+    9
+   ],
+   "best": [
+    8,
+    9
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Denver (start), Durango (end)",
+   "terrain": "High-altitude singletrack with big hike-a-bike sections; advanced",
+   "pitch": "Around 800 km of mostly singletrack from Denver to Durango, much of it above 3,000 m. Bikes detour around six wilderness areas.",
+   "stats": {
+    "km": 870,
+    "days": "14–21",
+    "climb": 24000
+   },
+   "weather": "Afternoon thunderstorms near-daily in July; the high passes can hold snow into early July.",
+   "kind": "route",
+   "support": "bikepacking"
+  },
+  {
+   "id": "kokopelli",
+   "name": "Kokopelli Trail",
+   "category": "mtb",
+   "country": "USA",
+   "region": "Colorado–Utah",
+   "zone": "usw",
+   "lat": 39.0,
+   "lon": -109.2,
+   "elev": [
+    1300,
+    2600
+   ],
+   "refElev": 1500,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    4,
+    5,
+    9,
+    10
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Grand Junction (start), Moab (end)",
+   "terrain": "Desert jeep roads and some singletrack; intermediate, but remote",
+   "pitch": "A classic desert bikepacking route from Fruita to Moab, through canyons and over the La Sal foothills, linking two mountain-bike towns.",
+   "stats": {
+    "km": 228,
+    "days": "3–5",
+    "climb": 3700
+   },
+   "kind": "route",
+   "support": "bikepacking"
+  },
+  {
+   "id": "girona",
+   "name": "Girona",
+   "category": "road",
+   "country": "Spain",
+   "region": "Catalonia",
+   "zone": "iberia",
+   "lat": 41.979,
+   "lon": 2.821,
+   "elev": [
+    70,
+    1100
+   ],
+   "refElev": 200,
+   "season": [
+    1,
+    12
+   ],
+   "best": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Girona airport ~20 min, Barcelona ~1.5 h",
+   "terrain": "Quiet backroads, classic climbs and coast roads; also the gravel capital of Europe",
+   "pitch": "Europe's pro-cyclist hometown: smooth, quiet roads, famous training climbs like Rocacorba and Els Àngels, coffee shops full of riders, and endless gravel.",
+   "children": [
+    {
+     "name": "Rocacorba",
+     "kind": "climb",
+     "lat": 42.07,
+     "lon": 2.69,
+     "note": "~10 km at ~6.5%, steeper near the top; the pros' test climb"
+    },
+    {
+     "name": "Els Àngels",
+     "kind": "climb",
+     "lat": 41.97,
+     "lon": 2.92,
+     "note": "~10 km steady climb to a hilltop sanctuary"
+    },
+    {
+     "name": "Sant Feliu de Guíxols coast road",
+     "kind": "section",
+     "lat": 41.78,
+     "lon": 3.03,
+     "note": "Twisty cliff road along the Costa Brava"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "road": [
+     "day",
+     "climbs"
+    ],
+    "gravel": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "mallorca",
+   "name": "Mallorca",
+   "category": "road",
+   "country": "Spain",
+   "region": "Balearic Islands",
+   "zone": "iberia",
+   "lat": 39.85,
+   "lon": 2.95,
+   "elev": [
+    0,
+    1450
+   ],
+   "refElev": 300,
+   "season": [
+    1,
+    12
+   ],
+   "best": [
+    3,
+    4,
+    5,
+    9,
+    10
+   ],
+   "crowds": 4,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Palma airport",
+   "terrain": "Mountain roads in the Serra de Tramuntana and flat island lanes; all levels",
+   "pitch": "The classic spring training island: the Sa Calobra hairpins, the Puig Major climb and quiet lanes across the plains, with mild weather when the north is cold.",
+   "children": [
+    {
+     "name": "Sa Calobra",
+     "kind": "climb",
+     "lat": 39.85,
+     "lon": 2.8,
+     "note": "~9.5 km at ~7%: a famous loop of hairpins down to the sea (and back up)"
+    },
+    {
+     "name": "Puig Major",
+     "kind": "climb",
+     "lat": 39.8,
+     "lon": 2.79,
+     "note": "~14 km to ~880 m, the island's longest climb"
+    },
+    {
+     "name": "Cap de Formentor",
+     "kind": "section",
+     "lat": 39.94,
+     "lon": 3.17,
+     "note": "Cliff road to a lighthouse at the northern tip"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "road": [
+     "day",
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "tenerife",
+   "name": "Tenerife (Teide)",
+   "category": "road",
+   "country": "Spain",
+   "region": "Canary Islands",
+   "zone": "atlantic",
+   "lat": 28.27,
+   "lon": -16.64,
+   "elev": [
+    0,
+    2350
+   ],
+   "refElev": 1500,
+   "season": [
+    1,
+    12
+   ],
+   "best": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Tenerife South airport",
+   "terrain": "Long climbs from sea level to over 2,000 m; mostly advanced",
+   "pitch": "A volcano you can climb from the beach: roads rise from sea level to over 2,000 m in the Teide National Park, where pro teams base winter altitude camps.",
+   "children": [
+    {
+     "name": "Teide from Los Cristianos",
+     "kind": "climb",
+     "lat": 28.2,
+     "lon": -16.7,
+     "note": "~40 km climb from the coast into the caldera"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs",
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "calpe",
+   "name": "Calpe & the Costa Blanca",
+   "category": "road",
+   "country": "Spain",
+   "region": "Valencia",
+   "zone": "iberia",
+   "lat": 38.645,
+   "lon": 0.045,
+   "elev": [
+    0,
+    1000
+   ],
+   "refElev": 300,
+   "season": [
+    1,
+    12
+   ],
+   "best": [
+    11,
+    12,
+    1,
+    2,
+    3
+   ],
+   "crowds": 3,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Alicante ~1 h, Valencia ~1.5 h",
+   "terrain": "Quiet mountain roads behind the coast; all levels",
+   "pitch": "The winter base of the pro peloton: mild sunny weather, empty inland mountain roads and climbs like the Coll de Rates.",
+   "children": [
+    {
+     "name": "Coll de Rates",
+     "kind": "climb",
+     "lat": 38.72,
+     "lon": -0.09,
+     "note": "~6.5 km steady climb, the classic local test"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "road": [
+     "day",
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "dolomites",
+   "name": "Corvara (Dolomites passes)",
+   "category": "road",
+   "country": "Italy",
+   "region": "South Tyrol / Veneto",
+   "zone": "italy",
+   "lat": 46.55,
+   "lon": 11.87,
+   "elev": [
+    1400,
+    2240
+   ],
+   "refElev": 2000,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    6,
+    7,
+    9
+   ],
+   "crowds": 4,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Venice ~2.5 h, Innsbruck ~2 h",
+   "terrain": "High mountain passes with hairpins; intermediate to advanced",
+   "pitch": "The Giro d'Italia's favourite playground: the Sella Ronda loop over four passes around the Sella group, the steep Giau and the Fedaia under the Marmolada glacier.",
+   "children": [
+    {
+     "name": "Sella Ronda (Pordoi, Sella, Gardena, Campolongo)",
+     "kind": "climb",
+     "lat": 46.51,
+     "lon": 11.81,
+     "note": "~55 km loop over four passes; car-free days some summers"
+    },
+    {
+     "name": "Passo Giau",
+     "kind": "climb",
+     "lat": 46.48,
+     "lon": 12.05,
+     "note": "~10 km at ~9% from Selva, 29 hairpins"
+    },
+    {
+     "name": "Passo Fedaia",
+     "kind": "climb",
+     "lat": 46.46,
+     "lon": 11.87,
+     "note": "Steep ramps under the Marmolada glacier"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs",
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "stelvio",
+   "name": "Bormio (Stelvio & Gavia)",
+   "category": "road",
+   "country": "Italy",
+   "region": "Lombardy",
+   "zone": "italy",
+   "lat": 46.468,
+   "lon": 10.37,
+   "elev": [
+    1200,
+    2760
+   ],
+   "refElev": 1800,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Milan ~3.5 h, Innsbruck ~2.5 h",
+   "terrain": "Giant alpine climbs; advanced",
+   "pitch": "Some of the hardest and most famous climbs in cycling, all within reach of Bormio: the Stelvio, the Gavia and the brutal Mortirolo.",
+   "weather": "High passes usually open late May or June and can close with early snow in October.",
+   "children": [
+    {
+     "name": "Passo dello Stelvio",
+     "kind": "climb",
+     "lat": 46.529,
+     "lon": 10.453,
+     "note": "~22 km at ~7% from Bormio to 2,757 m; 48 hairpins on the Prato side"
+    },
+    {
+     "name": "Passo Gavia",
+     "kind": "climb",
+     "lat": 46.343,
+     "lon": 10.488,
+     "note": "~26 km to 2,621 m, narrow and wild"
+    },
+    {
+     "name": "Mortirolo",
+     "kind": "climb",
+     "lat": 46.25,
+     "lon": 10.3,
+     "note": "~12 km at ~10.5% from Mazzo; brutally steep"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "oisans",
+   "name": "Bourg d'Oisans (Alpe d'Huez)",
+   "category": "road",
+   "country": "France",
+   "region": "Isère / Savoie",
+   "zone": "france",
+   "lat": 45.055,
+   "lon": 6.03,
+   "elev": [
+    720,
+    2650
+   ],
+   "refElev": 1500,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    6,
+    7,
+    9
+   ],
+   "crowds": 4,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Grenoble ~1 h, Lyon ~2 h",
+   "terrain": "Tour de France climbs; advanced",
+   "pitch": "Bourg d'Oisans sits at the foot of the most famous Tour de France climbs: the 21 hairpins of Alpe d'Huez, the Galibier and the Croix de Fer.",
+   "children": [
+    {
+     "name": "Alpe d'Huez",
+     "kind": "climb",
+     "lat": 45.092,
+     "lon": 6.07,
+     "note": "~13.8 km at ~8%, 21 numbered hairpins"
+    },
+    {
+     "name": "Col du Galibier",
+     "kind": "climb",
+     "lat": 45.064,
+     "lon": 6.408,
+     "note": "~18 km from Valloire to 2,642 m (via the Télégraphe)"
+    },
+    {
+     "name": "Col de la Croix de Fer",
+     "kind": "climb",
+     "lat": 45.227,
+     "lon": 6.205,
+     "note": "~30 km of varied climbing to 2,067 m"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "ventoux",
+   "name": "Bédoin (Mont Ventoux)",
+   "category": "road",
+   "country": "France",
+   "region": "Provence",
+   "zone": "france",
+   "lat": 44.124,
+   "lon": 5.18,
+   "elev": [
+    300,
+    1910
+   ],
+   "refElev": 1000,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9
+   ],
+   "crowds": 4,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Avignon ~45 min, Marseille ~1.5 h",
+   "terrain": "One giant climb with three routes up; advanced",
+   "pitch": "The 'Giant of Provence': a bare, windswept limestone summit at 1,910 m, climbed from three sides. Some riders do all three in a day.",
+   "weather": "The summit road usually closes to cars in winter, and the mistral wind can be fierce.",
+   "children": [
+    {
+     "name": "From Bédoin",
+     "kind": "climb",
+     "lat": 44.124,
+     "lon": 5.18,
+     "note": "~21 km at ~7.5%; the Tour route, through forest then the bare moonscape"
+    },
+    {
+     "name": "From Malaucène",
+     "kind": "climb",
+     "lat": 44.174,
+     "lon": 5.13,
+     "note": "~21 km, steeper in places"
+    },
+    {
+     "name": "From Sault",
+     "kind": "climb",
+     "lat": 44.09,
+     "lon": 5.41,
+     "note": "~26 km, the gentlest way up"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs",
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "pyrenees",
+   "name": "Luz-Saint-Sauveur (Tourmalet)",
+   "category": "road",
+   "country": "France",
+   "region": "Hautes-Pyrénées",
+   "zone": "france",
+   "lat": 42.87,
+   "lon": 0.0,
+   "elev": [
+    450,
+    2115
+   ],
+   "refElev": 1200,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    6,
+    7,
+    9
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Lourdes/Tarbes ~45 min, Toulouse ~2 h",
+   "terrain": "Tour de France climbs; advanced",
+   "pitch": "The Tourmalet, the most-climbed pass in Tour de France history, plus the Aubisque, Aspin, Peyresourde and Hautacam, all within a day's ride of each other.",
+   "children": [
+    {
+     "name": "Col du Tourmalet",
+     "kind": "climb",
+     "lat": 42.908,
+     "lon": 0.145,
+     "note": "~19 km at ~7.4% from Luz-Saint-Sauveur to 2,115 m"
+    },
+    {
+     "name": "Col d'Aubisque",
+     "kind": "climb",
+     "lat": 42.977,
+     "lon": -0.339,
+     "note": "~16.5 km from Laruns, then the cliffside road to the Soulor"
+    },
+    {
+     "name": "Hautacam",
+     "kind": "climb",
+     "lat": 42.97,
+     "lon": -0.0,
+     "note": "~13.5 km summit finish above Argelès"
+    },
+    {
+     "name": "Peyresourde & Aspin",
+     "kind": "climb",
+     "lat": 42.85,
+     "lon": 0.3,
+     "note": "Shorter, steady classic cols"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "flanders",
+   "name": "Oudenaarde (Flanders)",
+   "category": "road",
+   "country": "Belgium",
+   "region": "East Flanders",
+   "zone": "benelux",
+   "lat": 50.845,
+   "lon": 3.605,
+   "elev": [
+    10,
+    150
+   ],
+   "refElev": 50,
+   "season": [
+    3,
+    10
+   ],
+   "best": [
+    4,
+    5,
+    6,
+    9
+   ],
+   "crowds": 3,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Brussels ~1 h",
+   "terrain": "Short, steep cobbled climbs and farm lanes; all levels (the cobbles hurt)",
+   "pitch": "The home of the Tour of Flanders: short, brutal cobbled climbs like the Oude Kwaremont and Paterberg, a museum, and a country obsessed with bike racing.",
+   "weather": "Spring classics season is March–April, when it's often cold and wet.",
+   "children": [
+    {
+     "name": "Oude Kwaremont",
+     "kind": "climb",
+     "lat": 50.78,
+     "lon": 3.53,
+     "note": "~2.2 km of cobbles, the race's longest"
+    },
+    {
+     "name": "Paterberg",
+     "kind": "climb",
+     "lat": 50.79,
+     "lon": 3.56,
+     "note": "~360 m of cobbles up to ~20%"
+    },
+    {
+     "name": "Koppenberg",
+     "kind": "climb",
+     "lat": 50.81,
+     "lon": 3.59,
+     "note": "~600 m of rough cobbles up to ~22%"
+    },
+    {
+     "name": "Muur van Geraardsbergen",
+     "kind": "climb",
+     "lat": 50.77,
+     "lon": 3.87,
+     "note": "Cobbled wall to a chapel; up to ~20%"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "road": [
+     "day",
+     "cobbles"
+    ]
+   }
+  },
+  {
+   "id": "roubaix",
+   "name": "Roubaix (Paris–Roubaix cobbles)",
+   "category": "road",
+   "country": "France",
+   "region": "Nord",
+   "zone": "france",
+   "lat": 50.55,
+   "lon": 3.25,
+   "elev": [
+    20,
+    80
+   ],
+   "refElev": 40,
+   "season": [
+    3,
+    10
+   ],
+   "best": [
+    4,
+    5,
+    9
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Lille ~30 min",
+   "terrain": "Flat, very rough cobbled farm tracks; all levels, hard on bikes",
+   "pitch": "Ride the 'Hell of the North' on the same cobbled sectors as the race, including the Arenberg Forest, and finish with a lap of the Roubaix velodrome.",
+   "children": [
+    {
+     "name": "Trouée d'Arenberg",
+     "kind": "section",
+     "lat": 50.4,
+     "lon": 3.41,
+     "note": "~2.3 km straight cobbled track through the forest"
+    },
+    {
+     "name": "Carrefour de l'Arbre",
+     "kind": "section",
+     "lat": 50.58,
+     "lon": 3.23,
+     "note": "Five-star sector near the finish"
+    },
+    {
+     "name": "Roubaix velodrome",
+     "kind": "section",
+     "lat": 50.68,
+     "lon": 3.21,
+     "note": "The finish; showers with riders' name plaques"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "road": [
+     "cobbles"
+    ]
+   }
+  },
+  {
+   "id": "como",
+   "name": "Bellagio (Lake Como)",
+   "category": "road",
+   "country": "Italy",
+   "region": "Lombardy",
+   "zone": "italy",
+   "lat": 45.985,
+   "lon": 9.26,
+   "elev": [
+    200,
+    1500
+   ],
+   "refElev": 400,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    5,
+    6,
+    9,
+    10
+   ],
+   "crowds": 3,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Milan ~1 h",
+   "terrain": "Lakeside roads and steep climbs; intermediate to advanced",
+   "pitch": "Lakeside roads, climbs from the Giro di Lombardia, and the Madonna del Ghisallo chapel, the patron saint of cyclists, with a cycling museum beside it.",
+   "children": [
+    {
+     "name": "Madonna del Ghisallo",
+     "kind": "climb",
+     "lat": 45.92,
+     "lon": 9.27,
+     "note": "~10 km from Bellagio to the cyclists' chapel"
+    },
+    {
+     "name": "Muro di Sormano",
+     "kind": "climb",
+     "lat": 45.88,
+     "lon": 9.25,
+     "note": "~2 km at ~15%, with gradients painted on the road"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "road": [
+     "day",
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "swisspasses",
+   "name": "Andermatt (Swiss passes)",
+   "category": "road",
+   "country": "Switzerland",
+   "region": "Uri / Valais / Bern",
+   "zone": "alps",
+   "lat": 46.635,
+   "lon": 8.594,
+   "elev": [
+    500,
+    2430
+   ],
+   "refElev": 1800,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 5,
+   "guide": "Optional",
+   "airport": "Zurich ~2 h by train",
+   "terrain": "Big alpine passes; advanced",
+   "pitch": "Andermatt sits at the centre of a ring of famous passes: the Furka, Grimsel, Susten and the cobbled Tremola road on the Gotthard.",
+   "children": [
+    {
+     "name": "Furka Pass",
+     "kind": "climb",
+     "lat": 46.573,
+     "lon": 8.415,
+     "note": "To 2,429 m, past the Rhône Glacier"
+    },
+    {
+     "name": "Grimsel Pass",
+     "kind": "climb",
+     "lat": 46.561,
+     "lon": 8.338,
+     "note": "To 2,164 m between reservoirs"
+    },
+    {
+     "name": "Susten Pass",
+     "kind": "climb",
+     "lat": 46.729,
+     "lon": 8.448,
+     "note": "To 2,224 m, glacier views"
+    },
+    {
+     "name": "Gotthard (Tremola)",
+     "kind": "climb",
+     "lat": 46.555,
+     "lon": 8.565,
+     "note": "Historic cobbled hairpins to 2,106 m"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "asturias",
+   "name": "Oviedo (Angliru & Covadonga)",
+   "category": "road",
+   "country": "Spain",
+   "region": "Asturias",
+   "zone": "iberia",
+   "lat": 43.35,
+   "lon": -5.13,
+   "elev": [
+    50,
+    1570
+   ],
+   "refElev": 600,
+   "season": [
+    5,
+    10
+   ],
+   "best": [
+    6,
+    7,
+    9
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Asturias airport ~1 h",
+   "terrain": "Brutally steep Vuelta climbs; advanced",
+   "pitch": "Green mountains with some of the steepest climbs in pro cycling: the Angliru, with ramps over 20%, and the Lagos de Covadonga in the Picos de Europa.",
+   "weather": "Atlantic climate: green because it rains a lot, even in summer.",
+   "children": [
+    {
+     "name": "Alto de l'Angliru",
+     "kind": "climb",
+     "lat": 43.22,
+     "lon": -5.93,
+     "note": "~12.5 km at ~10%, ramps up to ~23%"
+    },
+    {
+     "name": "Lagos de Covadonga",
+     "kind": "climb",
+     "lat": 43.27,
+     "lon": -4.98,
+     "note": "~12.5 km at ~7% to mountain lakes"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs",
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "taiwankom",
+   "name": "Hualien (Taroko & Wuling)",
+   "category": "road",
+   "country": "Taiwan",
+   "region": "Hualien",
+   "zone": "eastasia",
+   "lat": 24.16,
+   "lon": 121.62,
+   "elev": [
+    0,
+    3275
+   ],
+   "refElev": 1500,
+   "season": [
+    10,
+    5
+   ],
+   "best": [
+    10,
+    11,
+    3,
+    4
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Taipei ~2.5 h by train to Hualien",
+   "terrain": "One very long climb from the sea to 3,275 m; advanced",
+   "pitch": "One of the longest paved climbs in the world: from the Pacific coast through Taroko Gorge to Wuling Pass at 3,275 m, about 100 km of almost non-stop climbing.",
+   "weather": "Avoid typhoon season (July–September); winter can bring frost and snow at the top.",
+   "children": [
+    {
+     "name": "Wuling Pass",
+     "kind": "climb",
+     "lat": 24.137,
+     "lon": 121.274,
+     "note": "3,275 m, Taiwan's highest road"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "boulder",
+   "name": "Boulder",
+   "category": "road",
+   "country": "USA",
+   "region": "Colorado",
+   "zone": "usw",
+   "lat": 40.015,
+   "lon": -105.27,
+   "elev": [
+    1600,
+    4300
+   ],
+   "refElev": 1700,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    6,
+    9
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Denver airport ~45 min",
+   "terrain": "Canyon climbs and high plains; intermediate to advanced",
+   "pitch": "An American pro-cycling hub at the foot of the Rockies: canyon climbs, Flagstaff Mountain from town, and Trail Ridge Road in Rocky Mountain National Park.",
+   "children": [
+    {
+     "name": "Flagstaff Mountain",
+     "kind": "climb",
+     "lat": 40.0,
+     "lon": -105.3,
+     "note": "~7 km from town, steep at the top"
+    },
+    {
+     "name": "Lefthand Canyon to Ward",
+     "kind": "climb",
+     "lat": 40.07,
+     "lon": -105.45,
+     "note": "~25 km steady canyon climb"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "road": [
+     "day",
+     "climbs"
+    ],
+    "gravel": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "haleakala",
+   "name": "Pāʻia (Haleakalā)",
+   "category": "road",
+   "country": "USA",
+   "region": "Maui",
+   "zone": "hawaii",
+   "lat": 20.8,
+   "lon": -156.33,
+   "elev": [
+    0,
+    3055
+   ],
+   "refElev": 1500,
+   "season": [
+    1,
+    12
+   ],
+   "best": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ],
+   "crowds": 2,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Kahului (Maui) airport",
+   "terrain": "One very long climb from sea level to over 3,000 m; advanced",
+   "pitch": "Climb from sea level at Pā'ia to the summit of a volcano at 3,055 m: one of the biggest elevation gains of any paved road on earth.",
+   "children": [
+    {
+     "name": "Haleakalā summit",
+     "kind": "climb",
+     "lat": 20.71,
+     "lon": -156.25,
+     "note": "~57 km, ~3,000 m of gain"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "road": [
+     "climbs"
+    ]
+   }
+  },
+  {
+   "id": "danube",
+   "name": "Danube Cycle Path (Passau–Vienna)",
+   "category": "road",
+   "country": "Austria",
+   "region": "Upper & Lower Austria",
+   "zone": "alps",
+   "lat": 48.23,
+   "lon": 15.33,
+   "elev": [
+    150,
+    300
+   ],
+   "refElev": 220,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9
+   ],
+   "crowds": 4,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Munich ~2 h to Passau; Vienna airport at the end",
+   "terrain": "Flat, paved riverside path; easy",
+   "pitch": "Europe's most popular long-distance bike path, the Austrian part of EuroVelo 6: flat riverside riding through the Wachau's vineyards and monasteries to Vienna.",
+   "stats": {
+    "km": 320,
+    "days": "5–7",
+    "climb": 400
+   },
+   "children": [
+    {
+     "name": "Wachau valley",
+     "kind": "section",
+     "lat": 48.36,
+     "lon": 15.42,
+     "note": "Vineyards, Melk Abbey and apricot orchards"
+    }
+   ],
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "loire",
+   "name": "Loire à Vélo",
+   "category": "road",
+   "country": "France",
+   "region": "Loire Valley",
+   "zone": "france",
+   "lat": 47.39,
+   "lon": 0.69,
+   "elev": [
+    0,
+    200
+   ],
+   "refElev": 60,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9
+   ],
+   "crowds": 3,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Paris ~1 h by train to the middle of the route",
+   "terrain": "Flat, waymarked lanes and paths; easy",
+   "pitch": "A waymarked route along the Loire to the Atlantic, part of EuroVelo 6, past Renaissance châteaux and vineyards. Easy riding with wine at the end of each day.",
+   "stats": {
+    "km": 900,
+    "days": "8–14",
+    "climb": 2000
+   },
+   "children": [
+    {
+     "name": "Châteaux stretch (Blois–Tours)",
+     "kind": "section",
+     "lat": 47.5,
+     "lon": 1.15,
+     "note": "Chambord, Chenonceau and Amboise within reach"
+    }
+   ],
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "grandesalpes",
+   "name": "Route des Grandes Alpes",
+   "category": "road",
+   "country": "France",
+   "region": "Alps, Lake Geneva to the Mediterranean",
+   "zone": "france",
+   "lat": 44.9,
+   "lon": 6.64,
+   "elev": [
+    0,
+    2770
+   ],
+   "refElev": 1800,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    6,
+    7,
+    9
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Geneva (start), Nice (end)",
+   "terrain": "Big alpine passes, day after day; advanced",
+   "pitch": "A classic road through the French Alps from Lake Geneva to the Mediterranean, over passes like the Iseran, Galibier and Izoard.",
+   "stats": {
+    "km": 720,
+    "days": "7–10",
+    "climb": 17000
+   },
+   "children": [
+    {
+     "name": "Col de l'Iseran",
+     "kind": "climb",
+     "lat": 45.417,
+     "lon": 7.031,
+     "note": "2,764 m, the highest paved pass in the Alps"
+    },
+    {
+     "name": "Col d'Izoard",
+     "kind": "climb",
+     "lat": 44.82,
+     "lon": 6.735,
+     "note": "Through the eerie 'Casse Déserte'"
+    }
+   ],
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "shimanami",
+   "name": "Shimanami Kaido",
+   "category": "road",
+   "country": "Japan",
+   "region": "Hiroshima / Ehime",
+   "zone": "eastasia",
+   "lat": 34.25,
+   "lon": 133.1,
+   "elev": [
+    0,
+    100
+   ],
+   "refElev": 30,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    10,
+    11
+   ],
+   "crowds": 3,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Hiroshima ~1.5 h to Onomichi",
+   "terrain": "Dedicated bike lanes over bridges and islands; easy",
+   "pitch": "A car-free route of bridges and bike lanes hopping across six islands of the Seto Inland Sea, with citrus groves, temples and rental bikes at both ends.",
+   "stats": {
+    "km": 70,
+    "days": "1–2",
+    "climb": 600
+   },
+   "weather": "June is the rainy season and typhoons can hit in late summer.",
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "lhasakathmandu",
+   "name": "Lhasa to Kathmandu",
+   "category": "road",
+   "country": "China / Nepal",
+   "region": "Tibet",
+   "zone": "himalaya",
+   "lat": 28.66,
+   "lon": 87.12,
+   "elev": [
+    1300,
+    5250
+   ],
+   "refElev": 4300,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    4,
+    5,
+    10
+   ],
+   "crowds": 1,
+   "cost": 4,
+   "guide": "Required",
+   "airport": "Fly or take the train to Lhasa",
+   "terrain": "Mostly paved high-altitude road over passes above 5,000 m; advanced, very high",
+   "pitch": "Across the Tibetan Plateau past Everest views and over passes above 5,000 m, then a huge descent into Nepal. Foreigners can only travel in Tibet on an organised tour.",
+   "stats": {
+    "km": 1000,
+    "days": "14–21",
+    "climb": 10000
+   },
+   "weather": "Permits and border status change: check current access.",
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "tuscany",
+   "name": "Siena (Tuscany)",
+   "category": "gravel",
+   "country": "Italy",
+   "region": "Siena / Chianti",
+   "zone": "italy",
+   "lat": 43.47,
+   "lon": 11.43,
+   "elev": [
+    200,
+    700
+   ],
+   "refElev": 400,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Florence ~1 h, Pisa ~1.5 h",
+   "terrain": "White gravel roads through vineyards and hills; all levels",
+   "pitch": "The white gravel roads of Chianti and the Crete Senesi, home to the L'Eroica vintage ride and the Strade Bianche race, with Siena's Piazza del Campo at the end.",
+   "children": [
+    {
+     "name": "L'Eroica routes (Gaiole)",
+     "kind": "section",
+     "lat": 43.47,
+     "lon": 11.43,
+     "note": "Waymarked routes on the old white roads"
+    },
+    {
+     "name": "Crete Senesi",
+     "kind": "section",
+     "lat": 43.2,
+     "lon": 11.55,
+     "note": "Rolling clay hills and cypress avenues"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "gravel": [
+     "day"
+    ],
+    "road": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "flinthills",
+   "name": "Emporia (Flint Hills)",
+   "category": "gravel",
+   "country": "USA",
+   "region": "Kansas",
+   "zone": "usc",
+   "lat": 38.404,
+   "lon": -96.181,
+   "elev": [
+    300,
+    450
+   ],
+   "refElev": 360,
+   "season": [
+    3,
+    11
+   ],
+   "best": [
+    4,
+    5,
+    6,
+    10
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Kansas City ~2 h",
+   "terrain": "Rough, rocky prairie gravel; long and exposed",
+   "pitch": "The tallgrass prairie of the Flint Hills is home to Unbound Gravel, the biggest race in gravel, held each spring on sharp flint roads around Emporia.",
+   "kind": "base",
+   "offers": {
+    "gravel": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "steamboat",
+   "name": "Steamboat Springs",
+   "category": "gravel",
+   "country": "USA",
+   "region": "Colorado",
+   "zone": "usw",
+   "lat": 40.485,
+   "lon": -106.832,
+   "elev": [
+    2000,
+    3000
+   ],
+   "refElev": 2100,
+   "season": [
+    6,
+    10
+   ],
+   "best": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Hayden (HDN) ~30 min, Denver ~3 h",
+   "terrain": "Smooth ranch roads and mountain gravel; all levels",
+   "pitch": "Ranch-country gravel in the Yampa Valley, with SBT GRVL each summer and hot springs after the ride.",
+   "kind": "base",
+   "offers": {
+    "gravel": [
+     "day"
+    ],
+    "mtb": [
+     "trails"
+    ]
+   }
+  },
+  {
+   "id": "cairngorms",
+   "name": "Aviemore (Cairngorms)",
+   "category": "gravel",
+   "country": "UK",
+   "region": "Scottish Highlands",
+   "zone": "uk",
+   "lat": 57.195,
+   "lon": -3.825,
+   "elev": [
+    200,
+    800
+   ],
+   "refElev": 300,
+   "season": [
+    4,
+    10
+   ],
+   "best": [
+    5,
+    6,
+    9
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Inverness ~45 min; trains from Edinburgh",
+   "terrain": "Estate tracks and forest roads through the national park; all levels",
+   "pitch": "Old Caledonian pine forest, estate tracks and empty glens in Britain's biggest national park, with whisky distilleries along the Spey.",
+   "weather": "Midges in summer; weather can be wintry on the hills any month.",
+   "children": [
+    {
+     "name": "Rothiemurchus & Glenmore",
+     "kind": "section",
+     "lat": 57.16,
+     "lon": -3.76,
+     "note": "Forest tracks around Loch Morlich"
+    }
+   ],
+   "kind": "base",
+   "offers": {
+    "gravel": [
+     "day"
+    ]
+   }
+  },
+  {
+   "id": "icelandhighlands",
+   "name": "Iceland Highlands (Kjölur)",
+   "category": "gravel",
+   "country": "Iceland",
+   "region": "Central Highlands",
+   "zone": "iceland",
+   "lat": 64.8,
+   "lon": -19.6,
+   "elev": [
+    200,
+    700
+   ],
+   "refElev": 600,
+   "season": [
+    7,
+    8
+   ],
+   "best": [
+    7,
+    8
+   ],
+   "crowds": 2,
+   "cost": 4,
+   "guide": "Optional",
+   "airport": "Keflavík; buses to the start",
+   "terrain": "Rough volcanic gravel roads (F-roads) and river crossings; intermediate, remote",
+   "pitch": "A crossing of Iceland's empty interior between glaciers on the old Kjölur route, with hot springs at Hveravellir halfway.",
+   "stats": {
+    "km": 200,
+    "days": "3–5",
+    "climb": 2000
+   },
+   "weather": "Highland roads usually open in late June or July; wind is the main challenge.",
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "carreteraaustral",
+   "name": "Carretera Austral",
+   "category": "gravel",
+   "country": "Chile",
+   "region": "Aysén",
+   "zone": "patagonia",
+   "lat": -45.57,
+   "lon": -72.07,
+   "elev": [
+    0,
+    1100
+   ],
+   "refElev": 300,
+   "season": [
+    11,
+    3
+   ],
+   "best": [
+    12,
+    1,
+    2
+   ],
+   "crowds": 2,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Puerto Montt (start), Balmaceda near Coyhaique (middle)",
+   "terrain": "Mixed paved and rough gravel road; intermediate, long",
+   "pitch": "A road carved through Chilean Patagonia past fjords, glaciers and temperate rainforest, ending at Villa O'Higgins. One of the world's great bike tours.",
+   "stats": {
+    "km": 1240,
+    "days": "21–35",
+    "climb": 18000
+   },
+   "weather": "Rain is frequent, and the wind can be relentless.",
+   "kind": "route",
+   "support": "bikepacking"
+  },
+  {
+   "id": "pamir",
+   "name": "Pamir Highway",
+   "category": "gravel",
+   "country": "Tajikistan / Kyrgyzstan",
+   "region": "Gorno-Badakhshan",
+   "zone": "centralasia",
+   "lat": 38.17,
+   "lon": 73.96,
+   "elev": [
+    800,
+    4655
+   ],
+   "refElev": 3800,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    7,
+    8
+   ],
+   "crowds": 1,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Dushanbe (start) or Osh (end)",
+   "terrain": "Broken tarmac and gravel at very high altitude; advanced, remote",
+   "pitch": "The 'Roof of the World' road through Tajikistan's Pamirs, along the Afghan border on the Panj River, then over the Ak-Baital Pass at 4,655 m.",
+   "stats": {
+    "km": 1200,
+    "days": "21–30",
+    "climb": 15000
+   },
+   "weather": "Needs a special GBAO permit. Check travel advisories before planning.",
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "greatdivide",
+   "name": "Great Divide Route",
+   "category": "gravel",
+   "country": "USA / Canada",
+   "region": "Banff to the Mexican border",
+   "zone": "usw",
+   "lat": 42.3,
+   "lon": -108.0,
+   "elev": [
+    1000,
+    3600
+   ],
+   "refElev": 2200,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    7,
+    8
+   ],
+   "crowds": 2,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Calgary (start, Banff), El Paso (end)",
+   "terrain": "Forest roads and backroads along the Continental Divide; long and remote",
+   "pitch": "The classic North American bikepacking route along the Rocky Mountains from Banff to the Mexican border, and the course of the Tour Divide race.",
+   "stats": {
+    "km": 4400,
+    "days": "40–70",
+    "climb": 60000
+   },
+   "weather": "Snow lingers on northern passes into June; grizzly country in Canada and Montana.",
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "atlas",
+   "name": "Atlas Mountains",
+   "category": "gravel",
+   "country": "Morocco",
+   "region": "High Atlas",
+   "zone": "africa",
+   "lat": 31.0,
+   "lon": -7.5,
+   "elev": [
+    0,
+    2600
+   ],
+   "refElev": 1500,
+   "season": [
+    10,
+    4
+   ],
+   "best": [
+    3,
+    4,
+    10,
+    11
+   ],
+   "crowds": 1,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Marrakech",
+   "terrain": "Mountain pistes, mule tracks and desert roads; advanced, remote",
+   "pitch": "Mountain pistes across the High and Anti-Atlas from Marrakech, the route of the Atlas Mountain Race, past Berber villages and kasbahs.",
+   "stats": {
+    "km": 1300,
+    "days": "10–18",
+    "climb": 20000
+   },
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "alps2ocean",
+   "name": "Alps 2 Ocean",
+   "category": "gravel",
+   "country": "New Zealand",
+   "region": "Canterbury / Otago",
+   "zone": "nz",
+   "lat": -44.49,
+   "lon": 169.97,
+   "elev": [
+    0,
+    900
+   ],
+   "refElev": 500,
+   "season": [
+    10,
+    4
+   ],
+   "best": [
+    11,
+    12,
+    1,
+    2,
+    3
+   ],
+   "crowds": 3,
+   "cost": 3,
+   "guide": "Optional",
+   "airport": "Christchurch ~4 h to the start; Queenstown ~2.5 h",
+   "terrain": "Purpose-built gravel trail and quiet roads; easy to intermediate",
+   "pitch": "From the foot of Aoraki/Mount Cook past glacier lakes and hydro dams down to Oamaru on the Pacific coast: New Zealand's longest single cycle trail.",
+   "stats": {
+    "km": 300,
+    "days": "4–6",
+    "climb": 2500
+   },
+   "kind": "route",
+   "support": "hotel"
+  },
+  {
+   "id": "jordanbiketrail",
+   "name": "Jordan Bike Trail",
+   "category": "gravel",
+   "country": "Jordan",
+   "region": "Um Qais to Aqaba",
+   "zone": "mideast",
+   "lat": 30.6,
+   "lon": 35.6,
+   "elev": [
+    -400,
+    1600
+   ],
+   "refElev": 1000,
+   "season": [
+    10,
+    5
+   ],
+   "best": [
+    3,
+    4,
+    10,
+    11
+   ],
+   "crowds": 1,
+   "cost": 2,
+   "guide": "Recommended",
+   "airport": "Amman (start), Aqaba (end)",
+   "terrain": "Desert tracks, village roads and singletrack; intermediate to advanced",
+   "pitch": "A route the length of Jordan, through olive hills and canyons to Petra and the red sand of Wadi Rum, finishing at the Red Sea.",
+   "stats": {
+    "km": 730,
+    "days": "10–14",
+    "climb": 13000
+   },
+   "weather": "Summer is far too hot; winter can bring rain and snow on the high plateau.",
+   "kind": "route",
+   "support": "bikepacking"
+  },
+  {
+   "id": "bajadivide",
+   "name": "Baja Divide",
+   "category": "gravel",
+   "country": "Mexico",
+   "region": "Baja California",
+   "zone": "mexico",
+   "lat": 28.0,
+   "lon": -113.3,
+   "elev": [
+    0,
+    1500
+   ],
+   "refElev": 300,
+   "season": [
+    11,
+    4
+   ],
+   "best": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "crowds": 1,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "San Diego (start), San José del Cabo (end)",
+   "terrain": "Sandy desert tracks and dirt roads; advanced, very remote",
+   "pitch": "A self-supported dirt route down the Baja peninsula through cactus deserts, missions and fishing villages, between the Pacific and the Sea of Cortez.",
+   "stats": {
+    "km": 2700,
+    "days": "35–50",
+    "climb": 30000
+   },
+   "kind": "route",
+   "support": "remote"
+  },
+  {
+   "id": "congonile",
+   "name": "Congo Nile Trail",
+   "category": "gravel",
+   "country": "Rwanda",
+   "region": "Lake Kivu",
+   "zone": "africa",
+   "lat": -2.06,
+   "lon": 29.35,
+   "elev": [
+    1450,
+    2200
+   ],
+   "refElev": 1600,
+   "season": [
+    6,
+    9
+   ],
+   "best": [
+    6,
+    7,
+    8
+   ],
+   "crowds": 1,
+   "cost": 2,
+   "guide": "Optional",
+   "airport": "Kigali ~3 h to Rubavu",
+   "terrain": "Dirt roads along the lake with constant climbing; intermediate",
+   "pitch": "Dirt roads along the shore of Lake Kivu through tea and coffee plantations and villages, in the 'land of a thousand hills'.",
+   "stats": {
+    "km": 230,
+    "days": "4–6",
+    "climb": 6000
+   },
+   "weather": "Dry seasons are June–September and December–February.",
+   "kind": "route",
+   "support": "bikepacking"
+  }
+ ]
+}

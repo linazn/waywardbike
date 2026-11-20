@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wayward Bike · Bike trips worth the journey</title>
+  <meta name="description" content="Wayward Bike: a world map of mountain bike, road and gravel trips worth the journey, with this week's riding conditions, when to go, and a side-by-side compare." />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/brand/favicon-64.png" />
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png" />
+  <meta name="theme-color" content="#1a4c2a" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Wayward Bike · Bike trips worth the journey" />
+  <meta property="og:description" content="A world map of mountain bike, road and gravel trips worth the journey, with this week's riding conditions and when to go." />
+  <meta property="og:image" content="assets/brand/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="758" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.css" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <header class="brand">
+        <button id="closeSidebar" class="sb-close" aria-label="Hide filters and show the full map" title="Hide filters">×</button>
+        <h1 class="logo">
+          <img class="logo-art" src="assets/brand/illustration.png" width="680" height="238" alt="" />
+          <img class="logo-word" src="assets/brand/wordmark.svg" width="1560" height="260" alt="Wayward Bike" />
+        </h1>
+        <p class="tagline"><img class="logo-tag" src="assets/brand/tagline.svg" width="1050" height="145" alt="Bike trips worth the journey" /></p>
+        <p class="muted" id="asof">Loading riding conditions…</p>
+      </header>
+
+      <div class="filter-bar">
+        <span>Filters <b id="filterCount"></b></span>
+        <button type="button" id="clearAll" class="link-btn">Clear all filters</button>
+      </div>
+
+      <section class="block">
+        <h2>What kind of riding? <span class="info" data-info="draw" tabindex="0" role="button" aria-label="What does this mean?">i</span></h2>
+        <div class="cat-toggles" id="catToggles"></div>
+      </section>
+
+      <section class="block">
+        <h2>When are you going? <span class="info" data-info="month" tabindex="0" role="button" aria-label="What does this mean?">i</span></h2>
+        <div class="months" id="months"></div>
+        <label class="check"><input type="checkbox" id="hideOut" /> Hide places out of season</label>
+      </section>
+
+      <section class="block">
+        <h2>Riding conditions this week <span class="info" data-info="cond" tabindex="0" role="button" aria-label="What does this mean?">i</span></h2>
+        <div class="seg" id="colorBy">
+          <button data-v="category">Colour by type</button>
+          <button data-v="cond">Colour by conditions</button>
+        </div>
+        <div class="seg" id="minCond" aria-label="Filter by riding conditions">
+          <button data-v="any">Any</button>
+          <button data-v="mixed">Mixed or better</button>
+          <button data-v="good">Good only</button>
+        </div>
+        <div class="legend" id="legend"></div>
+      </section>
+
+      <section class="block">
+        <h2>Crowds <span class="info" data-info="crowdFilter" tabindex="0" role="button" aria-label="What does this mean?">i</span></h2>
+        <div class="seg" id="crowdMax">
+          <button data-v="5">Any</button>
+          <button data-v="3">Skip the busiest</button>
+          <button data-v="2">Quiet only</button>
+        </div>
+      </section>
+
+      <section class="block grow">
+        <div class="list-top">
+        <div class="list-head">
+          <h2><span id="count">0</span> destinations</h2>
+          <select id="sortBy" aria-label="Sort list">
+            <option value="zone">By region</option>
+            <option value="name">A–Z</option>
+            <option value="cond">Best conditions this week</option>
+          </select>
+        </div>
+        <div id="hiddenNote" class="hidden-note"></div>
+        <input type="search" id="search" placeholder="Search name, country, region…" />
+        </div>
+        <ul id="list" class="dest-list"></ul>
+      </section>
+      <button id="showMap" class="show-map">Show <span id="countMap">0</span> on the map</button>
+      <footer class="credits">
+        Weather: <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a> (CC BY 4.0) · Map: <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a>, © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors · Terrain: Mapzen/AWS Terrain Tiles.
+        Modelled data for early trip scoping. Always check local conditions, trail status and access.
+        <div class="fb-foot">Ideas, corrections, a place I've missed? <button type="button" class="link-btn" data-feedback="">Send feedback</button></div>
+      </footer>
+    </aside>
+
+    <div id="sbBackdrop" aria-hidden="true"></div>
+    <main id="mapWrap">
+      <div id="map"></div>
+      <div id="zoneLayer"><svg id="zoneLines"></svg></div>
+      <button id="brandChip" class="brand-chip" aria-label="Wayward Bike: open filters"><img src="assets/brand/wordmark.svg" width="1560" height="260" alt="Wayward Bike" /></button>
+      <button id="toggleSidebar" class="fab" aria-label="Filters">☰ Filters</button>
+      <button id="showAll" class="map-btn" title="Zoom out to show every destination">World view</button>
+      <button id="feedbackBtn" class="map-btn fb-btn" data-feedback="" title="Ideas, corrections, places I've missed">Feedback</button>
+    </main>
+
+    <aside id="detail" class="hidden" aria-live="polite"></aside>
+
+    <footer id="tray" class="hidden">
+      <div class="tray-title">Compare <span id="cmpCount">0</span>/6</div>
+      <div id="trayBody"></div>
+    </footer>
+  </div>
+
+  <div id="modal" class="hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="sticky-close"><button class="close" id="modalClose" aria-label="Close">×</button></div>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+  <div id="tooltip" class="tooltip hidden"></div>
+
+  <script src="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

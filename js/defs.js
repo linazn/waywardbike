@@ -1,0 +1,23 @@
+// Definitions shown by the (i) hovers. Keep these short: one idea per entry.
+export const DEFS = {
+  draw: `Each dot is one of two things:<br><b>● A base</b>: a town you stay in and ride out from each day. Its colour is the main discipline, and many bases offer more than one.<br><b>◆ A multi-day route</b>: several days on the bike, one-way or a loop, moving on each night rather than returning to one base.<br>With nothing selected, everything shows. Select a discipline, a riding style or a type of route to show only those; a place shows if it matches any selection.`,
+  chips_mtb: `What you can ride from a base:<br><b>Lifts & shuttles</b>: lifts, gondolas or uplift shuttles do the climbing (bike parks, shuttle-served enduro).<br><b>Trails</b>: you pedal up; anything from purpose-built trail centres to natural mountain singletrack.`,
+  chips_road: `What you can ride from a base:<br><b>Day rides</b>: quiet roads and good loops from the door, the everyday riding.<br><b>Big climbs</b>: famous climbs, many from the Grand Tours.<br><b>Cobbles</b>: the cobbled roads of the spring classics.`,
+  chips_gravel: `<b>Day rides</b>: gravel and dirt-road loops you ride out from the base.`,
+  chips_multi: `Multi-day routes, by how supported the trip is:<br><b>Hotel-to-hotel</b>: waymarked, with a bed and food every night; luggage transfers often available.<br><b>Bikepacking</b>: you carry your gear; some camping or long stretches between towns.<br><b>Remote</b>: permits, guides, altitude or long gaps between supplies (Tibet, the Pamir, the Great Divide).`,
+  offers: `The kinds of riding you can do from this base, by discipline. The dot's colour is the main one.`,
+  support: `How supported the trip is: <b>Hotel-to-hotel</b> (a bed every night), <b>Bikepacking</b> (you carry your gear) or <b>Remote</b> (permits, guides, altitude or long gaps between supplies).`,
+  month: `Pick one or more months you could travel. Places in season in any picked month stay solid, places with a <b>best month</b> among them get a ring, and places out of season in all of them fade (or hide with the checkbox). Seasons are curated typical riding periods.`,
+  cond: `<b>Riding conditions</b> for the next 7 days, from the weather forecast at the place's reference elevation:<br><b>Good</b>: mostly dry and comfortable.<br><b>Mixed</b>: some rain, chilly, hot, windy, or trails wet from recent rain.<br><b>Poor</b>: a wet week, very hot or cold, or snow on the ground.<br>Mountain bike and gravel places also count rain in the last 3 days, because trails stay muddy. Out of season it shows as n/a. Multi-day routes are rated at one point near the middle.`,
+  weather: `Typical conditions per month over 8 years (modelled). Bars = rain days (≥1 mm), numbers below = typical daytime high (°C). Bold months with a dot are the best months. Hover a month for lows, rain totals, sunshine and wind.`,
+  whenToGo: `<b>Light</b> = typically rideable. <b>Dark</b> = best months (the usual mix of weather, light and crowds). Curated, so check passes, lifts and events for this year's dates.`,
+  crowds: `Curated 1–5 rating of how busy it feels in peak season.<br>1 = empty · 3 = normal busy · 5 = crowded trails, roads or lift lines.`,
+  crowdFilter: `Filters on the crowds rating.<br><b>Skip the busiest</b> hides places rated 4–5.<br><b>Quiet only</b> keeps places rated 1–2.`,
+  cost: `Rough all-in cost per person per day (lodging, food, lifts or shuttles, guiding where it's the norm; not flights or your bike).<br>1 = under $100 · 2 = $100–200 · 3 = $200–350 · 4 = $350–600 · 5 = $600+.`,
+  guide: `<b>Required</b>: you can't go without one (e.g. Tibet, Nepal's restricted areas).<br><b>Recommended</b>: most people use a guide or local outfitter.<br><b>Optional</b>: easy to do on your own.`,
+  areas: `A few highlights to start with, not every ride: bike parks, trail areas, famous climbs or sections of a route. On the map they're the <b>small dots</b> joined to their base by dashed lines. Tap one for its own short card.`,
+  route: `For multi-day routes: approximate total distance, the usual number of days, and total climbing. Riders vary a lot, and many routes have variants.`,
+  lookAround: `<b>Trail map</b> (mountain bike): Trailforks, with trails and difficulty.<br><b>Cycle map</b>: CyclOSM, showing bike lanes, paths and road surfaces worldwide.<br><b>Topo</b>: CalTopo's free topo map, for sizing up the terrain.<br><b>Web search</b>: a ready-made search for this place.`,
+};
+
+export const info = (key) => `<span class="info" data-info="${key}" tabindex="0" role="button" aria-label="What does this mean?">i</span>`;
