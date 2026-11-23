@@ -1,6 +1,7 @@
 import { MONTHS, monthBars, showTip, hideTip } from "./charts.js";
 import { DEFS, info } from "./defs.js";
 import { aboutHTML, siteLinksHTML } from "./about.js";
+import { track, initTracking } from "./track.js";
 
 const CAT = {
   mtb:    { label: "Mountain bike", short: "MTB", color: "#eda100", desc: "Lifts, trails, enduro" },
@@ -664,6 +665,7 @@ const hostLabel = (u) => { try { const h = new URL(u).hostname.replace(/^www\./,
 const fcUrl = (d) => `https://api.open-meteo.com/v1/forecast?latitude=${d.lat}&longitude=${d.lon}&elevation=${d.refElev}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,wind_speed_10m_max&past_days=3&forecast_days=7&timezone=auto`;
 function openDetail(id, fly) {
   popup?.remove(); // the full panel replaces the hover preview
+  track(`open ${id}`, BY_ID[id]?.name);
   state.selected = id;
   const d = BY_ID[id];
   if (fly) map.flyTo({ center: [d.lon, d.lat], zoom: Math.max(map.getZoom(), d.children ? 7 : 7.5), speed: 1.4, padding: panelPadding() });
@@ -693,6 +695,7 @@ const toursList = (d, filter) => `<ul class="tours">${d.tours.filter(t => !filte
 function openSub(id, i) {
   popup?.remove(); // the full panel replaces the hover preview
   const d = BY_ID[id], c = d?.children?.[i]; if (!c) return;
+  track(`open ${id} / ${c.name}`, `${c.name} (${d.name})`);
   state.selected = id;
   const k = kidKind(c), col = CAT[d.category].color;
   map.getSource("sel")?.setData({ type: "Feature", geometry: { type: "Point", coordinates: [d.lon, d.lat] }, properties: {} });
@@ -829,6 +832,7 @@ const richText = (t) => esc(t).split(/\n\s*\n/).map(p => `<p>${p.replace(/\*\*(.
 const photoFig = (p, cls = "") => `<figure class="photo ${cls}"><a href="${p.page}" target="_blank" rel="noopener"><img src="${p.src}" alt="${esc(p.alt)}" loading="lazy" /></a><figcaption>${esc(p.caption)} <span class="credit">Photo: ${esc(p.author)}, ${p.licenseUrl ? `<a href="${p.licenseUrl}" target="_blank" rel="noopener">${esc(p.license)}</a>` : esc(p.license)}, via <a href="${p.page}" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>`;
 function openStory(id, push = true) {
   const d = BY_ID[id], st = STORIES[id]; if (!d || !st) return;
+  track(`read story ${id}`, `Story: ${d.name}`);
   const mo = (m) => m.length ? m.map(x => MONTHS[x - 1]).join(", ") : "any month";
   const links = [d.links?.website && [hostLabel(d.links.website), d.links.website]].filter(Boolean);
   $("#modalBody").innerHTML = `<article class="story">
@@ -871,6 +875,7 @@ function loadTally() {
   });
 }
 function openFeedback(place = "", btn = null) {
+  track("open feedback");
   const page = !$("#modal").classList.contains("hidden") && $("#modal").classList.contains("story-mode") ? "read-more"
     : !$("#detail").classList.contains("hidden") ? "detail" : "map";
   const hiddenFields = { place, page };
@@ -885,6 +890,7 @@ function openFeedback(place = "", btn = null) {
 }
 /** About: the story behind the Wayward sites, in the reading layout used for stories */
 function openAbout() {
+  track("open about");
   $("#modalBody").innerHTML = aboutHTML("bike");
   $("#modal").classList.add("story-mode"); $("#modal").classList.remove("hidden");
   $("#modal .modal-card").scrollTop = 0;
@@ -901,6 +907,7 @@ function routeFromHash() {
 }
 
 function openCompare() {
+  track(`compare ${state.compare.length} places`);
   const items = state.compare.map(x => ({ d: BY_ID[x.id], c: condOf(BY_ID[x.id]), color: SLOTS[x.slot] }));
   const m = state.months[0] || null;
   const monthOf = (it) => state.months.find(x => inSeason(it.d, x)) || m || it.d.best[0] || 1;
@@ -966,6 +973,7 @@ async function boot() {
   $("#showAll").onclick = () => fitAll(true);
   document.addEventListener("click", (e) => { const b = e.target.closest?.("[data-feedback]"); if (b) { e.preventDefault(); openFeedback(b.dataset.feedback, b); } });
   $("#siteLinks").innerHTML = siteLinksHTML("bike");
+  initTracking("bike");
   document.addEventListener("click", (e) => { if (e.target.closest?.("[data-about]")) { e.preventDefault(); openAbout(); } });
   // start fetching Tally as soon as someone heads for a feedback link
   const warmTally = (e) => { if (e.target.closest?.("[data-feedback]")) loadTally().catch(() => {}); };
