@@ -348,3 +348,9 @@ svg.chart .grid { stroke: var(--border); stroke-width: 1; }
 .about-sites { font-size: 15px; line-height: 1.6; padding-left: 18px; margin: 0 0 12px; }
 .about .link-btn { font-size: inherit; padding: 0; }
 .about .about-sign { font-style: italic; color: var(--text-secondary); margin-top: 16px; }
+
+/* No page zoom (a map site): pinches and double-taps only scroll the page; the map handles its own gestures.
+   Form fields are 16px on touch screens so iOS doesn't auto-zoom into them and leave the page stuck enlarged. */
+html, body { touch-action: pan-x pan-y; }
+#map, #map canvas { touch-action: none; }
+@media (pointer: coarse) { input, select, textarea { font-size: 16px !important; } }
