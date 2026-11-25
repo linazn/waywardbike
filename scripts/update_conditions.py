@@ -4,7 +4,7 @@ Build data/conditions.json for Wayward Bike.
 
 Source: Open-Meteo (free, no key), at each destination's refElev.
   * climate: typical weather per month from 8 past years (cached on disk under data/cache/; it doesn't change)
-  * now: the last 3 days of rain, the 7-day forecast and modelled snow on the ground,
+  * now: the last 10 days and next 10 days (rain, highs, sun) for the strip; the last 3 days of rain and the 7-day forecast and modelled snow on the ground,
     turned into a simple riding-conditions rating: good / mixed / poor, with the reasons.
 
 Usage:
@@ -19,6 +19,7 @@ CACHE = os.path.join(DATA, "cache")
 ARCHIVE = "https://archive-api.open-meteo.com/v1/archive"
 FORECAST = "https://api.open-meteo.com/v1/forecast"
 CLIM_YEARS = (2017, 2024)  # 8 full years
+PAST_DAYS, AHEAD_DAYS = 10, 10  # weather strip window around today
 
 
 class DailyLimit(Exception):
@@ -90,16 +91,20 @@ def climate(d):
 def now(d):
     js = get(FORECAST, {
         "latitude": d["lat"], "longitude": d["lon"], "elevation": d["refElev"],
-        "daily": "temperature_2m_max,temperature_2m_min,precipitation_sum,precipitation_probability_max,wind_speed_10m_max",
-        "current": "snow_depth", "past_days": 3, "forecast_days": 7, "timezone": "auto",
+        "daily": "temperature_2m_max,temperature_2m_min,precipitation_sum,precipitation_probability_max,wind_speed_10m_max,sunshine_duration",
+        "current": "snow_depth", "past_days": PAST_DAYS, "forecast_days": AHEAD_DAYS + 1, "timezone": "auto",
     })
     dd = js["daily"]
     days = [{"date": dd["time"][i], "tmax": dd["temperature_2m_max"][i], "tmin": dd["temperature_2m_min"][i],
              "rain": round(dd["precipitation_sum"][i] or 0, 1), "pop": dd["precipitation_probability_max"][i],
              "wind": dd["wind_speed_10m_max"][i]} for i in range(len(dd["time"]))]
-    past, nxt = days[:3], days[3:]
+    past, nxt = days[PAST_DAYS - 3:PAST_DAYS], days[PAST_DAYS:PAST_DAYS + 7]
     snow = (js.get("current") or {}).get("snow_depth")
-    return {"past3rain": round(sum(x["rain"] for x in past), 1), "next7": nxt,
+    r1 = lambda v: None if v is None else round(v, 1)
+    # 10 days back + today + 10 ahead, for the strip in the detail panel
+    wx = {"start": dd["time"][0], "today": PAST_DAYS, "rain": [x["rain"] for x in days],
+          "tmax": [r1(x["tmax"]) for x in days], "sun": [round((v or 0) / 3600, 1) for v in dd["sunshine_duration"]]}
+    return {"past3rain": round(sum(x["rain"] for x in past), 1), "next7": nxt, "wx": wx,
             "snowDepth": round(snow * 100) if snow is not None else None, "today": nxt[0]["date"] if nxt else None}
 
 

@@ -2,6 +2,7 @@ import { MONTHS, monthBars, showTip, hideTip } from "./charts.js";
 import { DEFS, info } from "./defs.js";
 import { aboutHTML, siteLinksHTML } from "./about.js";
 import { track, initTracking } from "./track.js";
+import { wxStripHTML, bindWxStrips } from "./strip.js";
 
 const CAT = {
   mtb:    { label: "Mountain bike", short: "MTB", color: "#eda100", desc: "Lifts, trails, enduro" },
@@ -764,6 +765,7 @@ function renderDetail(id) {
         <div><div class="hero" style="${r ? "" : "color:#8a8984"}">${r ? `<i class="cdot" style="background:${COND[r].color}"></i>${COND[r].label}` : "n/a"}</div><div class="hero-sub">${r ? "next 7 days" : esc(st.label)}</div></div>
         <div class="hero-sub" style="flex:1">${r ? c.rated.reasons.map(esc).join("<br>") : `Forecast for the next 7 days, for reference: ${c.rated.reasons.map(esc).join("; ")}`}</div>
       </div>
+      ${c.wx ? wxStripHTML(c.wx, { kind: "rain", where: `at ~${num(d.refElev)} m (modelled)` }) : ""}
       <div class="days">${c.next7.map(x => `<div class="day ${x.rain >= 3 ? "wet" : ""}"><b>${weekday(x.date)}</b><span class="hi">${Math.round(x.tmax)}°</span><span class="lo">${Math.round(x.tmin)}°</span><span class="rain">${x.rain >= 0.5 ? (x.rain < 10 ? x.rain.toFixed(1) : Math.round(x.rain)) + " mm" : "dry"}</span></div>`).join("")}</div>
       <div class="note">Last 3 days: ${c.past3rain} mm of rain${c.snowDepth ? ` · snow on the ground ~${c.snowDepth} cm` : ""}. Modelled at ~${num(d.refElev)} m${d.stats ? ", near the middle of the route, so its ends can be very different" : ""}. Forecast from ${fmtDate(c.asOf)} via Open-Meteo · <a href="${fcUrl(d)}" target="_blank" rel="noopener">raw forecast ↗</a></div>`
       : `<p class="note">No conditions data yet for this destination.</p>`}
@@ -801,6 +803,7 @@ function renderDetail(id) {
   $("#zoomTo").onclick = () => map.flyTo({ center: [d.lon, d.lat], zoom: d.stats ? 6.5 : d.children ? 9 : 10, padding: panelPadding() });
   el.querySelectorAll(".children li").forEach(li => li.onclick = () => openSub(id, +li.dataset.i));
   monthBars($("#monthBars"), c?.climate, { months: state.months, best: d.best });
+  bindWxStrips($("#detail") || document);
 }
 
 // ---------- compare ----------
