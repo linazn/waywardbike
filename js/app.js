@@ -788,12 +788,13 @@ function renderDetail(id) {
     ${staleNote(d) ? `<div class="callout"><b>Out of date.</b> ${staleNote(d)}</div>` : ""}
     <div class="snowcard">
       ${c?.rated ? `
+      <div class="wx-sub">Next 7 days</div>
       <div class="snow-head">
         <div><div class="hero" style="${r ? "" : "color:#8a8984"}">${r ? `<i class="cdot" style="background:${COND[r].color}"></i>${COND[r].label}` : "n/a"}</div><div class="hero-sub">${r ? "next 7 days" : esc(st.label)}</div></div>
         <div class="hero-sub" style="flex:1">${r ? c.rated.reasons.map(esc).join("<br>") : `Forecast for the next 7 days, for reference: ${c.rated.reasons.map(esc).join("; ")}`}</div>
       </div>
-      ${c.wx ? wxStripHTML(c.wx, { kind: "rain", where: `at ~${num(d.refElev)} m (modelled)` }) : ""}
       <div class="days">${c.next7.map(x => `<div class="day ${x.rain >= 3 ? "wet" : ""}"><b>${weekday(x.date)}</b><span class="hi">${Math.round(x.tmax)}°</span><span class="lo">${Math.round(x.tmin)}°</span><span class="rain">${x.rain >= 0.5 ? (x.rain < 10 ? x.rain.toFixed(1) : Math.round(x.rain)) + " mm" : "dry"}</span></div>`).join("")}</div>
+      ${c.wx ? `<div class="wx-sub">Right now</div>${wxStripHTML(c.wx, { kind: "rain", where: `at ~${num(d.refElev)} m (modelled)` })}` : ""}
       <div class="note">Last 3 days: ${c.past3rain} mm of rain${c.snowDepth ? ` · snow on the ground ~${c.snowDepth} cm` : ""}. Modelled at ~${num(d.refElev)} m${d.stats ? ", near the middle of the route, so its ends can be very different" : ""}. Forecast from ${fmtDate(c.asOf)} via Open-Meteo · <a href="${fcUrl(d)}" target="_blank" rel="noopener">raw forecast ↗</a></div>`
       : `<p class="note">No conditions data yet for this destination.</p>`}
     </div>

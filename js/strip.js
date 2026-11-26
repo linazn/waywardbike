@@ -13,8 +13,13 @@ function css() {
   const s = document.createElement("style");
   s.id = "wx-strip-css";
   s.textContent = `
-.wx { margin-top: 10px; }
-.wx-sum { font-size: 13px; color: var(--text-primary); margin-bottom: 4px; }
+.wx { margin-top: 4px; }
+.wx-sum { display: grid; grid-template-columns: auto 1fr 1fr; gap: 2px 14px; font-size: 13px; color: var(--text-primary); margin-bottom: 6px; align-items: baseline; }
+.wx-sum .h { font-size: 11px; color: var(--text-muted); }
+.wx-sum .k { display: inline-flex; align-items: center; gap: 5px; color: var(--text-secondary); }
+.wx-sum i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; }
+.wx-sub { margin: 14px 0 6px; padding-top: 10px; border-top: 1px dashed var(--border); font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--text-muted); }
+.wx-sub:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
 .wx svg { display: block; width: 100%; height: auto; touch-action: manipulation; }
 .wx .hit { fill: transparent; cursor: pointer; }
 .wx .hit.on { fill: rgba(0,0,0,.06); }
@@ -36,17 +41,17 @@ const r0 = (v) => Math.round(v || 0);
 const mm = (v) => v < 10 ? (Math.round(v * 10) / 10) + " mm" : Math.round(v) + " mm";
 
 export function wxSummary(wx, kind) {
+  // a small table, one row per kind of weather, so snow and rain are never mixed up
   const t = wx.today, past = (k) => wx[k].slice(0, t), next = (k) => wx[k].slice(t, t + 10);
-  if (kind === "snow") {
-    const rainDays = (a) => a.filter(v => v >= 1).length;
-    const rp = rainDays(past("rain")), rn = rainDays(next("rain"));
-    const rainBit = rp || rn ? ` · rain on ${[rp && `${rp} recent day${rp > 1 ? "s" : ""}`, rn && `${rn} coming day${rn > 1 ? "s" : ""}`].filter(Boolean).join(" and ")}` : "";
-    return `Last 10 days <b>${r0(sum(past("snow")))} cm</b> · next 10 days <b>${r0(sum(next("snow")))} cm</b>${rainBit}`;
-  }
-  const wet = (a) => a.filter(v => v >= 1).length;
-  const wp = wet(past("rain")), wn = wet(next("rain"));
-  const part = (n, total) => n ? `<b>${n} wet day${n > 1 ? "s" : ""}</b> (${r0(total)} mm)` : `<b>dry</b>`;
-  return `Last 10 days ${part(wp, sum(past("rain")))} · next 10 days ${part(wn, sum(next("rain")))}`;
+  const days = (a, test) => a.filter(test).length;
+  const rainCell = (a) => { const n = days(a, v => v >= 1); return n ? `<b>${n} day${n > 1 ? "s" : ""}</b> <span class="muted">(${r0(sum(a))} mm)</span>` : `<span class="muted">none</span>`; };
+  const sw = (c, round) => `<i style="background:${c};${round ? "border-radius:50%" : ""}"></i>`;
+  const rows = [];
+  if (kind === "snow") rows.push([`${sw(SNOW)}Snow`, `<b>${r0(sum(past("snow")))} cm</b>`, `<b>${r0(sum(next("snow")))} cm</b>`]);
+  rows.push([`${sw(kind === "snow" ? RAIN_ON_SNOW : RAIN, kind === "snow")}Rain`, rainCell(past("rain")), rainCell(next("rain"))]);
+  if (kind !== "snow") { const dry = (a) => days(a, v => (v || 0) < 1); rows.push([`${sw(DRY, true)}Dry`, `<b>${dry(past("rain"))} days</b>`, `<b>${dry(next("rain"))} days</b>`]); }
+  return `<span class="h"></span><span class="h">Last 10 days</span><span class="h">Next 10 days <span class="muted">(forecast)</span></span>` +
+    rows.map(r => r.map((c, i) => `<span class="${i ? "" : "k"}">${c}</span>`).join("")).join("");
 }
 
 export { css as wxCSS };
@@ -71,14 +76,11 @@ export function wxStripHTML(wx, { kind = "rain", where = "" } = {}) {
   const today = `<line x1="${tx}" x2="${tx}" y1="0" y2="${BASE + 11}" stroke="var(--text-primary)" stroke-width="1" stroke-dasharray="2 2" opacity=".6"/>`;
   const base = `<line x1="0" x2="${n * W}" y1="${BASE + .5}" y2="${BASE + .5}" stroke="var(--border)" stroke-width="1"/>`;
   const hits = Array.from({ length: n }, (_, i) => `<rect class="hit" data-i="${i}" x="${i * W}" y="0" width="${W}" height="${BASE + 12}"/>`).join("");
-  const key = snow
-    ? `<span class="wx-key"><i style="background:${SNOW}"></i>snow</span><span class="wx-key"><i style="background:${RAIN_ON_SNOW};border-radius:50%"></i>rain</span>`
-    : `<span class="wx-key"><i style="background:${RAIN}"></i>rain</span><span class="wx-key"><i style="background:${DRY};border-radius:50%"></i>dry</span>`;
   return `<div class="wx" data-wx='${JSON.stringify(wx).replace(/'/g, "&#39;")}' data-kind="${kind}">
     <div class="wx-sum">${wxSummary(wx, kind)}</div>
     <svg viewBox="0 0 ${n * W} ${BASE + 12}" role="img" aria-label="Daily ${snow ? "snowfall" : "rain"}, 10 days back to 10 days ahead">${base}${g}${today}${hits}</svg>
     <div class="wx-axis"><span>10 days ago</span><span>today</span><span>+10 days</span></div>
-    <div class="wx-cap">${key}<span class="muted">${snow ? "Snow" : "Rain"}${where ? " " + where : ""}. Days 8–10 ahead are faded: low confidence. Hover or tap a day.</span></div>
+    <div class="wx-cap"><span class="muted">${where ? "Weather " + where + ". " : ""}Days 8–10 ahead are faded: low confidence. Hover or tap a day.</span></div>
   </div>`;
 }
 
