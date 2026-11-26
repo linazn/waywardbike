@@ -21,7 +21,11 @@ function css() {
 .wx-axis { display: flex; justify-content: space-between; font-size: 10.5px; color: var(--text-muted); margin-top: 1px; }
 .wx-cap { font-size: 12px; color: var(--text-secondary); min-height: 1.4em; margin-top: 2px; }
 .wx-key { display: inline-flex; align-items: center; gap: 3px; margin-right: 8px; }
-.wx-key i { display: inline-block; width: 7px; height: 7px; border-radius: 2px; }`;
+.wx-key i { display: inline-block; width: 7px; height: 7px; border-radius: 2px; }
+.wx-chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.wx-chips .chip { font-size: 13px; padding: 3px 10px; }
+.wx-rules { font-size: 11.5px; color: var(--text-muted); margin-top: 6px; line-height: 1.45; }
+.wx-rules b { color: var(--text-secondary); font-weight: 600; }`;
   document.head.appendChild(s);
 }
 
@@ -45,6 +49,7 @@ export function wxSummary(wx, kind) {
   return `Last 10 days ${part(wp, sum(past("rain")))} · next 10 days ${part(wn, sum(next("rain")))}`;
 }
 
+export { css as wxCSS };
 export function wxStripHTML(wx, { kind = "rain", where = "" } = {}) {
   if (!wx || !Array.isArray(wx.rain)) return "";
   css();
@@ -101,4 +106,48 @@ export function bindWxStrips(root = document) {
     el.addEventListener("pointerleave", () => show(pinned));
     el.addEventListener("click", (e) => { const h = e.target.closest(".hit"); if (!h) return; const i = +h.dataset.i; pinned = pinned === i ? null : i; show(pinned); });
   });
+}
+
+// ---------- filter chips built on the same 21-day series ----------
+// when = "week" (the 7 days either side of today) or "weekend" (the coming Sat + Sun; on a Sunday, just today)
+export function weekendIdx(wx) {
+  const t = wx.today, n = wx.rain.length;
+  if (day(wx, t).getUTCDay() === 0) return [t];
+  for (let i = t; i < n; i++) if (day(wx, i).getUTCDay() === 6) return [i, i + 1].filter(j => j < n);
+  return [];
+}
+const total = (a, from, to) => { let s = 0; for (let i = Math.max(0, from); i <= Math.min(a.length - 1, to); i++) s += a[i] || 0; return s; };
+const sunnyDay = (wx, i) => (wx.sun[i] || 0) >= 5 && (wx.snow ? (wx.snow[i] || 0) < 1 : true) && (wx.rain[i] || 0) < 1;
+export const WX_CHIPS = {
+  snow: {
+    fresh: { label: "Fresh snow", week: "30+ cm in the last 7 days", weekend: "30+ cm in the 7 days up to Saturday",
+      test: (wx, w) => w === "weekend" ? (() => { const k = weekendIdx(wx); return k.length && total(wx.snow, k[0] - 6, k[0]) >= 30; })() : total(wx.snow, wx.today - 7, wx.today - 1) >= 30 },
+    coming: { label: "Snow coming", week: "20+ cm forecast over the next 7 days", weekend: "10+ cm forecast over the weekend",
+      test: (wx, w) => w === "weekend" ? (() => { const k = weekendIdx(wx); return k.length && total(wx.snow, k[0], k[k.length - 1]) >= 10; })() : total(wx.snow, wx.today, wx.today + 6) >= 20 },
+    sunny: { label: "Sunny spell", week: "4+ sunny days in the next 7 (5+ h of sun, no snow or rain)", weekend: "sunny on Saturday and Sunday",
+      test: (wx, w) => { const k = w === "weekend" ? weekendIdx(wx) : [0, 1, 2, 3, 4, 5, 6].map(j => wx.today + j);
+        const n = k.filter(i => sunnyDay(wx, i)).length; return w === "weekend" ? k.length > 0 && n === k.length : n >= 4; } },
+  },
+  rain: {
+    dryLately: { label: "Dry lately", week: "under 5 mm of rain in the last 7 days", weekend: "under 5 mm of rain in the 5 days before Saturday",
+      test: (wx, w) => w === "weekend" ? (() => { const k = weekendIdx(wx); return k.length && total(wx.rain, k[0] - 5, k[0] - 1) < 5; })() : total(wx.rain, wx.today - 7, wx.today - 1) < 5 },
+    dryAhead: { label: "Dry ahead", week: "at most 1 wet day (1+ mm) in the next 7", weekend: "dry on Saturday and Sunday",
+      test: (wx, w) => { const k = w === "weekend" ? weekendIdx(wx) : [0, 1, 2, 3, 4, 5, 6].map(j => wx.today + j);
+        const wet = k.filter(i => (wx.rain[i] || 0) >= 1).length; return w === "weekend" ? k.length > 0 && wet === 0 : wet <= 1; } },
+  },
+};
+// true if the place passes every chip picked; places with no strip data never pass
+export function wxPasses(wx, kind, picked, when) {
+  if (!picked.length) return true;
+  if (!wx || !Array.isArray(wx.rain) || (kind === "snow" && !wx.snow)) return false;
+  return picked.every(k => WX_CHIPS[kind][k] ? !!WX_CHIPS[kind][k].test(wx, when) : true);
+}
+// the chip row + week/weekend switch, and a line spelling out what the picked chips mean
+export function wxChipsHTML(kind, picked, when) {
+  const defs = WX_CHIPS[kind];
+  const chips = Object.entries(defs).map(([k, c]) => { const on = picked.includes(k);
+    return `<button class="chip ${on ? "on" : ""}" data-wxchip="${k}" aria-pressed="${on}">${c.label}</button>`; }).join("");
+  const seg = `<div class="seg wx-when"><button data-wxwhen="week" class="${when === "week" ? "on" : ""}">Around now</button><button data-wxwhen="weekend" class="${when === "weekend" ? "on" : ""}">This weekend</button></div>`;
+  const rules = (picked.length ? picked : Object.keys(defs)).map(k => `<b>${defs[k].label}</b>: ${defs[k][when]}`).join("<br>");
+  return `${seg}<div class="wx-chips">${chips}</div><div class="wx-rules">${rules}</div>`;
 }

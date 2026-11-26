@@ -2,7 +2,7 @@ import { MONTHS, monthBars, showTip, hideTip } from "./charts.js";
 import { DEFS, info } from "./defs.js";
 import { aboutHTML, siteLinksHTML } from "./about.js";
 import { track, initTracking } from "./track.js";
-import { wxStripHTML, bindWxStrips } from "./strip.js";
+import { wxStripHTML, bindWxStrips, wxChipsHTML, wxPasses, wxCSS } from "./strip.js";
 
 const CAT = {
   mtb:    { label: "Mountain bike", short: "MTB", color: "#eda100", desc: "Lifts, trails, enduro" },
@@ -43,12 +43,15 @@ const state = Object.assign({
   hideOut: false,
   colorBy: "category",
   minCond: "any",
+  wxChips: [],        // dry chips (all must match)
+  wxWhen: "week",     // "week" or "weekend"
   crowdMax: 5,
   search: "",
   sort: "zone",
   compare: [],        // [{id, slot}]
 }, saved, { selected: null, search: "" });
 for (const k of Object.keys(CHIPS)) if (!Array.isArray(state.types[k])) state.types[k] = [];
+if (!Array.isArray(state.wxChips)) state.wxChips = [];
 const persist = () => {
   const { selected, ...rest } = state;
   localStorage.setItem("waywardbike2", JSON.stringify(rest));
@@ -121,6 +124,7 @@ function passes(d) {
   if (!picked(d)) return false;
   if (state.crowdMax < 5 && d.crowds > state.crowdMax) return false;
   if (state.minCond !== "any") { const r = liveCond(d); if (!r || COND_ORDER.indexOf(r) < COND_ORDER.indexOf(state.minCond)) return false; }
+  if (state.wxChips.length && (!status(d).live || !wxPasses(condOf(d)?.wx, "rain", state.wxChips, state.wxWhen))) return false; // in season now only
   if (state.hideOut && outForMonths(d)) return false;
   if (state.search) {
     const q = state.search.toLowerCase();
@@ -523,8 +527,8 @@ function refresh() {
 }
 
 // ---------- sidebar ----------
-const FILTER_DEFAULTS = { picks: [], types: Object.fromEntries(Object.keys(CHIPS).map(k => [k, []])), months: [], hideOut: false, minCond: "any", crowdMax: 5, search: "" };
-const activeFilters = () => state.picks.length + Object.values(state.types).reduce((a, x) => a + x.length, 0) + state.months.length + (state.hideOut ? 1 : 0) + (state.minCond !== "any" ? 1 : 0) + (state.crowdMax < 5 ? 1 : 0) + (state.search.trim() ? 1 : 0);
+const FILTER_DEFAULTS = { picks: [], types: Object.fromEntries(Object.keys(CHIPS).map(k => [k, []])), months: [], hideOut: false, minCond: "any", wxChips: [], crowdMax: 5, search: "" };
+const activeFilters = () => state.picks.length + Object.values(state.types).reduce((a, x) => a + x.length, 0) + state.months.length + (state.hideOut ? 1 : 0) + (state.minCond !== "any" ? 1 : 0) + state.wxChips.length + (state.crowdMax < 5 ? 1 : 0) + (state.search.trim() ? 1 : 0);
 function clearFilters() {
   Object.assign(state, structuredClone(FILTER_DEFAULTS));
   $("#search").value = "";
@@ -551,6 +555,7 @@ function renderControls() {
   document.querySelectorAll("#colorBy button").forEach(b => b.classList.toggle("on", b.dataset.v === state.colorBy));
   document.querySelectorAll("#crowdMax button").forEach(b => b.classList.toggle("on", +b.dataset.v === state.crowdMax));
   document.querySelectorAll("#minCond button").forEach(b => b.classList.toggle("on", b.dataset.v === state.minCond));
+  wxCSS(); $("#wxChips").innerHTML = wxChipsHTML("rain", state.wxChips, state.wxWhen);
   $("#sortBy").value = state.sort;
 }
 
@@ -580,6 +585,12 @@ function bindControls() {
   $("#hideOut").addEventListener("change", (e) => { state.hideOut = e.target.checked; refresh(); });
   $("#colorBy").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; state.colorBy = b.dataset.v; renderControls(); refresh(); });
   $("#crowdMax").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; state.crowdMax = +b.dataset.v; renderControls(); refresh(); });
+  $("#wxChips").addEventListener("click", (e) => {
+    const c = e.target.closest("[data-wxchip]"), w = e.target.closest("[data-wxwhen]");
+    if (c) { const k = c.dataset.wxchip; state.wxChips = state.wxChips.includes(k) ? state.wxChips.filter(x => x !== k) : [...state.wxChips, k]; }
+    else if (w) state.wxWhen = w.dataset.wxwhen; else return;
+    renderControls(); refresh();
+  });
   $("#minCond").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; state.minCond = b.dataset.v; renderControls(); refresh(); });
   $("#search").addEventListener("input", (e) => { state.search = e.target.value; refresh(); });
   $("#sortBy").addEventListener("change", (e) => { state.sort = e.target.value; refresh(); });
