@@ -591,6 +591,8 @@ function bindControls() {
     else if (w) state.wxWhen = w.dataset.wxwhen; else return;
     renderControls(); refresh();
   });
+  // count clicks on the plan-it links (forecast, directions, flights)
+  document.addEventListener("click", (e) => { const a = e.target.closest("a[data-out]"); if (a) track(`out ${a.dataset.out} ${state.selected || ""}`.trim(), a.textContent.replace(" ↗", "")); });
   $("#minCond").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; state.minCond = b.dataset.v; renderControls(); refresh(); });
   $("#search").addEventListener("input", (e) => { state.search = e.target.value; refresh(); });
   $("#sortBy").addEventListener("change", (e) => { state.sort = e.target.value; refresh(); });
@@ -648,7 +650,7 @@ function renderList() {
 // Map links generated from coordinates, chosen by the kind of riding:
 // mountain bike → Trailforks (trails, difficulty, conditions); road/gravel → Komoot (route planner, rider highlights);
 // everyone → Strava's heatmap (where people actually ride, set to the right sport) and CalTopo topo (terrain).
-const trailMapUrl = (lat, lon, z = 12) => `https://www.trailforks.com/map/?ll=${lat},${lon}&z=${z}`;
+const trailMapUrl = (lat, lon, z = 12) => `https://www.trailforks.com/map/?z=${z}&lat=${lat}&lon=${lon}`; // Trailforks ignores ll=
 const heatmapUrl = (lat, lon, z = 12, disc = "road") => `https://www.strava.com/maps/global-heatmap?sport=${({ mtb: "MountainBikeRide", gravel: "GravelRide", road: "Ride" })[disc]}&style=standard#${z}/${lat}/${lon}`;
 const komootUrl = (lat, lon, z = 12) => `https://www.komoot.com/plan/@${lat},${lon},${z}z`;
 const topoUrl = (lat, lon, z = 12) => `https://caltopo.com/map.html#ll=${lat},${lon}&z=${z}&b=mbt`;
@@ -674,6 +676,20 @@ const mapLinks = (d, short = false, lat = d.lat, lon = d.lon, z = d.stats ? 8 : 
     a(topoUrl(lat, lon, z), "topo")].filter(Boolean);
 };
 const hostLabel = (u) => { try { const h = new URL(u).hostname.replace(/^www\./, ""); return h; } catch { return u; } };
+// Plan-it links, built from coordinates
+const meteoblueUrl = (d) => `https://www.meteoblue.com/en/weather/week/${(+d.lat).toFixed(3)}N${(+d.lon).toFixed(3)}E${d.refElev ? Math.round(d.refElev) : ""}`;
+const windyUrl = (d) => `https://www.windy.com/?${d.lat},${d.lon},10`;
+const directionsUrl = (d) => `https://www.google.com/maps/dir/?api=1&destination=${d.lat},${d.lon}`;
+// "Getting there" sometimes names a route's start town rather than an airport: these places get a hand-picked airport instead
+const FLY_TO = { lhasakathmandu: "Lhasa", arizonatrail: "Tucson", maahdaahey: "Bismarck", oregontimber: "Medford", blueridge: "Charlottesville",
+  oregoncoast: "Portland", raidpyreneen: "Biarritz", claudia: "Munich", hebrides: "Glasgow", c2c: "Newcastle", highland550: "Glasgow",
+  manalileh: "Kullu", transam: "Portland", bigbend: "Midland", moselrhine: "Luxembourg", curonian: "Palanga", lejog: "Newquay",
+  medellin: "Medellín", vallnord: "Barcelona" };
+const flightsTo = (d) => FLY_TO[d.id] || (d.airport || "").split(/[,/;~(]| \d| then | or /)[0].trim().replace(/ airport$/i, "");
+const outLink = (url, label, kind) => `<a href="${url}" target="_blank" rel="noopener" data-out="${kind}">${label} ↗</a>`;
+const forecastLinks = (d) => [outLink(meteoblueUrl(d), "meteoblue", "meteoblue"), outLink(windyUrl(d), "Windy", "windy")];
+const travelLinks = (d) => [!d.stats && outLink(directionsUrl(d), "Directions", "directions"), // routes: no single place to drive to
+  flightsTo(d) && outLink(`https://www.google.com/travel/flights?q=${encodeURIComponent("Flights to " + flightsTo(d))}`, `Flights to ${esc(flightsTo(d))}`, "flights")].filter(Boolean);
 const fcUrl = (d) => `https://api.open-meteo.com/v1/forecast?latitude=${d.lat}&longitude=${d.lon}&elevation=${d.refElev}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,wind_speed_10m_max&past_days=3&forecast_days=7&timezone=auto`;
 function openDetail(id, fly) {
   popup?.remove(); // the full panel replaces the hover preview
@@ -798,7 +814,8 @@ function renderDetail(id) {
       <dt>Cost ${info("cost")}</dt><dd>${meter(d.cost, 5)}</dd>
       <dt>Guide ${info("guide")}</dt><dd>${esc(d.guide)}</dd>
       <dt>Bike hire ${info("hire")}</dt><dd>${hireText(d)}</dd>
-      <dt>Getting there</dt><dd>${esc(d.airport)}</dd>
+      <dt>Forecast ${info("forecastLinks")}</dt><dd>${forecastLinks(d).join(" · ")}</dd>
+      <dt>Getting there</dt><dd>${esc(d.airport)}<div class="note" style="margin-top:2px">${travelLinks(d).join(" · ")}</div></dd>
       <dt>Look it up ${info("lookAround")}</dt><dd>${[...mapLinks(d), searchLink(destSearch(d))].join(" · ")}</dd>
       ${d.links?.website ? `<dt>Website</dt><dd><a href="${d.links.website}" target="_blank" rel="noopener">${hostLabel(d.links.website)} ↗</a></dd>` : ""}
     </dl>
@@ -868,7 +885,7 @@ function openStory(id, push = true) {
       <dt>Crowds ${info("crowds")}</dt><dd>${meter(d.crowds, 5)}</dd>
       <dt>Guide ${info("guide")}</dt><dd>${esc(d.guide)}</dd>
       <dt>Bike hire ${info("hire")}</dt><dd>${hireText(d)}</dd>
-      <dt>Getting there</dt><dd>${esc(d.airport)}</dd>
+      <dt>Getting there</dt><dd>${esc(d.airport)}<div class="note" style="margin-top:2px">${travelLinks(d).join(" · ")}</div></dd>
     </dl>
     <div class="story-links">${[...links.map(([l, u]) => `<a href="${u}" target="_blank" rel="noopener">${esc(l)} ↗</a>`), searchLink(destSearch(d))].join(" · ")}</div>
     ${st.sources?.length ? `<div class="note">Sources: ${st.sources.map(x => `<a href="${x.url}" target="_blank" rel="noopener">${esc(x.label)}</a>`).join(" · ")}</div>` : ""}
