@@ -52,17 +52,12 @@
 
       <section class="block">
         <h2>Riding conditions this week <span class="info" data-info="cond" tabindex="0" role="button" aria-label="What does this mean?">i</span></h2>
-        <div class="seg" id="colorBy">
-          <button data-v="category">Colour by type</button>
-          <button data-v="cond">Colour by conditions</button>
-        </div>
         <div class="seg" id="minCond" aria-label="Filter by riding conditions">
           <button data-v="any">Any</button>
           <button data-v="mixed">Mixed or better</button>
           <button data-v="good">Good only</button>
         </div>
         <div id="wxChips" style="margin-bottom:8px"></div>
-        <div class="legend" id="legend"></div>
       </section>
 
       <section class="block">
@@ -77,7 +72,7 @@
       <section class="block grow">
         <div class="list-top">
         <div class="list-head">
-          <h2><span id="count">0</span> destinations</h2>
+          <h2><span id="count">…</span> destinations</h2>
           <select id="sortBy" aria-label="Sort list">
             <option value="zone">By region</option>
             <option value="name">A–Z</option>
@@ -89,7 +84,7 @@
         </div>
         <ul id="list" class="dest-list"></ul>
       </section>
-      <button id="showMap" class="show-map">Show <span id="countMap">0</span> on the map</button>
+      <button id="showMap" class="show-map">Show <span id="countMap">…</span> on the map</button>
       <footer class="credits">
         Weather: <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a> (CC BY 4.0) · Map: <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a>, © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors · Terrain: Mapzen/AWS Terrain Tiles.
         Modelled data for early trip scoping. Always check local conditions, trail status and access.
@@ -102,6 +97,15 @@
       <div id="map"></div>
       <div id="zoneLayer"><svg id="zoneLines"></svg></div>
       <button id="brandChip" class="brand-chip" aria-label="Wayward Bike: open filters"><img src="assets/brand/wordmark.svg" width="1560" height="260" alt="Wayward Bike" /></button>
+      <div id="mapLegend" class="map-legend" aria-label="Map colours">
+        <div class="seg" id="colorBy">
+          <button data-v="category">Riding type</button>
+          <button data-v="cond">Conditions this week</button>
+        </div>
+        <div class="legend" id="legend"></div>
+      </div>
+      <div id="loadingNote" class="loading-note">Loading places…</div>
+      <div id="welcome" class="welcome hidden" role="dialog" aria-labelledby="welcomeTitle"></div>
       <button id="toggleSidebar" class="fab" aria-label="Filters">☰ Filters</button>
       <button id="showAll" class="map-btn" title="Zoom out to show every destination">World view</button>
       <button id="feedbackBtn" class="map-btn fb-btn" data-feedback="" title="Ideas, corrections, places I've missed">Feedback</button>

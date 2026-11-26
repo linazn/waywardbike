@@ -583,7 +583,7 @@ function bindControls() {
     renderControls(); refresh();
   });
   $("#hideOut").addEventListener("change", (e) => { state.hideOut = e.target.checked; refresh(); });
-  $("#colorBy").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; state.colorBy = b.dataset.v; renderControls(); refresh(); });
+  $("#colorBy").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; state.colorBy = b.dataset.v; state.colorByChosen = true; renderControls(); refresh(); });
   $("#crowdMax").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; state.crowdMax = +b.dataset.v; renderControls(); refresh(); });
   $("#wxChips").addEventListener("click", (e) => {
     const c = e.target.closest("[data-wxchip]"), w = e.target.closest("[data-wxwhen]");
@@ -611,11 +611,38 @@ function bindControls() {
   $("#brandChip").addEventListener("click", () => setSidebar(true));
   $("#toggleSidebar").addEventListener("click", () => setSidebar(desktop() ? true : !$("#sidebar").classList.contains("open")));
   for (const id of ["#closeSidebar", "#showMap", "#sbBackdrop"]) $(id).addEventListener("click", () => setSidebar(false));
+  openSidebar = () => setSidebar(true);
+}
+let openSidebar = () => {};
+
+// One-time welcome card: two ways in, then it never shows again
+function showWelcome() {
+  if (state.welcomed || new URLSearchParams(location.search).has("nowelcome")) return;
+  const el = $("#welcome");
+  el.innerHTML = `
+    <h2 id="welcomeTitle">Welcome to Wayward Bike</h2>
+    <p>A map of ${Math.floor(DEST.length / 10) * 10}+ places to ride worldwide, from bike parks and famous climbs to gravel back roads and multi-day routes, with riding conditions updated daily.</p>
+    <div class="welcome-btns">
+      <button class="primary" data-welcome="now">Where's good right now?</button>
+      <button data-welcome="explore">Explore beyond the usual</button>
+    </div>
+    <p class="muted">Tap any dot for its card. Filters live in the side panel.</p>`;
+  el.classList.remove("hidden");
+  el.onclick = (e) => {
+    const b = e.target.closest("[data-welcome]"); if (!b) return;
+    state.welcomed = true; el.classList.add("hidden"); track(`welcome ${b.dataset.welcome}`);
+    if (b.dataset.welcome === "now") {
+      state.colorBy = "cond"; state.colorByChosen = true; renderControls(); refresh();
+      openSidebar();
+      const sec = $("#wxChips").closest("section");
+      setTimeout(() => { sec.scrollIntoView({ behavior: "smooth", block: "start" }); sec.classList.add("flash"); setTimeout(() => sec.classList.remove("flash"), 2200); }, 250);
+    } else persist();
+  };
 }
 
 function renderLegend() {
   $("#legend").innerHTML = state.colorBy === "cond"
-    ? Object.values(COND).map(c => `<span><i style="background:${c.color}"></i>${c.label}</span>`).join("") + `<span><i style="background:#fff;border:1.5px solid #6f6e69"></i>out of season / no data yet</span><span><i class="route-key"></i>multi-day route</span><span class="muted" style="width:100%">Riding conditions over the next 7 days. Ring colour = main discipline.</span>`
+    ? Object.values(COND).map(c => `<span><i style="background:${c.color}"></i>${c.label}</span>`).join("") + `<span><i style="background:#fff;border:1.5px solid #6f6e69"></i>no data / off-season</span><span><i class="route-key"></i>multi-day route</span><span class="muted" style="width:100%">Riding conditions over the next 7 days. Ring = main type.</span>`
     : Object.values(CAT).map(c => `<span><i style="background:${c.color}"></i>${c.label}</span>`).join("") + `<span><i class="route-key"></i>multi-day route</span>` + (state.months.length ? `<span class="muted" style="width:100%">Ringed dot = a best month · faded = out of season in all picked months</span>` : "");
 }
 
@@ -996,6 +1023,7 @@ async function boot() {
     $("#asof").innerHTML += `<br>⚠ Not updated for ${age} days (it normally updates daily), so the forecasts may be out of date.`;
   }
   renderControls(); bindControls(); initMap(); refresh();
+  $("#loadingNote").remove(); showWelcome();
   const infoAt = (el) => { const r = el.getBoundingClientRect(); showTip(DEFS[el.dataset.info] || "", r.right, r.top); };
   document.addEventListener("mouseover", (e) => { const el = e.target.closest?.("[data-info]"); if (el) infoAt(el); });
   document.addEventListener("mouseout", (e) => { if (e.target.closest?.("[data-info]")) hideTip(); });
